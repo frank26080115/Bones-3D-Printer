@@ -22,7 +22,7 @@ You are my friend, so I bet you already know it'll be good.
 General Design Overview
 =======================
 
-It's basically a copy of my Hephaestus https://eleccelerator.com/hephaestus-my-own-3d-printer/ . But this time, key differences:
+It's basically a copy of [my Hephaestus 3D printer](https://eleccelerator.com/hephaestus-my-own-3d-printer/). But this time, key differences:
 
  * uses 1.75mm filament, instead of 2.85mm
  * single Z leadscrew, instead of two
@@ -36,9 +36,9 @@ It's basically a copy of my Hephaestus https://eleccelerator.com/hephaestus-my-o
 In general, this still means:
 
  * Ultimaker-like mechanics
- * 24V electrical system
  * No bed sensor required
  * About 200mm x 200mm build size
+ * Heated bed
  * 32-bit microcontroller (8-bit is still an option)
 
 CAD
@@ -51,9 +51,16 @@ The whole 3D printer was 3D modeled first, almost every single part, using Onsha
  * You can design your own custom parts and share it with me, so I can give you feedback
  * You don't even need a computer. Onshape runs in the cloud and accessible through any web browser or their smartphone app
 
-The link to the Onshape model: https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/208ce2426916e4fde5ad150f
+The link to the Onshape model: [https://cad.onshape.com/documents/359ba....150f](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/208ce2426916e4fde5ad150f)
 
-Next
-====
+About the lessons
+=================
+
+There will be parts of the lesson where I take you through steps in CAD to create something, a drawing or a part. But keep in mind, I am not taking through the steps to make an exact copy of the model I just showed you. Instead, each time, I will be simplifiying something that was originally really complicated, to something very easy, and focus on important concepts, instead of exact replication.
+
+Different lessons might intertwine, one lesson might refer to information taught much later, there might be some jumping back and forth, and some knowledge might not even follow any order.
+
+The lessons will be listed below:
+
 
 UNDER CONSTRUCTION
