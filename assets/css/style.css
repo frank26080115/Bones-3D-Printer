@@ -1,0 +1,9 @@
+---
+---
+
+@import "";
+
+.inner h1
+{
+	white-space: nowrap;
+}
