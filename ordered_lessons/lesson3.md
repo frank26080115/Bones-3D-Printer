@@ -25,13 +25,15 @@ If the four legs of the printer isn't exactly the same length, you can use adjus
 
 This printer is much cheaper to build than my Hephaestus 3D printer or my Ultimaker 2, one expensive part of Hephaestus is the usage of water-jet cut aluminum sheets to make sure all the rods are mounted in perfect position. Let me explain with an example
 
-The water-jet machine is specified to have a tolerance of +/- 0.1mm. If I design one sheet of aluminum to have two holes exactly 300mm apart, then I might end up with a sheet that has holes could be 299.99mm apart, or 300.1mm apart. That's pretty good.
+The water-jet machine is specified to have a tolerance of +/- 0.1mm. If I design one sheet of aluminum to have two holes exactly 300mm apart, then I might end up with a sheet that has holes could be 299.8mm apart, or 300.2mm apart. That's pretty good.
 
 ![](../images/lesson3/singleerrortolerance.png)
 
 The new design is basically two 3D printed parts, each one with a hole, mounted with a 2020 aluminum beam in between. Pretend my 3D printer can print with a tolerance of +/- 0.1mm, and the aluminum beam was cut on both ends with +/- 0.2mm tolerance. Now the maximum and minimum possible distance between the holes are much more wrong:
 
 ![](../images/lesson3/stackingerrors.png)
+
+(the above diagram ignored the tolerances of the ball bearings themselves)
 
 It will be incredibly hard to measure the spacing of two rods across the entire printer, so we are not going to bother, or even care. What's more important is that all the rods running along the X axis are parallel with each other, and the same for the Y axis. Remember that parallel lines will form a plane, and now we have two planes, one formed by the X rods, and another one formed by the Y rods. These two planes must be parallel. Being parallel is more important than the distance between these two planes.
 
@@ -102,10 +104,18 @@ When you screw the plastic clamp down to the aluminum beam, the plastic will squ
 
 ![](../images/lesson3/gapforces.png)
 
-Pretend the Z axis rod is made with +/- 0.05mm diameter tolerance, the aluminum beam has a width tolerance of +/- 0.05mm, and the 3D printed plastic has a dimensional tolerance of +/- 0.1mm, what is the advantage of this design over a piece of plastic surrounding the entire Z axis rod?
+Remember that there's a chance that the 3D printer that prints this plastic clamp will have its own tolerance, and also it can over- or under-extrude depending on the filament and print settings. You might end up with a rod bigger or smaller than the hole. We want to be able to handle this situation.
 
-![](picture tomorrow)
+![](../images/lesson3/zrodholdertolerancesituations.png)
 
-The same principle is applied to the sliding block part that holds a graphite bushing and the middle axis steel rods. Have a look:
+See how our design with the U shape and the gap can handle these situations just fine.
+
+Pretend the Z axis rod is made with +/- 0.1mm diameter tolerance (ie. +/- 0.05mm radius tolerance), the aluminum beam has a width tolerance of +/- 0.05mm, and the 3D printed plastic has a dimensional tolerance of +/- 0.2mm, what is the advantage of this design over a piece of plastic surrounding the entire Z axis rod?
+
+![](../images/lesson3/zrodholdertotalerrors.png)
+
+As you can see, butting up the metal rod against another chunk of metal is clearly the best way to go. It has better overall positional tolerance and handles more errors in manufacturing.
+
+The same principle is applied to the sliding block part that holds a brass graphite bushing and the middle axis steel rods. Have a look:
 
 ![](../images/lesson3/slidingblockgap.png)
