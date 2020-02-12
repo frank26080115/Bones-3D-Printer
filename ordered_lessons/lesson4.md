@@ -116,6 +116,12 @@ The two 45 degree slopes meet at the top at a point, forming a 90 degree corner.
 
 We use this technique for the ball bearings, which have an outer diameter of 22mm, and need a tight toleranced fit. The fasteners we are using around the printer are only 5mm in diameter, and their positioning do not need tight tolerances. This is why we only apply this technique on the circles for the ball bearings and not the circles for the 5mm screws.
 
+### Print Supports
+
+Support structures (often simply called "supports") is a scaffolding that goes underneath an area that's an overhang. The 3D printer parts we are designing have avoided the use of supports because it wastes plastic and time. The area directly above the supports usually have a rough surface, and should not be depended upon for any precision fit.
+
+But just because we are avoiding it for building our precision machine, doesn't mean it's always bad. It's incredibly useful when used in the right situations. Have a read of this [All3D article: 3D Printing Support Structures: All You Need To Know](https://all3dp.com/1/3d-printing-support-structures/)
+
 ## Print Artifacts and Optimization
 
 There are many caveats to 3D printing plastic parts, we will explorer some of the noteworthy problems and how to solve them.

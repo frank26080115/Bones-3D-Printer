@@ -53,6 +53,8 @@ The whole 3D printer was 3D modeled first, almost every single part, using Onsha
 
 The link to the Onshape model: [https://cad.onshape.com/documents/359ba....150f](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/208ce2426916e4fde5ad150f)
 
+![](../images/3dmodeloverview.png)
+
 About the lessons
 =================
 
@@ -60,7 +62,14 @@ There will be parts of the lesson where I take you through steps in CAD to creat
 
 Different lessons might intertwine, one lesson might refer to information taught much later, there might be some jumping back and forth, and some knowledge might not even follow any order.
 
-The lessons will be listed below:
+Table of Contents
+=================
+
+ * [Lesson 0](ordered_lessons/lesson0.md): How this 3D printer works
+ * [Lesson 1](ordered_lessons/lesson1.md): Planning the frame
+ * [Lesson 2](ordered_lessons/lesson2.md): Gantry Design
+ * [Lesson 3](ordered_lessons/lesson3.md): Construction Tolerance
+ * [Lesson 4](ordered_lessons/lesson4.md): Designing 3D Printed Parts
 
 
 UNDER CONSTRUCTION

@@ -1,4 +1,4 @@
-# Lesson 1: Planning the frame
+# Planning the frame
 
 We are designing a 3D printer in CAD. Right now, forget about the electronics and focus on the physical construction. We should be asking ourselves some questions:
 

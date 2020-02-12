@@ -1,4 +1,4 @@
-# Lesson 2 - Gantry Design
+# Gantry Design
 
 Remember in the frame planning, I actually designed the entire gantry just to figure out how high up to put the Z axis rods? This lesson will cover those sketches in detail. After this lesson, you will be an expert in using constraints.
 
