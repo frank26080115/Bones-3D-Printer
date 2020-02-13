@@ -112,6 +112,8 @@ If the rods are too thin and the bed is too heavy, then the rods could bend.
 
 **Tech Specs (bearing):** 16mm inner diameter, 28mm outer diameter, 37mm length, linear ball bearing, standard part number: **LM16UU**
 
+(you can also use LM16LUU, which are longer and will give the bed more stability, but will be more expensive)
+
 ## Timing belts and pulleys
 
 ![](../images/lesson5/parts/beltsandpulleys.png)
