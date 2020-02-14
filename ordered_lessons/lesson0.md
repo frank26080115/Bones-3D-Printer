@@ -33,6 +33,6 @@ The bed moves on the vertical Z axis. It is driven by a leadscrew, which is a ro
 
 We will be using the Hemera extruder, which uses a stepper motor and some gears to drive the plastic filament into the nozzle. The system of parts that melts the plastic filament is known as a "hot end".
 
-<iframe src="https://www.youtube.com/embed/yV4bd_d5FAI" frameborder="0" allowfullscreen=""></iframe>
+<div class="youtube_container"><iframe src="https://www.youtube.com/embed/yV4bd_d5FAI" frameborder="0" allowfullscreen=""></iframe></div>
 
 Read more about the [Hemera extruder on the E3D-Online website](https://e3d-online.com/e3d-hemera-feature)
