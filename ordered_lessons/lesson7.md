@@ -1,7 +1,3 @@
----
-toc: true
----
-
 # 3D Printer Electronics
 
 This lesson will be a little bit of general overview, and a lot of math! I will focus less on what things do (which the other lessons cover), and focus more on how to check for safety and pick components.
