@@ -10,24 +10,33 @@
 
 #main-content
 {
+	margin-top: 130px;
 	width: 700px;
-}
-
-@media print, screen and (max-width: 720px) {
-	#main-content
-	{
-		width: auto;
-	}
 }
 
 @media print, screen and (max-width: 1060px) {
 	#main-content
 	{
-		width: 600px;
+		margin-top: 130px;
+		width: 700px;
 	}
 }
 
-@media print, screen and (max-width: 1160px) {
+@media print, screen and (max-width: 720px) {
+	#main-content
+	{
+		margin-top: 130px;
+		width: auto;
+	}
+}
+
+nav
+{
+	margin-left: -580px;
+	top: 150px;
+}
+
+@media print, screen and (max-width: 1200px) {
 	nav
 	{
 		display: none;
@@ -37,32 +46,18 @@
 header
 {
 	position: absolute;
+	padding: 20px 0px 20px 0px;
+}
+
+@media print, screen and (max-width: 720px) {
+	header p {
+		display: block;
+	}
 }
 
 #banner
 {
-	position: absolute;
-}
-
-#banner .fork
-{
-	position: relative;
-	margin-left: 135px;
-}
-
-@media print, screen and (max-width: 720px) {
-	#banner .fork
-	{
-		position: relative;
-	}
-}
-
-@media print, screen and (max-width: 1060px) {
-	#banner .fork
-	{
-		position: relative;
-		margin-left: -325px;
-	}
+	display: none;
 }
 
 #main-content img
