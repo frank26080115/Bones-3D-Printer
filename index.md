@@ -70,9 +70,8 @@ Table of Contents
  * [Lesson 2](ordered_lessons/lesson2.md): Gantry Design
  * [Lesson 3](ordered_lessons/lesson3.md): Construction Tolerance
  * [Lesson 4](ordered_lessons/lesson4.md): Designing 3D Printed Parts
- * [Lesson 4](ordered_lessons/lesson5.md): 3D Printer Motion
- * Lesson 5: Continued Design Walkthrough
- * Lesson 6: Detailed Parts Examination
+ * [Lesson 5](ordered_lessons/lesson5.md): 3D Printer Motion
+ * Lesson 6: Continued Design Walkthrough
  * [Lesson 7](ordered_lessons/lesson7.md): 3D Printer Electronics
  * Lesson 8: Mechanical Assembly
  * Lesson 9: Electrical Assembly

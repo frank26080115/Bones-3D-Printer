@@ -178,9 +178,9 @@ There's another way to achieve higher resolution. What if you tell the eletronic
 
 The problem with microsteps is that there's a bit less torque, so it's easier to cause unwanted movement. If the microsteps are too small and too weak then you might end up simply stretching the belt slightly, instead of moving the print head.
 
-Don't worry too much, a 200 steps/rev motor with microstepping works just fine for 3D printers. For the Z axis, it's a good idea to use multiple of full steps as your printing layer height.
+Don't worry too much, a 200 steps/rev motor with microstepping works just fine for 3D printers. The default setting for most firmware is to enable 1/16 microsteps by default, this means given 0.2mm per full step, we can easily achieve **0.0125mm** positional resolution in the X and Y axis.
 
-Let's do another math calculation, what is the minimum layer height of a 3D print if you used the leadscrew I've specified for you and a 200 step/rev motor? One revolution of the leadscrew is equal to 8mm of motion. 8 divided by 200 is 0.04, so if you do not use microsteps, then the thinnest layer of plastic you can print is 0.04mm thick. In practice, you will never print that thin, but you do want to use a multiple of 0.04, such as 0.12mm, 0.2mm, 0.4mm, etc.
+For the Z axis, it's a good idea to use multiple of full steps as your printing layer height. Let's do another math calculation, what is the minimum layer height of a 3D print if you used the leadscrew I've specified for you and a 200 step/rev motor? One revolution of the leadscrew is equal to 8mm of motion. 8 divided by 200 is 0.04, so if you do not use microsteps, then the thinnest layer of plastic you can print is 0.04mm thick. In practice, you will never print that thin, but you do want to use a multiple of 0.04, such as 0.12mm, 0.2mm, 0.4mm, etc.
 
 ## Shaft Coupling
 
