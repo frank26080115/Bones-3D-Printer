@@ -20,6 +20,13 @@
 	}
 }
 
+@media print, screen and (max-width: 1060px) {
+	#main-content
+	{
+		width: 600px;
+	}
+}
+
 #main-content img
 {
 	display: block;
