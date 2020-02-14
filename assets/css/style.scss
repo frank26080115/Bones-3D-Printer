@@ -13,10 +13,11 @@
 	width: 700px;
 }
 
-@media print, screen and (max-width: 720px)
-#main-content
-{
-	width: auto;
+@media print, screen and (max-width: 720px) {
+	#main-content
+	{
+		width: auto;
+	}
 }
 
 #main-content img
