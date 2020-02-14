@@ -27,6 +27,44 @@
 	}
 }
 
+@media print, screen and (max-width: 1160px) {
+	nav
+	{
+		display: none;
+	}
+}
+
+header
+{
+	position: absolute;
+}
+
+#banner
+{
+	position: absolute;
+}
+
+#banner .fork
+{
+	position: relative;
+	margin-left: 135px;
+}
+
+@media print, screen and (max-width: 720px) {
+	#banner .fork
+	{
+		position: relative;
+	}
+}
+
+@media print, screen and (max-width: 1060px) {
+	#banner .fork
+	{
+		position: relative;
+		margin-left: -325px;
+	}
+}
+
 #main-content img
 {
 	display: block;
