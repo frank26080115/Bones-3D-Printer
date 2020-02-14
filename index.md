@@ -1,7 +1,3 @@
----
-layout: post
----
-
 UNDER CONSTRUCTION
 
 This project is an inexpensive fully custom designed 3D printer. The design utilizes common off-the-shelf components and 3D printed parts in its construction. This printer is designed to be something that can become a lesson plan, where the design can be broken down into very simplified concepts so that lessons plans can be developed around small steps that accumulate into the realization of a completely working 3D printer.
