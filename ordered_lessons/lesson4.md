@@ -120,6 +120,8 @@ We use this technique for the ball bearings, which have an outer diameter of 22m
 
 Support structures (often simply called "supports") is a scaffolding that goes underneath an area that's an overhang. The 3D printer parts we are designing have avoided the use of supports because it wastes plastic and time. The area directly above the supports usually have a rough surface, and should not be depended upon for any precision fit.
 
+![](../images/lesson4/supportsexample.png)
+
 But just because we are avoiding it for building our precision machine, doesn't mean it's always bad. It's incredibly useful when used in the right situations. Have a read of this [All3D article: 3D Printing Support Structures: All You Need To Know](https://all3dp.com/1/3d-printing-support-structures/)
 
 ## Print Artifacts and Optimization
@@ -134,6 +136,8 @@ Corner bulges will cause flat walls to not be completely flat at the corner. The
 
 We use fillets and chamfers to avoid them. Slicer settings can be adjusted to compensate for the extra filament pressure. Belts can be tightened to avoid extruder overshoots. The extruder's acceleration setting can also be slowed down to manage the momentum.
 
+![](../images/lesson4/fillet.png)
+
 ### Elephant's Foot
 
 When the first layer of a 3D print is made, it is squished right up against the bed plate. If you don't squish it enough, the print might peel away from the bed while it's printing. If you squish it too much, then the first layer will become slightly over-extruded, and become bigger than what you expect.
@@ -143,6 +147,8 @@ When the first layer of a 3D print is made, it is squished right up against the 
 ![](../images/lesson4/elephantsfootexplained.png)
 
 We can correct for this by adding a chamfer or fillet to the bottom of the printed part.
+
+![](../images/lesson4/elephantsfootchamfer.png)
 
 The slicer settings might actually have a setting to shrink just the first layer in order to avoid elephant's foot. This might work but sometimes even the second layer is affected, so I prefer to use chamfers as the solution to elephant foot.
 
