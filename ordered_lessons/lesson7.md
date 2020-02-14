@@ -21,7 +21,7 @@ The major electrical components are:
  * Part Cooling Fan
  * Maybe a LCD screen
 
-### Power Input and PSU
+## Power Input and PSU
 
 The power that arrives at your home is 120VAC (in North America), AC meaning alternating current. This is quite high and quite dangerous for a computerized device like a 3D printer. We will use a power supply unit (PSU) to convert the 120VAC down to 12VDC so that our sensitive components can work properly, and not die when we make a mistake.
 
@@ -39,7 +39,7 @@ For the power input, we plan on using an all-in-one package that includes an inp
 
 (the above product is nice because it looks like the connectors are included and crimped on properly, if you choose this, we can double check its safety with a stress test)
 
-#### Total Power Used
+### Total Power Used
 
 We'll very roughly add up the power consumption in our 3D printer:
 
@@ -59,7 +59,7 @@ If we are using 178W at 12V, then we can calculate the current consumption at th
 
 (175W is the worst case scenario, typically your bed heater is only fully powered up during pre-heat, and doesn't use much power to maintain heat)
 
-#### AC Input and Conversion
+### AC Input and Conversion
 
 When converting between different voltages, remember the [Law of Conservation of Energy](https://en.wikipedia.org/wiki/Conservation_of_energy). ~~If you don't conserve power, the cops will come and arrest you.~~ Power in must always equal power out. There's no free ~~lunch~~ power in the universe.
 
@@ -75,7 +75,7 @@ We are using 196.6W from your wall outlet. Let's do that current consumption cal
 
 <nobr> 196.6W &divide; 120V = 1.64A </nobr>
 
-#### What's the important takeaway?
+### What's the important takeaway?
 
 Safety First! But don't worry, a typical desktop computer uses about 500W, a microwave uses much more than 1000W. Your house should be protected by many circuit breakers, typically 10A or 15A, and our 3D printer will not trip those circuit breakers.
 
@@ -85,7 +85,7 @@ You'll want to use a fuse on the AC power input side, rated anywhere between 1.8
 
 On the DC power output side, you'll want wires that can handle 15A of current for the main bus wire, and insulated to handle 12VDC. You will need a 20A fuse, typically installed on the control circuit board.
 
-#### What do fuses (and circuit breakers) do?
+## What do fuses (and circuit breakers) do?
 
 Accidents happen, and we all make mistakes. Pretend you were using a drill on a piece of metal, but you lost your grip and that piece of metal flies across the room and hits your 3D printer's power cable, causing a short circuit! This would cause current to flow much greater than just 15A, I would actually expect some sparks. Without a fuse, then some electrical components, wires, and connectors, will start getting very hot, potentially melting, or even starting a fire.
 
