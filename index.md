@@ -1,5 +1,5 @@
 ---
-layout: full
+layout: post
 ---
 
 UNDER CONSTRUCTION
