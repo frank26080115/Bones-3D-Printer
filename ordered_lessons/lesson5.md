@@ -245,7 +245,11 @@ Later on, you will need to configure your 3D printer's firmware with this inform
 
 ## Cheaper Plastic Bearings
 
-In recent years, the demand for cheaper 3D printers have popularized plastic self-lubricating bearings, to be used instead of metal ball linear bearings. One particular German brand named "igus" became the most popular, with products that can directly replace LM8UU and LM16UU. If you can get genuine (meaning not Chinese crap) igus bearings, you can try them out to save some money.
+In recent years, the demand for cheaper 3D printers have popularized plastic self-lubricating bearings, to be used instead of metal ball linear bearings.
+
+![](../images/lesson5/pictures/igusbearings.png)
+
+One particular German brand named "igus" became the most popular, with products that can directly replace LM8UU and LM16UU. If you can get genuine (meaning not Chinese crap) igus bearings, you can try them out to save some money.
 
  * LM8UU Replacement: RJ4JP-01-08
  * LM16UU Replacement: RJ4JP-01-16
