@@ -124,6 +124,28 @@ Support structures (often simply called "supports") is a scaffolding that goes u
 
 But just because we are avoiding it for building our precision machine, doesn't mean it's always bad. It's incredibly useful when used in the right situations. Have a read of this [All3D article: 3D Printing Support Structures: All You Need To Know](https://all3dp.com/1/3d-printing-support-structures/)
 
+## Usage of Square Nuts
+
+Many of the 3D printed parts I've designed for this 3D printer will use square nuts embedded into plastic. The plastic will have square shaped cavities that the square nuts will sit in.
+
+![](../images/lesson4/squarenutcavities.png)
+
+This has the advantage of making assembly easier, and also in certain places it allows screws to be shorter. For example, in places where you need to screw something from the bottom upwards, you can avoid using a pair of pliers, and use your other hand to keep the screw steady instead.
+
+![](../images/lesson4/squarenutsexample.png)
+
+What about hex nuts? What about threaded inserts?
+
+Hex nuts, when used as an embedded nut, will fail more often than square nuts. When you apply torque to them when they are embedded inside a 3D print, they tend to round-out the cavity they are embedded in. Compare a square with a hexagon and you'll immediately notice that the corner-to-corner distance for a square nut is much longer than the corner-to-corner distance of a hexagonal nut meant for the same screw thread. Thus, the square nut will be less likely to round-out the cavity.
+
+![](../images/lesson4/squarevshex.png)
+
+Threaded inserts are great but they still won't beat a square nut in terms of holding strength. Threaded inserts would have worse performance than a hex nut for the same reasons why hex nuts will round-out a cavity. For an axial load, a square nut has the entire nut surface to brace against the load, while the threaded insert only has tiny teeth.
+
+![](../images/lesson4/threadedinserts2.png)
+
+Threaded inserts are awesome for an easy task like to fasten a lid for a box. But where I use square nuts is where I need to tighten down bearings and such, which is not an appropriate use for threaded inserts. There are many places in this design where threaded inserts are actually appropriate but I chose not to use them, this is to save money.
+
 ## Print Artifacts and Optimization
 
 There are many caveats to 3D printing plastic parts, we will explorer some of the noteworthy problems and how to solve them.

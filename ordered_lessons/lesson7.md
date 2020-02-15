@@ -257,9 +257,11 @@ In the end, my recommendation is we stick with using 14 AWG wire for the main po
 
 #### Nozzle Heater Wires
 
-The nozzle heater will come with a 1 meter long wire already, and it's insulated with a special jacket that's very VERY heat resistant, I believe it's a glass fiber braided sleeve. The conductor inside is... well... nobody knows officially but the best guess is 22 AWG. The wire is already properly terminated for you so do not cut this wire.
+The nozzle heater will come with a 1 meter long wire already, and it's insulated with a special jacket that's very VERY heat resistant, I believe it's a glass fiber braided sleeve. The conductor inside is... well... nobody knows officially but the best guess is 22 AWG. The wire is already properly terminated for you so do not cut this wire unless you have to.
 
 ![](../images/lesson7/nozzleheatercartridge.png)
+
+If you do need to extend this wire, extend it from the end farthest away from the actual heating element. Use the 14 AWG wire as the extension, it's safer this way and it keeps the print head lighter.
 
 #### Stepper Motor Wires
 
