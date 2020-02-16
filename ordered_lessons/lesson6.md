@@ -90,6 +90,18 @@ These switches are designed so that they are durable and their activation point 
 
 These switches also have a standardized form factor so we can easily purchase replacements if any breaks.
 
+## X and Y Stepper Motor Standoff
+
+These are 3D printed plastic standoffs that act as a spacer between the X and Y axis stepper motors and the gantry bearing mounts. This space is needed because there needs to be a shaft coupling between the side linear rods and the stepper motor's shaft.
+
+![](../images/lesson6/steppermotorstandoffoverview.png)
+
+The openings on this part allows for the shaft coupling to be tightened by a hex wrench, since the coupling will use set-screws for fastening.
+
+This part does not need to be strong, since it's simply a spacer, and the screws inside will take any load that would cause problems. The print orientation will ensure that it does handle forces axial to the screws. I did later modify the design to be even stronger, by making one side a solid wall, and giving it a wider base.
+
+![](../images/lesson6/steppermotorstandoffstronger.png)
+
 ## Z Axis Motor Mount
 
 Have a look at how the Z axis stepper motor is mounted to the frame. It is using a 3D printed piece of plastic with a design that secures the stepper motor to the rear horizontal beam of the printer's frame. Pay attention to how ribs and walls are used to give it strength.
@@ -174,11 +186,19 @@ The drag chain can bend in one direction, and limits the bend radius of itself, 
 
 A drag chain is appropriate for something that moves slowly and only in on direction, so it is perfect for a 3D printer bed, which only moves up and down, and only once per print.
 
+This drag chain is secured to the frame and the bed assembly by some 3D printed plastic parts that act as anchors for the ends of the drag chain.
+
+![](../images/lesson6/dragchainanchors.png)
+
 ## Upper Corner Cable Guide
 
 ![](../images/lesson6/uppercornercableguideoverview.png)
 
 For the wires going to the extruder, we need to prop up the wires so that they don't end up dangling into the gantry's rods. There will be a flexible tube that goes into an arc above the printer, bridging the side of the printer and the extruder. The wires that powers the extruder will be guided along this tube so that they don't dangle.
+
+Zip-ties will be used extensively, especially to attach this tube to the extruder and the frame. A 3D printed piece of plastic can be used to position the tube on the printer frame.
+
+![](../images/lesson6/uppercornercableguideattachment.png)
 
 On other printers the same idea is used very frequently.
 
