@@ -206,31 +206,65 @@ On other printers the same idea is used very frequently.
 
 ## Power Input
 
-On the back of the printer is where the main power input is. It will be an off-the-shelf IEC320 C14 input module with a power switch and safety fuse, all in one. A 3D printed piece of plastic will let you screw this input module on, and it will be secured to the frame of the printer.
+![](../images/lesson6/acinputoverview.png)
 
-Another piece of 3D printed plastic behind the first one is there to protect the connectors and wires. It'll stop you from poking your fingers in accidentally and getting shocked.
+On the back of the printer is where the main power input is. It will be an off-the-shelf IEC320 C14 input module with a power switch and safety fuse, all in one.
+
+![](../images/lesson7/powerinputsocket.png)
+
+A 3D printed piece of plastic will let you screw this input module on, and it will be secured to the frame of the printer.
+
+![](../images/lesson6/acinputpanel.png)
+
+Another piece of 3D printed plastic behind the first one is there to protect the connectors and wires. Notice that uses square nuts for easy pliers-free assembly.
+
+![](../images/lesson6/acinputshield.png)
+
+It'll stop you from poking your fingers in accidentally and getting shocked.
 
 ## Power Supply
 
+![](../images/lesson6/lrs35012.png)
+
 The power supply module is mounted right next to the power input, on the side of the printer.
+
+![](../images/lesson6/powersupplyplacement.png)
 
 This short distance means less wires needed for the more dangerous higher voltage wires. The mounts are simple U shaped clamps, 3D printed, that wraps over the aluminum beam and allows you to use screws to fasten the power supply.
 
+![](../images/lesson6/psuclamps.png)
+
 This also ensures that the outer enclosure of the power supply is directly in contact with the aluminum frame, which provides a simple yet important grounding connection electrically.
 
-There is a 3D printed cover for the power supply, which you can slide along the power supply and secure in place. You will slide it out of the way during wiring, and when you are finished, slide it into final position to protect the connectors and to prevent you from poking your fingers into dangerous high voltages.
+There is a 3D printed cover for the power supply, which you can slide along the power supply and secure in place. There are screws that can be fastened to the sides of the power supply, and they will sit in slots on the 3D printed cover so they can slide. You will slide the cover out of the way during wiring, and when you are finished, slide it into final position to protect the connectors and to prevent you from poking your fingers into dangerous high voltages.
+
+![](../images/lesson6/psushield.png)
 
 We will cover the topic of electricity and safety later.
 
-The footprint of most power supplies of this type are fairly standard, but the thickness might vary between models. This design will fit a Mean Well LRS-350-12 model. You may need to redesign these parts very slightly if you use another model.
+The footprint of most power supplies of this type are fairly standard, but the thickness might vary between models. Most of these power supplies use M4 screws in a 150mm by 50mm arrangement pattern.
+
+![](../images/lesson6/lrs350drawing.png)
+
+This design will fit a Mean Well LRS-350-12 model. You may need to redesign these parts very slightly if you use another model. Since it's likely only the thickness will differ, you'd only need to modify the sliding cover's dimensions.
 
 ## Control Circuit
 
+![](../images/lesson6/controlboxplacement.png)
+
 The main circuit board is placed into a 3D printed box that's mounted to the bottom front of the printer, which means it's easy to access its microSD card slot. It's also placed close to the LCD screen so that the cable between the main circuit and the LCD screen can be shorter.
 
-The 3D printed box has a lid and obviously protects the main circuit board. There is one big opening on its side to give access to the microSD card slot and the USB port connector. It has openings along its other walls to allow wires to protrude through. It also accomodates a cooling fan to keep the main circuit board cool.
+There is one big opening on its side to give access to the microSD card slot and the USB port connector. It has openings along its other walls to allow wires to protrude through. It also accomodates a cooling fan to keep the main circuit board cool.
+
+![](../images/lesson6/circuitboxopenedup.png)
+
+The 3D printed box has a lid and obviously protects the main circuit board. There are cavities for square nuts at the corners of the box, allowing us to fasten the lid to the box with screws. This is a good place for threaded inserts instead but we are saving money this way.
+
+![](../images/lesson6/circuitboxlid.png)
 
 This 3D model of the box is designed to accomodate a BIGTREETECH SKR Mini E3, but it also fits a TH3D EZBoard Lite. If you want to use another circuit board, you will have to redesign the box.
+
+![](../images/lesson6/twocircuits.png)
 
 ## LCD Screen
 
