@@ -190,6 +190,18 @@ This drag chain is secured to the frame and the bed assembly by some 3D printed 
 
 ![](../images/lesson6/dragchainanchors.png)
 
+## Bed Cable Anchor
+
+In order to keep the printer safe, I would recommend soldering thick wires directly to the heated bed's solder pads. This is means we can have the most electrical current flow capacity, less fire risk, but it also means we need to be careful that the solder joints do not crack under repeated movements (metal fatigue). The drag chain does help keep the wires out of the way of things, and sort of holds them still, but there is still a chance for very minor movements of the wire between the drag chain and the heated bed. I've designed this 3D printed plastic cable anchor that is mounted to the bed assembly right next to the drag chain's exit point.
+
+![](../images/lesson6/bedcableanchoroverview.png)
+
+It allows the heated bed wires to be zip-tied very close to the solder joint, ensuring absolutely that it will not move and risk a cracked solder joint.
+
+![](../images/lesson6/bedcableanchorotherviews.png)
+
+Aside note: It's definitely not impossible to have a safe crimped connector to connect the bed heater, but truely safe ones are much larger than the ones that would come supplied with the bed heater. Properly crimping wires do not involve solder and thus allows wires to be flexible without worrying about solder cracking. Using a good safe connector would make it easy to replace the bed heater.
+
 ## Upper Corner Cable Guide
 
 ![](../images/lesson6/uppercornercableguideoverview.png)
@@ -268,6 +280,44 @@ This 3D model of the box is designed to accomodate a BIGTREETECH SKR Mini E3, bu
 
 ## LCD Screen
 
-You need a LCD screen so you can use the printer without a dedicated computer attached to the printer's USB port. There is a 3D printed box designed to hold a LCD screen, mounted to the bottom side corner of the printer frame. The specific screen it fits is a BIGTREETECH TFT24, which is a very cheap option yet packs many features. It has both a touch screen mode, and if you don't like that mode, you can also use the legacy mode.
+You need a LCD screen so you can use the printer without a dedicated computer attached to the printer's USB port. There is a 3D printed box designed to hold a LCD screen, mounted to the bottom side corner of the printer frame.
 
-To fit any other screen, this box needs to be redesigned.
+![](../images/lesson6/lcdboxplacement.png)
+
+The specific screen it fits is a BIGTREETECH TFT24, which is a very cheap option yet packs many features. It has both a touch screen mode, and if you don't like that mode, you can also use the legacy mode.
+
+![](../images/lesson6/tft24.png)
+
+The 3D printed plastic box has a hole in the back for the cables to escape through. The right side wall is lower than the other walls to accomondate the SD card slot. The USB port is on the right side, and will be completely blocked off, sorry.
+
+![](../images/lesson6/lcdboxviews.png)
+
+To fit any other screen, or to use the USB port, this box needs to be redesigned.
+
+## Advanced Fan Duct
+
+Remeber that other part of the extruder mount that had a blower fan?
+
+![](../images/lesson6/hermeramountothersidefan.png)
+
+I also designed a much better version, still 3D printed, that focuses the airflow more, partially surrounding the nozzle. (instead of just using a flap that points down, which wastes a lot of air)
+
+![](../images/lesson6/advancedfanductoverview.png)
+
+It still uses an inexpensive-yet-effective 40mm centrifugal blower fan. This is very popular and also what I've been using successfully on my own Hephaestus 3D printer.
+
+The design of this part is much more complex so I did it in another file. Have a look at how the profile of the airduct was designed, how I used constraints to point towards a spot just below the nozzle, while keeping enough clearance.
+
+![](../images/lesson6/advancedfanductdesign.png)
+
+(none of this is science, the 5mm and 30 degree angle are just guesses, it looks good enough to me)
+
+The bad news with this design is that the height is not adjustable, which would be handy. If for some reason you need to adjust the height, the whole part needs to be re-printed. It also sticks out the back a little bit, but according to the positioning of the print bed, there's enough room in the back and won't hit anything.
+
+Due to the more complex geometry, I had to be extra thoughtful about managing overhang angles for easy 3D printing. Have a look at how I used sloped angles to support the curved duct that would've dangled just above the print bed.
+
+![](../images/lesson6/advancedfanductoverhangcontrol.png)
+
+## That's all for now
+
+For now that's all the important bits and pieces!
