@@ -60,19 +60,31 @@ Other topics from [lesson 4](lesson4) applied here are the print orientation, ho
 
 ![](../images/lesson5/parts/slidingblocks.png)
 
-These blocks carry the cross linear rods and have an internal brass bushing so it can slide along the side linear rods. The have internal groves where the belt is attached to so the belt can pull on it. We talked about these in [lesson 5](lesson5).
+These blocks carry the cross linear rods and have an internal brass bushing so it can slide along the side linear rods. The have internal groves where the belt is attached to so the belt can pull on it. We talked about these sliding blocks interact with the other components in [lesson 5](lesson5).
 
 ![](../images/lesson5/pictures/slidingblocksectionview.png)
+
+We also talked about how the screws are fastened to square nuts embedded into the plastic in [lesson 4](lesson4). The position of this part was planned out in [lesson 2](lesson2).
+
+![](../images/lesson2/planalignedwithfloorplan.png)
 
 ## Limit Switches and Homing
 
 How does the printer know where the print head is? How does the printer know where the bed is?
 
-The "end" of the printing area is at (0, 0) meaning X=0 and Y=0, this is the front left corner of the bed. When the X axis reaches position 0, the cross rod will hit an electrical switch, which signals to the control circuit and the firmware that the X axis has reached X=0. The switch is called a limit switch. The same goes for the Y axis and Z axis too, except the Z axis limit switch is on the bottom of the printer, not the top.
+The "end" of the printing area is at (0, 0) meaning X=0 and Y=0, this is the front left corner of the bed. When the X axis reaches position 0, the cross rod will hit an electrical switch, which signals to the control circuit and the firmware that the X axis has reached X=0.
+
+![](../images/lesson6/printerlimitswitch.png)
+
+The switch is called a limit switch, and also called end-stop switches. The same goes for the Y axis and Z axis too, except the Z axis limit switch is on the bottom of the printer, not the top.
+
+![](../images/lesson6/limitswitch.png)
 
 At the start of a print, the firmware will move all of the axis towards their limit switches until all of them have been hit, so the printer knows what position it has started in. This is called "**homing**". Once the homing is complete, the firmware can simply track position internally because it is controlling the stepper motors, which moves in very precise steps. As long as the firmware doesn't lose count and the stepper motors are fully functioning, then the firmware is aware of the position of all of the axis.
 
 In this printer's design, all of the limit switches are adjustable, so we can fine tune the home position easily. For the X and Y axis limit switches, the mounting holes are actually slots, so the switches can slide. For the Z axis limit switch, there's a screw above it that can be extended to adjust the activivation point.
+
+![](../images/lesson6/limitswitchslots.png)
 
 These switches are designed so that they are durable and their activation point is repeatable. This is important because we want the home position to be consistent, so that every print starts at the same bed height. Otherwise, one print might be successful, and the next print might not stick to the bed at all.
 
@@ -82,21 +94,53 @@ These switches also have a standardized form factor so we can easily purchase re
 
 Have a look at how the Z axis stepper motor is mounted to the frame. It is using a 3D printed piece of plastic with a design that secures the stepper motor to the rear horizontal beam of the printer's frame. Pay attention to how ribs and walls are used to give it strength.
 
-On the side is where the Z axis limit switch is mounted.
+![](../images/lesson6/zsteppermotormountoverview.png)
+
+On the side is where the Z axis limit switch is mounted. This limit switch will let the printer circuit and firmware know when the bed has reached the bottom of the printer.
+
+![](../images/lesson6/zsteppermotormountlimitswitch.png)
+
+Above the limit switch is the limit switch actuator, which is the object that will press against the limit switch. We'll talk about this soon.
 
 ## Z Axis Lead-Nut Mount
 
 On the back of the bed assembly is where the lead-nut is mounted, so that the leadscrew can move the bed up and down. This is a 3D printed piece of plastic, with holes that allow the lead-nut to protrude through and be fastened. Due to the positioning of the lead-nut, the screws need to be countersunk into the plastic, which is why there are four holes that have a chamfer.
 
+![](../images/lesson6/leadnutplate.png)
+
 You will also notice that the bed's rear aluminum beam needs a slight cut so that the leadscrew does not hit it. There's other ways to solve this problem but the easiest is to just make that cut into the aluminum.
+
+![](../images/lesson6/bedreararmcut.png)
+
+## Z Axix Limit Switch Actuator
+
+![](../images/lesson6/zsteppermotormountlimitswitch.png)
+
+This is a 3D printed plastic part that is meant to press against the Z axis limit switch. It has a hole for a screw that's positioned exactly above the limit switch's button. It also has a cavity for a square nut for the screw to thread into. To adjust the activation point of the switch, simply rotate the screw to extend or retract it.
+
+![](../images/lesson6/zsteppermotormountlimitswitchactuator.png)
 
 ## The Bed Assembly
 
-The bed assembly starts off looking like a forklift built with three aluminum beams. The bed plate itself is simply the bed heater PCB with a sheet of glass on top. The bed plate uses a four point spring loaded leveling system with the holes at its four corners, connected to pieces of 3D printed plastic under them, with springs in between.
+The bed assembly starts off looking like a forklift built with three aluminum beams.
+
+![](../images/lesson6/bedassemblyoverview.png)
+
+The bed plate itself is simply the bed heater PCB with a sheet of glass on top. The bed plate uses a four point spring loaded leveling system with the holes at its four corners, connected to pieces of 3D printed plastic under them, with springs in between.
+
+![](../images/lesson6/bedassemblyoverviewlow.png)
 
 The front two pieces of plastic are very simple they are attached to the front of the forklift and just have to support the front of the bed.
 
-The rear two pieces of plastic at the rear of the forklift have a very similar role but also provides four additional holes. These additional holes is where another piece of plastic, the backstop, can be attached and adjusted in height to match the height of the glass sheet. This backstop prevents the glass from sliding when you use a scraper to remove your prints from the glass bed, and this is why the part uses four screws secured into a very thick piece of plastic, for strength.
+![](../images/lesson4/bedfrontstand.png)
+
+The rear two pieces of plastic at the rear of the forklift have a very similar role but also provides four additional holes.
+
+![](../images/lesson6/bedrearblockoverview.png)
+
+These additional holes is where another piece of plastic, the backstop, can be attached and adjusted in height to match the height of the glass sheet. This backstop prevents the glass from sliding when you use a scraper to remove your prints from the glass bed, and this is why the part uses four screws secured into a very thick piece of plastic, for strength.
+
+![](../images/lesson6/backstopplate.png)
 
 The height of the backstop is adjustable because we don't want the print head assembly to hit the backstop when it is performing movements close to the rear of the printer.
 
@@ -106,21 +150,39 @@ If you drastically change the bed's level, you do need to re-adjust the height o
 
 We've talked about how and why we level the bed in the previous lessons. Now we look at the hardware required in detail.
 
+![](../images/lesson6/bedspringsdetail.png)
+
+![](../images/lesson6/bedspringsknobsamazon.png)
+
 If you tighten the knob by twisting it clockwise, the knob will pull the screw, compressing the spring, and lowering that corner of the bed. Vice-versa, loosening the knob by twisting it counterclockwise, the knob will push the screw, the spring will extend, and that corner of the bed will rise.
 
 There's actually another way, using silicone rubber columns. These are tube shaped pieces of silicone that acts as springs. They are shorter than the springs that are commonly found on 3D printers. This is a good thing because a shorter gap between the bed and fork lift means slightly more stability of the bed itself.
 
+![](../images/lesson6/siliconebedlevelcolumns.png)
+
+You would need to buy the screws and knobs separately if you decide to buy the silicone columns.
+
 ## Drag Chain
 
-A drag chain is used to guide the wires going from the bottom of the printer to the bed assembly. The drag chain can bend in one direction, and limits the bend radius of itself, and thus limiting the bend radius on the wires inside. This reduces wear-and-tear on the wires as they are repeatedly bent and straightened. It also protects the wires from snagging on anything.
+A drag chain is used to guide the wires going from the bottom of the printer to the bed assembly.
+
+![](../images/lesson6/dragchainoverview.png)
+
+The drag chain can bend in one direction, and limits the bend radius of itself, and thus limiting the bend radius on the wires inside. This reduces wear-and-tear on the wires as they are repeatedly bent and straightened. It also protects the wires from snagging on anything.
+
+![](../images/lesson6/dragchaininaction.png)
 
 A drag chain is appropriate for something that moves slowly and only in on direction, so it is perfect for a 3D printer bed, which only moves up and down, and only once per print.
 
 ## Upper Corner Cable Guide
 
+![](../images/lesson6/uppercornercableguideoverview.png)
+
 For the wires going to the extruder, we need to prop up the wires so that they don't end up dangling into the gantry's rods. There will be a flexible tube that goes into an arc above the printer, bridging the side of the printer and the extruder. The wires that powers the extruder will be guided along this tube so that they don't dangle.
 
 On other printers the same idea is used very frequently.
+
+![](../images/lesson6/uppercornercableguideexample.png)
 
 ## Power Input
 
