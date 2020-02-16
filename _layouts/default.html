@@ -18,9 +18,9 @@
 
       <header>
         <a href="{{ '/' | absolute_url }}">
-            <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+            <h1>{{ default: site.title | default: site.github.repository_name }}</h1>
         </a>
-        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+        <p>{{ page.description | page.title | default: site.description | default: site.github.project_tagline }}</p>
       </header>
 
     <div class="wrapper">
