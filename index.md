@@ -72,11 +72,12 @@ Table of Contents
  * [Lesson 4](ordered_lessons/lesson4.md): Designing 3D Printed Parts
  * [Lesson 5](ordered_lessons/lesson5.md): 3D Printer Motion
  * [Lesson 6](ordered_lessons/lesson6.md): Continued Design Walkthrough
- * [Lesson 7](ordered_lessons/lesson7.md): 3D Printer Electronics
- * Lesson 8: Mechanical Assembly
- * Lesson 9: Electrical Assembly
- * Lesson 10: Firmware Setup
- * Lesson 11: Software Setup
+ * [Lesson 7](ordered_lessons/lesson7.md): Part CAD Design Walkthrough
+ * [Lesson 8](ordered_lessons/lesson8.md): 3D Printer Electronics
+ * Lesson 9: Mechanical Assembly
+ * Lesson 10: Electrical Assembly
+ * Lesson 11: Firmware Setup
+ * Lesson 12: Software Setup
 
 
 UNDER CONSTRUCTION

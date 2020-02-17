@@ -222,7 +222,7 @@ On other printers the same idea is used very frequently.
 
 On the back of the printer is where the main power input is. It will be an off-the-shelf IEC320 C14 input module with a power switch and safety fuse, all in one.
 
-![](../images/lesson7/powerinputsocket.png)
+![](../images/lesson8/powerinputsocket.png)
 
 A 3D printed piece of plastic will let you screw this input module on, and it will be secured to the frame of the printer.
 

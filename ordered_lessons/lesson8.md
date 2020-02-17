@@ -21,7 +21,7 @@ The major electrical components are:
 
 The power that arrives at your home is 120VAC (in North America), AC meaning alternating current. This is quite high and quite dangerous for a computerized device like a 3D printer. We will use a power supply unit (PSU) to convert the 120VAC down to 12VDC so that our sensitive components can work properly, and not die when we make a mistake.
 
-![](../images/lesson7/meanwellpsu.png)
+![](../images/lesson8/meanwellpsu.png)
 
 When shopping for a PSU, you'll need to look for:
 
@@ -31,7 +31,7 @@ When shopping for a PSU, you'll need to look for:
 
 For the power input, we plan on using an all-in-one package that includes an input socket, a power switch, and a fuse.
 
-![](../images/lesson7/powerinputsocket.png)
+![](../images/lesson8/powerinputsocket.png)
 
 (the above product is nice because it looks like the connectors are included and crimped on properly, if you choose this, we can double check its safety with a stress test)
 
@@ -85,7 +85,7 @@ On the DC power output side, you'll want wires that can handle 15A of current fo
 
 Accidents happen, and we all make mistakes. Pretend you were using a drill on a piece of metal, but you lost your grip and that piece of metal flies across the room and hits your 3D printer's power cable, causing a short circuit! This would cause current to flow much greater than just 15A, I would actually expect some sparks. Without a fuse, then some electrical components, wires, and connectors, will start getting very hot, potentially melting, or even starting a fire.
 
-![](../images/lesson7/fuses.png)
+![](../images/lesson8/fuses.png)
 
 Fuses will protect from this situation. They are made with a piece of metal conductor inside, that is designed with the exact size to melt when a specific current passes through it. Thus, if a dangerous amount of current is pushed through the fuse, it will melt, and the current will stop flowing, keeping things safe.
 
@@ -97,7 +97,7 @@ Fuses will protect from this situation. They are made with a piece of metal cond
 
 Have you ever wondered what this round hole in a power outlet actually does? That's the ground pin. Its job is to protect you from electrical shock.
 
-![](../images/lesson7/groundpins.png)
+![](../images/lesson8/groundpins.png)
 
 Imagine that piece of metal hit the 120VAC wire, and also touched the aluminum frame of the 3D printer, while you were holding it. If the frame was not grounded, then there's a chance that you be electrically shocked with 120VAC. If the frame was grounded, then all that high voltage would go into the ground, and not hurt you, moments later, the fuse should blow, and everything would be totally safe.
 
@@ -119,11 +119,11 @@ The two popular ways of making a heated bed. One is to make an aluminum plate an
 
 Have a look at the circuit board design for one of these heated beds, you can see it's just simply copper in a snaking pattern.
 
-![](../images/lesson7/pcbbedheatertraces.png)
+![](../images/lesson8/pcbbedheatertraces.png)
 
 To heat the nozzle, the heater is usually in a cylindrical format, simply a coil inside a metal canister.
 
-![](../images/lesson7/nozzleheatercartridge.png)
+![](../images/lesson8/nozzleheatercartridge.png)
 
 The most important characteristic of a heating element to us right now is its resistance. Our choosen heated bed is designed for a 12V input and should provide 120W of heat output. A very simple calculation can help us find the current consumption
 
@@ -259,7 +259,7 @@ In the end, my recommendation is we stick with using 14 AWG wire for the main po
 
 The nozzle heater will come with a 1 meter long wire already, and it's insulated with a special jacket that's very VERY heat resistant, I believe it's a glass fiber braided sleeve. The conductor inside is... well... nobody knows officially but the best guess is 22 AWG. The wire is already properly terminated for you so do not cut this wire unless you have to.
 
-![](../images/lesson7/nozzleheatercartridge.png)
+![](../images/lesson8/nozzleheatercartridge.png)
 
 If you do need to extend this wire, extend it from the end farthest away from the actual heating element. Use the 14 AWG wire as the extension, it's safer this way and it keeps the print head lighter.
 
@@ -267,7 +267,7 @@ If you do need to extend this wire, extend it from the end farthest away from th
 
 A stepper motor will have 4 wires and each wire must be plugged into the right pin on your stepper motor driver's output. If you don't colour-code your wires, this becomes a nightmare. Luckily, it's pretty cheap to buy colour-coded wire bundles specifically for stepper motors.
 
-![](../images/lesson7/steppermotorwires.png)
+![](../images/lesson8/steppermotorwires.png)
 
 They are usually 22 or 24 AWG, with a plain PVC insulating jacket, and bundled as a ribbon. You can find them with connectors already crimped on for you.
 
@@ -304,7 +304,7 @@ When shopping for a control circuit, we are checking the following specification
 
 The best canidate, in my opinion, is the BIGTREETECH SKR Mini E3. It's small and cheap, at around $30, it's literally 1/3 of the price of its competitors.
 
-![](../images/lesson7/skrminie3.png)
+![](../images/lesson8/skrminie3.png)
 
 Here's a few things I want to point out:
 
@@ -317,7 +317,7 @@ Here's a few things I want to point out:
 
 The only downside is that I can't be sure how reliable it is. The stepper motor drivers are perfectly adaquate. The connectors should not melt if we stick with a 120W bed heater and 30W nozzle heater. The only thing left to worry about are the MOSFETs that control the heaters. Fortunately, if they fail, it's not really a fire hazard if we keep flammable materials away.
 
-![](../images/lesson7/skrminie3safetyparts.png)
+![](../images/lesson8/skrminie3safetyparts.png)
 
 A down side of a small circuit board is that there's less surface area for heat dissipation. Components that generate heat are grouped closer together. Copper traces that handle large currents have less space. All of these means that it's a good idea to put a cooling fan around this circuit board.
 
