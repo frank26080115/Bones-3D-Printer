@@ -73,4 +73,5 @@ Table of Contents
  * Lesson 10: Electrical Assembly
  * Lesson 11: Firmware Setup
  * Lesson 12: Software Setup
+ * [Optional 3D Printed Parts](other_pages/optional3dprintedparts.md)
  * [Flaws, Mistakes, Improvements](other_pages/flawsmistakesimprovements.md)
