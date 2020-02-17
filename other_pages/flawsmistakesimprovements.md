@@ -16,6 +16,10 @@ Also, I just hate how "mate connectors" work in Onshape assemblies, it is really
 
 And sorry if I'm making your computer laggy with my massive model.
 
+## Overconstraint
+
+Some might comment that it's a bad design to secure all the rods so securely. All of the rods break the "two points make a line" rule because of the sliding bearings are technically a 3rd point. But honestly, this works, Hephaestus does the same thing but with aluminum fixtures instead of plastic, and the Ultimaker brand also has a similar design. If your assembly steps take this into account, and you're not getting crazy warping from extreme temperature changes, it's fine. Plus, the rods are slightly bendy, as we've discussed already, and the bearings will just take the additional preload.
+
 ## Sliding Blocks Improvement
 
 The sliding blocks on Hephaestus are a two part design. The new sliding blocks on Bones is a three piece design, with a "cap" piece that clamps down on the cross linear rod. This third piece might not be needed if the two other pieces were made bigger with a slot, the cross linear rod will sit in the slot with a friction fit. This is how the Ultimaker 2 works.
