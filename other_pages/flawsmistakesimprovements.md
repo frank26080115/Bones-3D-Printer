@@ -10,6 +10,8 @@ For [my Hephaestus 3D printer](https://eleccelerator.com/hephaestus-my-own-3d-pr
 
 In Onshape, at the time of this writing, I cannot make constraints between different assemblies, so I am forced to design using a single part studio.
 
+Another bad thing I did is that I did not separate out operations that should stand alone. For example, I never used the holes tool, instead, I drew circles into the sketches. This reduced the number of features in the feature tree, which I knew would be huge. Doing things all in one sketch takes away from the ability to suppress individual features easily. This would've been more important in a professional setting where a part could have two variants, one with holes and one without.
+
 Also, I just hate how "mate connectors" work in Onshape assemblies, it is really hard to get used to for a former SolidWorks user. My point is: if you are new to CAD and starting with Onshape, you might not be so stuck, so try using assemblies as much as possible, because technically that's more proper.
 
 And sorry if I'm making your computer laggy with my massive model.
