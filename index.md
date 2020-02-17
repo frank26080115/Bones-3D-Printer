@@ -1,30 +1,19 @@
-UNDER CONSTRUCTION
-
 This project is an inexpensive fully custom designed 3D printer. The design utilizes common off-the-shelf components and 3D printed parts in its construction. This printer is designed to be something that can become a lesson plan, where the design can be broken down into very simplified concepts so that lessons plans can be developed around small steps that accumulate into the realization of a completely working 3D printer.
 
-You, yes, you. If you've received a direct invitation to view this project from me, it means you are my friend who I would like to help build this 3D printer. Here's the deal only available to you:
+![](images/3dmodeloverview.png)
 
- * You will read everything here, read absolutely everything I write, there will be many many many lessons
- * There are homework exercises for you to complete, and I will check your work and give you feedback
- * You will build this 3D printer!
- * You will buy the parts
- * I will double check you are buying the right parts
- * I will 3D print the parts you need 3D printed
- * I will give you spare parts whenever I can
- * I will meet up with you if you need help, I can bring tools
- * When you are done, I will make absolutely sure what you have built is safe
- * You will take pictures so I can post it to this website
+You, yes, you. If you've received a direct invitation to view this project from me, it means you are my friend IRL who I would like to help build this 3D printer. This *could* mean in-person help, free spare parts, borrowing tools, etc, definitely an in-person **safety check**. What's in it for me? **You are my test subject. I don't actually need this printer right now, but I do want to see that my design works!** The 3D printing marketplace is constantly evolving and I want to keep up with some new developments. This new design uses the more common 1.75mm plastic filament and all FIVE of 3D printers that I use needs 2.85mm filament, meaning even if I build it, I can't use any of my existing stockpile of 2.85mm plastic filament. But I have that need to prove to myself that I can design good 3D printer that doesn't use expensive parts and techniques.
 
-What's in it for me? You are my test subject. I don't actually need this printer right now, but I do want to see that my design works! The 3D printing marketplace is constantly evolving and I want to keep up with some new developments. This new design uses the more common 1.75mm filament and all FIVE of 3D printers that I use needs 2.85mm filament, meaning even if I build it, I can't use it myself. But I have that need to prove to myself that I can design good 3D printer that doesn't use expensive parts and techniques.
+You know me, so I bet you already know it'll be good. Reply back to my invitation to start.
 
-You are my friend, so I bet you already know it'll be good.
+This website is still **under construction**
 
 General Design Overview
 =======================
 
 It's basically a copy of [my Hephaestus 3D printer](https://eleccelerator.com/hephaestus-my-own-3d-printer/). But this time, key differences:
 
- * uses 1.75mm filament, instead of 2.85mm
+ * uses 1.75mm plastic filament, instead of 2.85mm
  * single Z leadscrew, instead of two
  * uses a stock Hemera extruder, instead of a flexible-shaft driven Titan Aero
  * uses limit switches, instead of sensorless homing
@@ -53,14 +42,16 @@ The whole 3D printer was 3D modeled first, almost every single part, using Onsha
 
 The link to the Onshape model: [https://cad.onshape.com/documents/359ba....150f](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/208ce2426916e4fde5ad150f)
 
-![](images/3dmodeloverview.png)
+For additional CAD lessons unrelated to this 3D printer, check out my [robotics class, click here](http://eleccelerator.com/ssfpl_robotics_class_2018/), also using Onshape
 
-About the lessons
+About the Lessons
 =================
 
 There will be parts of the lesson where I take you through steps in CAD to create something, a drawing or a part. But keep in mind, I am not taking through the steps to make an exact copy of the model I just showed you. Instead, each time, I will be simplifiying something that was originally really complicated, to something very easy, and focus on important concepts, instead of exact replication.
 
 Different lessons might intertwine, one lesson might refer to information taught much later, there might be some jumping back and forth, and some knowledge might not even follow any order.
+
+The assembly and setup steps are much harder for me to write because... well... I can only guess at the order-of-operations without testing, and I can't provide photographs. So please somebody build this printer and send me photos!
 
 Table of Contents
 =================
@@ -72,12 +63,10 @@ Table of Contents
  * [Lesson 4](ordered_lessons/lesson4.md): Designing 3D Printed Parts
  * [Lesson 5](ordered_lessons/lesson5.md): 3D Printer Motion
  * [Lesson 6](ordered_lessons/lesson6.md): Continued Design Walkthrough
- * [Lesson 7](ordered_lessons/lesson7.md): Part CAD Design Walkthrough
+ * [Lesson 7](ordered_lessons/lesson7.md): Part CAD Design Walkthrough (more homework)
  * [Lesson 8](ordered_lessons/lesson8.md): 3D Printer Electronics
  * Lesson 9: Mechanical Assembly
  * Lesson 10: Electrical Assembly
  * Lesson 11: Firmware Setup
  * Lesson 12: Software Setup
-
-
-UNDER CONSTRUCTION
+ * [Flaws, Mistakes, Improvements](other_pages/flawsmistakesimprovements.md)

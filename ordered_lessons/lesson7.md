@@ -166,7 +166,7 @@ Remember the Z axis linear rods, and the 3D printed plastic clamps that secure t
 
 ![](../images/lesson3/zrodholder3dview.png)
 
-**Design those clamps**. I am providing a starting point that includes the aluminum extrusion beam and the rod itself. You can use constraints and those starting pieces to make your sketches and extrudes. To start, make a fork of this OnShape model into your own account, and start editing: *TODO insert URL*
+**Design those clamps**. I am providing a starting point that includes the aluminum extrusion beam and the rod itself. You can use constraints and those starting pieces to make your sketches and extrudes. To start, make a fork of this Onshape model into your own account, and start editing: *TODO insert URL*
 
 #### Design a Box, for a LCD Screen
 
