@@ -20,14 +20,15 @@ It's basically a copy of [my Hephaestus 3D printer](https://eleccelerator.com/he
  * fully metric, instead of a mix of metric and imperial
  * uses 2020 for the frame, instead of 1010
  * no water-jet cut parts
- * all motion components now available from Amazon, instead of industrial supplies
+ * all motion components now available from Amazon, instead of industrial suppliers
+ * 12V power, instead of 24V
 
 In general, this still means:
 
  * Ultimaker-like mechanics
- * No bed sensor required
- * About 200mm x 200mm build size
- * Heated bed
+ * no bed sensor required
+ * about 200mm x 200mm build size
+ * heated bed
  * 32-bit microcontroller (8-bit is still an option)
 
 CAD
