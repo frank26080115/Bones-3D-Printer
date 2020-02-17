@@ -8,6 +8,8 @@ Recall in [lesson 2], we talked about how the upper gantry was planned out with 
 
 Remember that you can always follow along by forking and editing the 3D model yourself. Since it's a cloud based CAD tool, you can just fork it over to your own account, and edit the sketches and features to see what I am showing you. The link to the Onshape model: [https://cad.onshape.com/documents/359b...150f](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/208ce2426916e4fde5ad150f)
 
+![](../images/followalong.png)
+
 On this webpage, some images may be opened in full view (so you can zoom in) when you click on them. Not all of them, but some.
 
 ### How do we start?
