@@ -2,6 +2,10 @@
 
 We've already looked at many parts of the printer during the previous lessons, we will not look at the ones we've missed and talk about what they do.
 
+![](../images/partsarenamed.png)
+
+The link to the Onshape model: [https://cad.onshape.com/documents/359ba....150f](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/208ce2426916e4fde5ad150f)
+
 ## Extruder Mount
 
 ![](../images/lesson6/extrudermountoverview.png)

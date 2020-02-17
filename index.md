@@ -44,6 +44,8 @@ The link to the Onshape model: [https://cad.onshape.com/documents/359ba....150f]
 
 ![](images/followalong.png)
 
+![](images/partsarenamed.png)
+
 For additional CAD lessons unrelated to this 3D printer, check out my [robotics class, click here](http://eleccelerator.com/ssfpl_robotics_class_2018/), also using Onshape
 
 About the Lessons

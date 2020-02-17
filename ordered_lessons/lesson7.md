@@ -10,6 +10,8 @@ Remember that you can always follow along by forking and editing the 3D model yo
 
 ![](../images/followalong.png)
 
+![](../images/partsarenamed.png)
+
 On this webpage, some images may be opened in full view (so you can zoom in) when you click on them. Not all of them, but some.
 
 ### How do we start?
