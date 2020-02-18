@@ -341,7 +341,21 @@ This is just one situation that this feature is useful for. Other ones it can ha
 What it does not help with:
 
  * MOSFET failed closed
+ * firmware crashing
+ * short circuits
 
 Don't worry too much about MOSFETs failing closed, it means that the heaters cannot be turned off. This is bad but if they are secured in place, nothing should catch fire. The printer will still stop and report an error.
 
 And remember, short circuits that cause dangerously high currents are protected by the fuses.
+
+## External MOSFET
+
+One popular accessory for 3D printers is an external MOSFET. They got popular because the MOSFETs on cheap 3D printers got a reputation for exploding. They are also a way to use a heated bed that's designed for way more power than your control circuit can handle.
+
+![](../images/lesson8/externalmosfet.png)
+
+Basically, the external MOSFET board is a circuit board with a much bigger MOSFET than usual, and with a heat sink for heat dissipation. The MOSFET is usually controlled by an optoisolator, and the optoisolator is driven by the orignal MOSFET on the control circuit. This way, no extra connectors are needed, no firmware changes are needed.
+
+Note: Some people actually buy these as an *insurance policy* when they purchase a cheap printer. For example, people frequently tell other people that if you want to order a Anet 3D printer, you should just buy one of these MOSFETs because Anet essentially build ticking time bombs.
+
+**Advanced Homework:** Design and build your own external MOSFET circuit board, and then design a 3D printed box to protect it. If you do it right, this is a way to absolutely guarantee that your MOSFET will never fail, because you can buy a MOSFET rated for 200A if you wanted to.
