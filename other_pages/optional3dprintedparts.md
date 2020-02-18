@@ -52,7 +52,7 @@ Replacement Design:
 
 ### Simple Cable Tie Point
 
-These have holes for you to zip-tie wires against, and it can be screwed onto the frame's T-slotted aluminum beams using M5 screws and T-nuts. This is useful for situations when you can't just zip-tie around the aluminum beam.
+These have holes for you to zip-tie wires against, and it can be screwed onto the frame's T-slotted aluminum beams using M5 screws and T-slot-nuts. This is useful for situations when you can't just zip-tie around the aluminum beam.
 
 ![](../images/other/cabletiepoint.png)
 
@@ -60,7 +60,7 @@ These have holes for you to zip-tie wires against, and it can be screwed onto th
 
 ### Spool Holder
 
-This is a spool holder that can be adapted to any size of 3D printer filament spools. It bolts against your printer's frame via screws and T-nuts, into the T-slots. It uses four F608ZZ rotary ball bearings for smooth rotation. It's width can be adjusted by loosening the mounting and sliding it along the T-slot. This design is almost guaranteed to never tangle because there's no way for the plastic filament to "escape" it.
+This is a spool holder that can be adapted to any size of 3D printer filament spools. It bolts against your printer's frame via screws and T-slot-nuts, into the T-slots. It uses four F608ZZ rotary ball bearings for smooth rotation. It's width can be adjusted by loosening the mounting and sliding it along the T-slot. This design is almost guaranteed to never tangle because there's no way for the plastic filament to "escape" it.
 
 The rotary ball bearings should be F608ZZ just like the ones used for the 3D printer's gantry, but ordinary 608 ball bearings should also work. They need to be secured with 5/8" diameter screws and nuts, or use M5 diameter screws and nuts.
 

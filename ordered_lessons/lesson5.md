@@ -126,9 +126,9 @@ Belts are usually made of a soft rubbery material for flexibility and grip. But 
 
 The belt must be tightened after the printer has been assembled. If the belt is loose, the print head will move when it shouldn't, causing ugly looking prints. There's a screw inside the **sliding block** that tightens the belt, and also we can add spring loaded belt tightening clips to the belt.
 
-**Tech Specs (belt):** 6mm width, 2mm teeth pitch, GT2 profile timing belt
+**Tech Specs (belt):** 6mm width, 2mm teeth pitch, 2GT profile timing belt
 
-**Tech Specs (pulley):** 20 teeth, GT2 profile, 2mm teeth pitch, 7mm belt width, 8mm inner bore diameter
+**Tech Specs (pulley):** 20 teeth, 2GT profile, 2mm teeth pitch, 7mm belt width, 8mm inner bore diameter
 
 [Wikipedia: Timing Belt](https://en.wikipedia.org/wiki/Toothed_belt)
 
@@ -148,7 +148,7 @@ The difference between a threaded rod (one purchased from a hardware store like 
 
 [Wikipedia: Leadscrew](https://en.wikipedia.org/wiki/Leadscrew)
 
-## Stepper motor
+## Stepper Motor
 
 ![](../images/lesson5/parts/steppermotorshaftcoupling.png)
 
