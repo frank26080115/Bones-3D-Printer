@@ -95,7 +95,7 @@ If you want to buy from MiSUMi, you can get each rod custom cut-to-length.
 
 Buy 2 of them. 16mm diameter, 400mm long, hardened steel, chrome plated.
 
-So far I've not found a good deal for these. They are $15.50 each on MiSUMi ([part number PSFJ16-400](https://us.misumi-ec.com/vona2/detail/110302634310/?PNSearch=PSFJ16-400)).
+So far I've not found a good deal for these. They are $15.50 each on MiSUMi ([part number PSFJ16-400](https://us.misumi-ec.com/vona2/detail/110302634310/?HissuCode=PSFJ16-400)).
 
 If you want to buy from MiSUMi, you can get each rod custom cut-to-length.
 
