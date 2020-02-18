@@ -243,6 +243,20 @@ In practice, there are many things that can go wrong. For example, the effective
 
 Later on, you will need to configure your 3D printer's firmware with this information, called "ESTEPS", ie extruder steps per mm. In reality, since E3D made the Hemera, they will provide the best value to put into your firmware. So don't worry too much about it. (if you want the best performance, you should do a full calibration yourself)
 
+## Timing Belt Tensioning
+
+The timing belt needs to be kept tight at all times, otherwise, the print head won't go where you want it to. A loose belt will result in a badly distorted print as a result.
+
+![](../images/lesson5/belttensionproblem.png)
+
+The easiest way to achieve this is to use torsion springs designed specifically for 6mm wide belts. These are very common for 3D printers, and very easy to install.
+
+![](../images/lesson5/belttensionspring.png)
+
+Some people don't like them because they do not solve the problem completely, the belt can still stretch by pulling the springs apart. But this is not a problem on our printer design because we are using two belts per axis, not just one, so it's as if our printer is using 12mm wide belts instead of the 6mm wide belts that other people use.
+
+The Ultimaker brand of 3D printers have these springs hidden inside their sliding blocks.
+
 ## Cheaper Plastic Bearings
 
 In recent years, the demand for cheaper 3D printers have popularized plastic self-lubricating bearings, to be used instead of metal ball linear bearings.
