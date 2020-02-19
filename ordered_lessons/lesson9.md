@@ -30,7 +30,7 @@ I have optimized a shopping list for every screw, nut, and washer you need from 
 |-----|-------------------------------------------------|------------------------------------|
 | 120 | [90909A721](https://www.mcmaster.com/90909A721) | M5 x 8mm flanged button head screw |
 | 100 | [93475A240](https://www.mcmaster.com/93475A240) | M5 washer                          |
-| 30  | [92832A229](https://www.mcmaster.com/92832A229) | M3 x 20mm button head screw        |
+| 40  | [92832A229](https://www.mcmaster.com/92832A229) | M3 x 20mm button head screw        |
 | 30  | [92095A168](https://www.mcmaster.com/92095A168) | M3 x 14mm button head screw        |
 | 30  | [92832A215](https://www.mcmaster.com/92832A215) | M3 x  6mm button head screw        |
 | 12  | [91290A137](https://www.mcmaster.com/91290A137) | M3 x 50mm button head screw        |
