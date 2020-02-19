@@ -77,3 +77,14 @@ Table of Contents
  * Lesson 13: Software Setup
  * [Optional 3D Printed Parts](other_pages/optional3dprintedparts.md)
  * [Flaws, Mistakes, Improvements](other_pages/flawsmistakesimprovements.md)
+
+If you have enjoyed this project...
+===================================
+
+Please consider making a contribution to help cure Alzheimer's disease.
+
+[![](images/fishercenterlogo.png)](https://www.alzinfo.org/)
+
+and maybe contribute your computer's idle processing power to help finding a cure
+
+[![](images/foldingathomelogo.png)](https://foldingathome.org/)
