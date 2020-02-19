@@ -2,6 +2,8 @@
 
 ## Shopping List
 
+![](../images/lesson9/shoppingcart.png)
+
 This page will attempt to list everything you need to buy. You can try shopping around for the best deal but for certain parts, I will insist on a particular model from a particular store. In the end, feel free to ask me to check an item on your list.
 
 The main source will be Amazon Prime and McMaster-Carr. If you wish to shop on Aliexpress, eBay, Banggood, etc, that's up to you. I will avoid posting Amazon links unless there's one particular listing that I need to point out.
@@ -12,11 +14,17 @@ Be smart, group your purchases to save on shipping, but also, take the project s
 
 Buy these from Amazon, they don't need to be super high quality, just straight and cut to the right length. See [lesson 1](lesson1) for the sizes you need, because we picked the sizes according to what is available on Amazon.
 
+![](../images/lesson1/2020shopping.png)
+
 ### Fasteners
 
 There are about 400 screws being used in this design! That's not even counting the nuts and washers.
 
-I've figured out that it's not cheaper to buy them from Amazon, plus, there are some that cannot be found easily on Amazon. So the source for all the screws shall be from McMaster-Carr. I have optimized a shopping list for every screw, nut, and washer you need from McMaster-Carr:
+I've figured out that it's not cheaper to buy them from Amazon, plus, there are some that cannot be found easily on Amazon. So the source for all the screws shall be from McMaster-Carr.
+
+![](../images/lesson9/mcmastercarrlogo.png)
+
+I have optimized a shopping list for every screw, nut, and washer you need from McMaster-Carr:
 
 | Qty | Sku                                             | Name                               |
 |-----|-------------------------------------------------|------------------------------------|
@@ -47,9 +55,17 @@ The above list is optimized to an extreme extent, including the usage of [cost-s
 
 McMaster-Carr doesn't tell you what the shipping costs are, but in the end, it should still be cheaper than Amazon. (warning - if McMaster-Carr ships from two different warehouses, you pay extra shipping)
 
-McMaster-Carr does NOT stock T-slot-nuts for M5 screws, or at least... they do but they cost like $2 each and we'd need like 180 of them. So this one we have to buy from Amazon. They cost about $10 for a pack of 100. (specs: 2020 series T-slot nut for M5 screws)
+### T-slot Nuts
+
+McMaster-Carr does NOT stock T-slot-nuts for M5 screws, or at least... they do but they cost like $2 each and we'd need like 180 of them. So this one we have to buy from Amazon.
+
+![](../images/lesson9/tslotnutamazon.png)
+
+They cost about $10 for a pack of 100. (specs: 2020 series T-slot nut for M5 screws)
 
 ### Frame Brackets
+
+![](../images/lesson9/brackets.png)
 
  * 10x T shaped frame brackets
  * 18x L shaped frame brackets
@@ -65,6 +81,8 @@ These should also have come with T-slot-nuts
 
 Amazon sells bed leveling springs in packs of 4 which includes the knob as well. I have not tried these, and I question just how good those springs are.
 
+![](../images/lesson6/bedspringsknobsamazon.png)
+
 I do have some suggestions that are from McMaster-Carr that are much stronger. Stronger is good, it'll make the bed more stable. My suggestion is this set of parts:
 
  * [spring SKU 94125K204](https://www.mcmaster.com/94125K204), which comes in a pack of 5, and works great with our design
@@ -77,6 +95,8 @@ This one must be a 380mm long leadscrew integrated into a NEMA stepper motor.
 
  * [Pololu product number 2690:](https://www.pololu.com/product/2690) "Stepper Motor with 38cm Lead Screw: Bipolar, 200 Steps/Rev, 42×38mm, 2.8V, 1.7 A/Phase"
 
+![](../images/lesson9/pololuleadscrew.png)
+
 Seemingly equivalent products from overseas costs about half the price. Make sure the leadscrew is TR8x8, and 380mm long. Make sure the physical and electrical specifications are similar. 
 
 Make sure you get at least two lead-nuts! One should come with the motor, get a spare!
@@ -87,11 +107,15 @@ Make sure you get at least two lead-nuts! One should come with the motor, get a 
 
 Buy 2 of them. NEMA 17 sized stepper motor with 5mm D shaped output shaft. 200 steps per rotation, phase current rating of about 1.5 amps or more, bipolar.
 
+![](../images/lesson9/nema17steppermotor.png)
+
 This [17HS15-1504S-X1 from OMC](https://www.omc-stepperonline.com/nema-17-bipolar-45ncm-6374ozin-15a-42x42x39mm-4-wires-w--1m-pin-connector.html) is absolutely perfectly suitable for a 3D printer like ours, and comes with a 1m cable. Should be about $9 each. Another option is [17HS15-1684S from OMC](https://www.omc-stepperonline.com/nema-17-stepper-motor/nema-17-bipolar-1-8deg-36ncm-51oz-in-1-68a-2-8v-42x42x39mm-4-wires.html), which doesn't have a connector but still have a cable.
 
 #### 8mm diameter linear rods
 
 Buy 6 of them. 8mm diameter, 440mm long, hardened steel, chrome plated.
+
+![](../images/lesson9/linearrod.png)
 
 For comparison, getting the best quality possible from MiSUMi, they'll cost about $20 each. On Amazon, something that might work costs $8 each, in a pack of 2.
 
@@ -101,6 +125,8 @@ If you want to buy from MiSUMi, you can get each rod custom cut-to-length.
 
 Buy 2 of them. 16mm diameter, 400mm long, hardened steel, chrome plated.
 
+![](../images/lesson9/linearrod2.png)
+
 So far I've not found a good deal for these. They are $15.50 each on MiSUMi ([part number PSFJ16-400](https://us.misumi-ec.com/vona2/detail/110302634310/?HissuCode=PSFJ16-400)).
 
 If you want to buy from MiSUMi, you can get each rod custom cut-to-length.
@@ -109,11 +135,15 @@ If you want to buy from MiSUMi, you can get each rod custom cut-to-length.
 
 Buy 4 of them. 8mm inner diameter, 15mm outer diameter, 25mm long.
 
+![](../images/lesson9/lm8uu.png)
+
 The standard LM8UU on MiSUMi costs $6.50 each ([part number LMU8](https://us.misumi-ec.com/vona2/detail/110300026540/?HissuCode=LMU8)). Amazon has them for about $2 each if you get a pack of 4.
 
 #### LM16UU linear ball bearings
 
 Buy 4 of them. 16mm inner diameter, 28mm outer diameter, 37mm long.
+
+![](../images/lesson9/lm16uu.png)
 
 The standard LM8UU on MiSUMi costs $8.13 each ([part number LMU16](https://us.misumi-ec.com/vona2/detail/110300026540/?HissuCode=LMU16)). Amazon has them for about $3 each if you get a pack of 4.
 
@@ -123,6 +153,8 @@ We may need to upgrade to LM16LUU if the bed vibrates. This is highly unlikely t
 
 These must be "oil free" or "oil-less" or "self-lubricating graphite" brass bushings!
 
+![](../images/lesson9/oillessbushing.png)
+
 Buy 4 of them. 8mm inner diameter, 12mm outer diameter, 24mm or 25mm long. You can try putting two together that are 12mm to act as one piece.
 
 MiSUMI has these for about $13.50 each ([part number MPBZ8-25](https://us.misumi-ec.com/vona2/detail/110300032230/?HissuCode=MPBZ8-25)). This might be a better deal than Amazon or eBay.
@@ -130,6 +162,8 @@ MiSUMI has these for about $13.50 each ([part number MPBZ8-25](https://us.misumi
 #### F608ZZ rotary ball bearing
 
 Buy 8 of them. 8mm inner diameter, 22mm outer diameter, with flange, 6mm or 7mm overall thickness.
+
+![](../images/lesson9/f608zz.png)
 
 The standard F608ZZ on MiSUMi costs $12.28 each ([part number F608ZZ](https://us.misumi-ec.com/vona2/detail/221000058301/?PNSearch=F608ZZ&HissuCode=F608ZZ)). Amazon has them for about $2 each or lower, in large packs.
 
@@ -139,6 +173,8 @@ Another 4 more is needed for the spool holder but the spool holder do not need h
 
 2GT profile 6mm wide timing belt, with some sort of fiber cord inside for reinforcement.
 
+![](../images/lesson9/timingbelt.png)
+
 You need 4 chunks, each chunk should be about 760mm long, so you can also buy a roll that's longer than 3040mm long.
 
 MiSUMi has these for about $7.85 per chunk ([part number GBN7602GT-60](https://us.misumi-ec.com/vona2/detail/110302652060/?HissuCode=GBN7602GT-60)). [Filastruder has the Gates branded 2GT belt](https://www.filastruder.com/products/gates-2gt-belts), it'll cost $31 for all the belt we need. Amazon lists 5 meters worth for $7.
@@ -147,15 +183,21 @@ MiSUMi has these for about $7.85 per chunk ([part number GBN7602GT-60](https://u
 
 Buy 8 of them. 20 teeth, 8mm bore, 2GT profile, 6mm wide or slightly wider.
 
+![](../images/lesson9/pulley.png)
+
 MiSUMi and Filastruder actually doesn't have a product that matches what we need, and no acceptable substitutes. The Ultimaker reseller [fbrc8 has some](https://fbrc8.com/products/pulley-8mm-assembly) that are $8.40 each. Otherwise, they are on Amazon for about $2.50 each, in packs of 5.
 
 #### Timing Belt Tension Spring
 
 Buy 4 of them. Torsion springs designed specifically to tighten up 6mm wide belts. These cost pennies!
 
+![](../images/lesson9/belttensionspringsamazon.png)
+
 #### Shaft Collar
 
 Buy at least 10 of them, 20 is better. 8mm bore, about 7mm wide, about 14mm outer diameter, using set-screws for locking. Try getting ones that have two set-screws instead of just one if possible.
+
+![](../images/lesson9/shaftcollar.png)
 
 There's no reason to get high quality versions of these. They are dirt cheap. I'm not even going to research them.
 
@@ -163,21 +205,43 @@ There's no reason to get high quality versions of these. They are dirt cheap. I'
 
 Buy at least 2 of them. 8mm bore to 5mm bore, 25mm long, 18mm outer diameter, flexible aluminum.
 
-There's no reason for these to be high quality. About $3 or less is a fine price. [example from OMC](https://www.omc-stepperonline.com/shaft-coupling/5mm-8mm-flexible-coupling-18x25mm-cnc-stepper-motor-shaft-coupler-st-fc04.html)
+![](../images/lesson9/shaftcoupling.png)
+
+There's no reason for these to be super high quality. About $3 or less is a fine price. [example from OMC](https://www.omc-stepperonline.com/shaft-coupling/5mm-8mm-flexible-coupling-18x25mm-cnc-stepper-motor-shaft-coupler-st-fc04.html)
 
 ### Extruder
 
-We've talked about the [E3D Hemera extruder](https://e3d-online.com/e3d-hemera) many times. This is what we must use. Get the full package with 12V electronics. It comes packaged with a lot of stuff so make sure you are not buying anything duplicated. [Filastruder link](https://www.filastruder.com/collections/e3d-hemera/products/e3d-hemera)
+We've talked about the [E3D Hemera extruder](https://e3d-online.com/e3d-hemera) many times.
+
+![](../images/lesson9/hemera.png)
+
+This is what we must use. Get the full package with 12V electronics. It comes packaged with a lot of stuff so make sure you are not buying anything duplicated. [Filastruder link](https://www.filastruder.com/collections/e3d-hemera/products/e3d-hemera)
 
 ### Hot-End Components
 
+#### Heat Block
+
 The heat-block should be an [aluminum heat-block](https://e3d-online.com/v6-heater-block-for-sensor-cartridges) from E3D-Online. [Filastruder link](https://www.filastruder.com/collections/e3d-spare-parts-and-accessories/products/e3d-standard-v6-heater-block-cartridge-style)
 
-The heater cartidge must be a 12V 30W [heater cartidge](https://e3d-online.com/standard-heater-cartridge) from E3D-Online. Knock-offs may have problems fitting properly into the heat-block, which is a potential hazard and lowers efficiency. [Filastruder link](https://www.filastruder.com/collections/e3d-spare-parts-and-accessories/products/e3d-heater-cartridge)
+![](../images/lesson9/heatblock.png)
+
+#### Heater Cartridge
+
+The heater cartridge must be a 12V 30W [heater cartidge](https://e3d-online.com/standard-heater-cartridge) from E3D-Online. Knock-offs may have problems fitting properly into the heat-block, which is a potential hazard and lowers efficiency. [Filastruder link](https://www.filastruder.com/collections/e3d-spare-parts-and-accessories/products/e3d-heater-cartridge)
+
+![](../images/lesson8/nozzleheatercartridge.png)
+
+#### Thermistor Cartridge
 
 The temperature sensor should be a [thermistor cartridge](https://e3d-online.com/thermistor-cartridge) designed specifically for the heat-block. [Filastruder link](https://www.filastruder.com/collections/e3d-spare-parts-and-accessories/products/e3d-thermistor-cartridge)
 
+![](../images/lesson9/thermistor.png)
+
+#### Nozzle
+
 Your first nozzle should be an ordinary 0.4mm diameter brass nozzle for 1.75mm plastic filament. It must use the same M6 threads that the E3D heat-block uses. [Filastruder link](https://www.filastruder.com/collections/e3d-spare-parts-and-accessories/products/e3d-spare-nozzle-v6)
+
+![](../images/lesson9/brassnozzle.png)
 
 Your second nozzle should be a 0.8mm nozzle for the sake of print speed, ordinary brass is OK but a premium upgrade is [something like this](https://thegr5store.com/store/index.php/1-75mm-filament-products/0-8mm-matchless-race-nozzle-for-1-75mm-filament.html), I can attest to how good "Matchless" nozzles are.
 
@@ -189,6 +253,8 @@ For the heat-block, it's a good idea to get a sock for it. It stops plastic from
 
 The extruder should've already included a [12V cooling fan](https://e3d-online.com/e3d-hemera-fan), which is required to prevent the hot-end from jamming. You should get another one to cool the control circuit board. Should be 40mm x 40mm square shape and 10mm thick.
 
+![](../images/lesson9/coolingfan.png)
+
 Get a Noctua NF-A4x10 if you are willing to spend $15 on just a cooling fan. It's super quiet. Otherwise, shop around, they are cheap. For simply cooling the circuit board, they pose no danger if they fail.
 
 [$3 on Filastruder](https://www.filastruder.com/products/generic-40mm-ball-and-sleeve-bearing-axial-fans) ; [option on Digi-Key (Sunon MF40101VX-1000U-A99)](https://www.digikey.com/product-detail/en/sunon-fans/MF40101VX-1000U-A99/259-1798-ND/6198736) ; [example on Amazon](https://smile.amazon.com/WINSINN-Brushless-40x40x10mm-Extruder-Makerbot/dp/B0757LXKST/ref=sr_1_3)
@@ -196,6 +262,8 @@ Get a Noctua NF-A4x10 if you are willing to spend $15 on just a cooling fan. It'
 ### Blower Fan
 
 You will need a small centrifugal blower fan, 40mm x 40mm square shape, 10mm thich, running on 12V.
+
+![](../images/lesson9/blowerfan.png)
 
 These usually cost about $6 on Amazon, usually in packs of 2 or 4. These pose no danger if they fail.
 
@@ -205,6 +273,8 @@ These usually cost about $6 on Amazon, usually in packs of 2 or 4. These pose no
 
 As recommended in [lesson 1](lesson1), we will use a 220mm x 220mm bed rated for 12V that outputs about 120W, made of aluminum.
 
+![](../images/lesson1/heatedbedamazon.png)
+
 [example on Amazon](https://smile.amazon.com/Aluminum-Hotbed-Cable-Printer-220x220mm/dp/B07JLQW3XW/ref=sr_1_25)
 
 It may come with wires, but those wires are crap in terms of safety. We will use our own wires.
@@ -212,6 +282,8 @@ It may come with wires, but those wires are crap in terms of safety. We will use
 ### Bed Glass
 
 This must be a borosilicate glass bed, 220mm x 220mm in size.
+
+![](../images/lesson9/glassbedamazon.png)
 
 If we properly use a countersink drill bit on the heated bed, we could avoid required the glass to have the corners cut. Here are some that don't have corners cut:
 
@@ -234,12 +306,16 @@ WARNING: Borosilicate glass is required to handle high temperatures!
    * silicone insulated
    * one chunk black and one chunk red, about 25 or 50 feet each, red and black might come together on one spool
 
+![](../images/lesson9/24gaugewire.png)
+
 Additional connectors and such will be mentioned later on during the lesson on electrical assembly, because you'll need to deal with situations as they arise.
 
 ### Control Circuit Board
 
  * [BIGTREETECH SKR Mini E3](https://www.biqu.equipment/products/bigtreetech-skr-mini-e3-control-board-32-bit-integrated-tmc2209-uart-for-ender-4) official page
  * [AmazonSmile Link](https://smile.amazon.com/BIGTREETECH-Control-TMC2209-Printer-Creality/dp/B07XYW21J3?sa-no-redirect=1)
+
+![](../images/lesson8/skrminie3.png)
 
 You can try getting the combo with the TFT24 LCD screen. [AmazonSmile link to combo](https://smile.amazon.com/BIGTREETECH-DIRECT-Control-Dispaly-Motherboard/dp/B07ZP5FPFK/ref=sr_1_3?)
 
@@ -248,6 +324,8 @@ You can try getting the combo with the TFT24 LCD screen. [AmazonSmile link to co
  * Recommended: [BIGTREETECH TFT24](https://www.biqu.equipment/collections/lcd/products/bigtreetech-tft24-v1-1-display-two-working-modes)
     * if buying from Amazon, see above part about the SKR Mini E3 combo
  * Dirt cheap option: 12864 LCD Graphic Smart Display, [AmazonSmile link](https://smile.amazon.com/KINGPRINT-Graphic-Display-Controller-Adapter/dp/B076WQQX5K/ref=sr_1_16?) or [BIGTREETECH link](https://www.biqu.equipment/collections/lcd/products/ramps1-4-lcd-12864-lcd-control-panel-for-3d-printer-smart-controller-mega-2560)
+
+![](../images/lesson6/tft24.png)
 
 ### Power Supply Unit
 
@@ -262,6 +340,8 @@ As discussed in the [electrical lesson](lesson8), we are shopping for a reputabl
    * [Mean Well page](https://www.meanwell.com/webapp/product/search.aspx?prod=LRS-350)
    * [AmazonSmile search](https://smile.amazon.com/s?k=meanwell+lrs-350-12&rh=p_85%3A2470955011)
 
+![](../images/lesson6/lrs35012.png)
+
 Important: The LRS-200-12 is has a much more open enclosure for airflow and does not use a cooling fan. This is could be dangerous as debris may fall into the enclosure. The LRS-350-12 is definitely the preferred choice because it's better protected and uses a cooling fan. If the fan fails, it should still be safe because we are only using 175W in the worst case, and it has its own internal protections that will trigger.
 
 There are other options that are about $20 on Amazon Prime, or [from OMC](https://www.omc-stepperonline.com/power-supply?mfp=16o-ship-from[58,59],47-output-voltage-v[12],49-power-w[201,250,350,400]). If you wish to save $20 you can try them out. It is likely that they will fail earlier and generate more electromagnetic interference. They are also thicker than the LRS family from Mean Well.
@@ -270,11 +350,15 @@ There are other options that are about $20 on Amazon Prime, or [from OMC](https:
 
 As discussed in the [electrical lesson](lesson8), we will use a product that combines the AC input socket, power switch, and a safety fuse. These are super common on Amazon. Find one with the wires already attached if possible.
 
+![](../images/lesson8/powerinputsocket.png)
+
 [example on Amazon](https://smile.amazon.com/BIQU-Rocker-Switch-Socket-Module/dp/B07KS2TQ45/ref=sr_1_1) , and here's a beefcake one on [Digi-Key (Delta 06AB2D)](https://www.digikey.com/product-detail/en/delta-electronics/06AB2D/1144-1009-ND/3830632)
 
 ### Limit Switches
 
 We need 3 limit switches. Their form-factor are somewhat standarized, and we are only passing a very weak signal through them so they do not need a high rating. But with the same form-factor, the actuator style might still differ.
+
+![](../images/lesson9/limitswitches.png)
 
  * from Amazon Prime, this one is the best deal: [link to AmazonSmile](https://smile.amazon.com/Cylewet-V-153-1C25-Straight-Arduino-CYT1068/dp/B071NSRHK3/ref=sr_1_5)
  * from Digi-Key, the best deal: [Omron D3V-11G2M-3C24-K](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/D3V-11G2M-3C24-K/Z10805-ND/1789198)
@@ -282,6 +366,8 @@ We need 3 limit switches. Their form-factor are somewhat standarized, and we are
 Switches that are smaller will not fit with our M3 screws.
 
 ### Teflon Tube
+
+![](../images/lesson9/teflontube.png)
 
 You do need a teflon tube. Firstly, to support the wires going to the extruder. Secondly (and optionally), it helps guide the plastic filament to the extruder from the spool holder. It's not a requirement but could prevent tangles.
 
@@ -298,6 +384,8 @@ We will cover connectors, soldering, and such, much later. Since at this point, 
 If you are a friend that can meet me locally, I'd gladly provide you with the 3D printed parts for this 3D printer. Come meet me at the public library I volunteer at, I can show you how to print one part in person with the library's Ultimaker 3D printer.
 
 Otherwise, go through the design and the [walkthroughs (link to lesson 6)](lesson6), use the Onshape export function to generate the STL files you need for printing them yourself.
+
+![](../images/lesson9/exportingstl.png)
 
 Remember what we discussed about [best print orientation (link to lesson 4)](lesson4). Most of the time it's obvious, and if it isn't obvious, I would've pointed it out in a previous lesson.
 
