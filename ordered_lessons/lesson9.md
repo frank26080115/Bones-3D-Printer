@@ -57,7 +57,7 @@ McMaster-Carr doesn't tell you what the shipping costs are, but in the end, it s
 
 ### T-slot Nuts
 
-McMaster-Carr does NOT stock T-slot-nuts for M5 screws, or at least... they do but they cost like $2 each and we'd need like 180 of them. So this one we have to buy from Amazon.
+McMaster-Carr does NOT stock T-slot-nuts for M5 screws, or at least... they do but they cost like $2 each and we'd need about another 160 of them. So this one we have to buy from Amazon.
 
 ![](../images/lesson9/tslotnutamazon.png)
 
@@ -381,9 +381,11 @@ I'd much prefer you to buy something with a 3mm inner diameter if possible. [Thi
 
 ### Drag Chain
 
-A relatively small drag chain is used to guide the wires to the heated bed as it moves up and down.
+A relatively small drag chain is used to guide the wires to the heated bed as it moves up and down. The internal size can be as small as 10mm x 10mm.
 
 ![](../images/lesson9/dragchain.png)
+
+This is not a required part, there's an alternate cost saving method that uses another piece of teflon tube instead. Please see the [page on alternative parts](../other_pages/optional3dprintedparts#tube-guide-anchor).
 
 ### Other Electrical Components
 

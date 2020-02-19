@@ -48,6 +48,16 @@ Replacement Design:
 
 [Link to Model](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/7b49229f1095a7f50965be98)
 
+### Tube Guide Anchor
+
+The design has a drag chain that guides the wires between the printer's frame and the printer's bed, as it moves up and down. It prevents the wires from sagging or getting caught on something. This drag chain would cost about $8 and also would make replacing the heated bed more difficult.
+
+An alternative solution is to use a teflon tube to prop up the wires instead. This requires a slightly redesigned 3D printed part that have holes meant for zip-tying the tube.
+
+![](../images/other/verttubeanchor.png)
+
+[Link to Model](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/879e7d80929449cf28acd3bf)
+
 ## Useful Accessories
 
 ### Simple Cable Tie Point
