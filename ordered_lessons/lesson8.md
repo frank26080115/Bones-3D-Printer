@@ -93,6 +93,8 @@ Fuses will protect from this situation. They are made with a piece of metal cond
 
 [Wikipedia: Circuit Breaker](https://en.wikipedia.org/wiki/Circuit_breaker)
 
+When a fuse blows, you must first diagnose the problem that caused it to blow. Only replace a fuse when you are certain that it won't blow again.
+
 ## Grounding (aka Earthing)
 
 Have you ever wondered what this round hole in a power outlet actually does? That's the ground pin. Its job is to protect you from electrical shock.
