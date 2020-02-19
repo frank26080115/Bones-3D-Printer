@@ -297,6 +297,10 @@ With corners cut:
 
 WARNING: Borosilicate glass is required to handle high temperatures!
 
+You will need some small binder clips if the glass plate does not come with any. These will clip the glass to the bed.
+
+![](../images/lesson9/binderclips.png)
+
 ### Wires
 
  * 14 AWG stranded copper wire
@@ -375,6 +379,12 @@ This teflon tube is not a bowden tube, but it may be sold as one. It does not ne
 
 I'd much prefer you to buy something with a 3mm inner diameter if possible. [This Amazon listing is great](https://smile.amazon.com/WINGONEER%C2%AE-Teflon-Bowden-Filament-Printer/dp/B077XDYR74/ref=sr_1_7).
 
+### Drag Chain
+
+A relatively small drag chain is used to guide the wires to the heated bed as it moves up and down.
+
+![](../images/lesson9/dragchain.png)
+
 ### Other Electrical Components
 
 We will cover connectors, soldering, and such, much later. Since at this point, we are a bit unsure what wires come attached to what product, so we will deal with connecting them after mechanical assembly. You do need plenty of zip-ties later but you may get those from any retails store.
@@ -388,6 +398,14 @@ Otherwise, go through the design and the [walkthroughs (link to lesson 6)](lesso
 ![](../images/lesson9/exportingstl.png)
 
 Remember what we discussed about [best print orientation (link to lesson 4)](lesson4). Most of the time it's obvious, and if it isn't obvious, I would've pointed it out in a previous lesson.
+
+Almost all of the parts can be printed with PLA plastic, except for the parts that are touching a stepper motor, which can get very hot. Use PETG for any parts that need to get warm, and nylon for things that will get very hot.
+
+Please use PETG for the following:
+
+ * mounting part for the Hemera extruder
+ * standoff spacers for the X and Y axis stepper motors
+ * mounting part Z axis stepper motor
 
 # Tools
 

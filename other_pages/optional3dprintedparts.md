@@ -68,6 +68,14 @@ The rotary ball bearings should be F608ZZ just like the ones used for the 3D pri
 
 [Link to Model](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/e6f8eff31be62feb446cee75)
 
+### 2020 Feet
+
+Recall in [lesson 3](lesson3) we talked about what happens if a leg of the printer is too long or too short? We can use some sort of adjustable feet to make the printer level. I've designed something that goes around a 2020 profile aluminum extrusion beam, and is secured to it via a M5 screw and a T-slot nut.
+
+![](../images/other/3dprinted2020feet.png)
+
+[Link to Model](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/ffe99086e5938267dbd1d906)
+
 ## Upgrades
 
 ### Duet 2 WiFi Box
