@@ -33,6 +33,7 @@ I have optimized a shopping list for every screw, nut, and washer you need from 
 | 40  | [92832A229](https://www.mcmaster.com/92832A229) | M3 x 20mm button head screw        |
 | 30  | [92095A168](https://www.mcmaster.com/92095A168) | M3 x 14mm button head screw        |
 | 30  | [92832A215](https://www.mcmaster.com/92832A215) | M3 x  6mm button head screw        |
+| 20  | [90991A113](https://www.mcmaster.com/90991A113) | M3 x  8mm button head screw        |
 | 12  | [91290A137](https://www.mcmaster.com/91290A137) | M3 x 50mm button head screw        |
 | 100 | [90576A102](https://www.mcmaster.com/90576A102) | M3 nylon locking nut               |
 | 100 | [97259A101](https://www.mcmaster.com/97259A101) | M3 square nut 5.5mm wide           |
@@ -47,7 +48,6 @@ The above list is optimized to an extreme extent, including the usage of [cost-s
 
 | Sku                                             | Name                             | Why?                           |
 |-------------------------------------------------|----------------------------------|--------------------------------|
-| [90991A113](https://www.mcmaster.com/90991A113) | M3 x  8mm button head screw      | just in case 6mm is too short  |
 | [92832A225](https://www.mcmaster.com/92832A225) | M3 x 16mm button head screw      | just in case 14mm is too short |
 | [90991A115](https://www.mcmaster.com/90991A115) | M3 x 12mm button head screw      | just in case 14mm is too long  |
 | [92703A151](https://www.mcmaster.com/92703A151) | M3 x 12mm countersink head screw | original lead-nut mount design |
@@ -175,7 +175,7 @@ Another 4 more is needed for the spool holder but the spool holder do not need h
 
 ![](../images/lesson9/timingbelt.png)
 
-You need 4 chunks, each chunk should be about 760mm long, so you can also buy a roll that's longer than 3040mm long.
+You need 4 chunks, each chunk should be about 780mm long, so you can also buy a roll that's longer than 3120mm long.
 
 MiSUMi has these for about $7.85 per chunk ([part number GBN7602GT-60](https://us.misumi-ec.com/vona2/detail/110302652060/?HissuCode=GBN7602GT-60)). [Filastruder has the Gates branded 2GT belt](https://www.filastruder.com/products/gates-2gt-belts), it'll cost $31 for all the belt we need. Amazon lists 5 meters worth for $7.
 
@@ -236,6 +236,8 @@ The heater cartridge must be a 12V 30W [heater cartidge](https://e3d-online.com/
 The temperature sensor should be a [thermistor cartridge](https://e3d-online.com/thermistor-cartridge) designed specifically for the heat-block. [Filastruder link](https://www.filastruder.com/collections/e3d-spare-parts-and-accessories/products/e3d-thermistor-cartridge)
 
 ![](../images/lesson9/thermistor.png)
+
+Buy this with the optional 1m long wire! We need that connector!
 
 #### Nozzle
 
@@ -409,6 +411,14 @@ Please use PETG for the following:
  * standoff spacers for the X and Y axis stepper motors
  * mounting part Z axis stepper motor
 
+Make sure all the holes on the 3D printed parts fit the screws that will go into them. Use a drill bit to drill them out if the holes do not fit the screws.
+
+If a hole or clamp is meant to fit in a bearing, and it doesn't fit, then that part should be re-designed and re-printed with a very slightly bigger diameter. Do not use a drill to widen these parts.
+
+# Ball Bearing Preparation
+
+When you purchase ball bearings, both the rotary and linear kind, you should lubricate it. The bearings might already seem oily, but that oil is an anti-rust oil used for storage and transportation, not for lubrication. Purchase some dedicated bearing oil, such as machine oil, and apply it to all the bearings. Do this right before installing the bearings.
+
 # Tools
 
 Required:
@@ -418,11 +428,12 @@ Required:
  * pliers for gripping nuts during tightening
  * flush cutters
  * drill and drill bits
- * countersink drill bit
+ * ~~countersink drill bit~~
  * screwdriver set, including torx bits
  * hobby knife (Xacto knife)
  * set of metal files (not computer files...)
- * something to grind and cut aluminum beams, such as an angle grinder or rotary tool (Dremel tool)
+ * something to cut aluminum beams, at least a metal hacksaw, a miter saw of some kind is better
+ * something to grind into aluminum beams, such as an angle grinder or rotary tool (Dremel tool)
 
 There may have been things I've missed. We'll deal with missing stuff as the assembly is being done.
 

@@ -6,16 +6,6 @@ The link to the Onshape model: [https://cad.onshape.com/documents/359ba....150f]
 
 ## Money Saving Parts
 
-### Z Stepper Spacer
-
-The Z axis stepper motor has a mount that is 4mm thick. This means it should be using a 8mm long M3 screw. But it's the only place in the design where such a screw is needed. This means you'd be buying a pack of 100 screws but using only 4 of them, so buying them could be wasteful.
-
-But we already need more than twenty 14mm long M3 screws. So if we design a spacer that's 6mm tall, then we can use the 14mm long screws to mount the Z axis stepper motor.
-
-![](../images/other/zstepperspacer.png)
-
-[Link to Model](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/d639a4eba6b7893faf065275)
-
 ### Thicker Backstop Plate
 
 The plate part behind the glass bed that acts as a backstop was originally designed to use very long countersink screws. But we only need 8 of them and they are sold by the hundreds, so buying them could be wasteful.
