@@ -6,17 +6,23 @@ I will write this page assuming you already have the skills to solder, to crimp,
 
 ## Strategy
 
-For the high current and high voltage connections on the power supply, we will be using screw terminals. They mate with spade connectors (aka fork connectors). They also technically accept bare wires but it's a lot more dangerous without using connectors.
+For the high current and high voltage connections on the power supply, we will be using barrier screw terminals. They mate with fork connectors (aka spade connectors). They also technically accept bare wires but it's a lot more dangerous without using connectors.
 
-For the high current connections on the control circuit board, there are some terminal blocks. Terminal blocks like these work best with proper wire ferrules, but also accept bare wires. We will avoid using bare wires.
+![](../images/lesson11/psuandforkconnectors.png)
+
+For the high current connections on the control circuit board, there are some screw terminal blocks. Terminal blocks like these work best with proper wire ferrules, but also accept bare wires. We will avoid using bare wires.
+
+![](../images/lesson11/screwterminalblockandferrules.png)
 
 For the low current connections, the control circuit board uses many JST-XH connectors. These have a 2.54mm pin pitch and are polarized.
 
-Now here's some bad news. Spade connectors need a crimper, or even two crimpers. Wire ferrules need a special type of crimper. JST-XH also has its own type of crimper. One crimper is about $20, which doesn't sound bad for a tool that will keep you safe and your projects reliable for many years, but spending $60 on just crimpers for a 3D printer might be a bit daunting.
+Now here's some bad news. Spade/Fork connectors need a crimper, or even two crimpers. Wire ferrules need a special type of crimper. JST-XH also has its own type of crimper. One crimper is about $20, which doesn't sound bad for a tool that will keep you safe and your projects reliable for many years, but spending $60 on just crimpers for a 3D printer might be a bit daunting.
 
-I know the promise is that the 3D printer is cheap to build. But I will be writing my instructions assuming you have access to the crimpers for the spade connectors and the wire ferrules. You are free to half-ass some of the wiring, but don't expect me to be happy about it if you ask me to inspect it in person.
+I know the promise is that the 3D printer is cheap to build. But I will be writing my instructions assuming you have access to the crimpers for the fork connectors and the wire ferrules. You are free to half-ass some of the wiring, but don't expect me to be happy about it if you ask me to inspect it in person.
 
 The wires we'll be using are either 14 AWG or 24 AWG. To avoid using a crimper for the JST-XH connectors, we will buy a large pack of JST-XH pigtails.
+
+![](../images/lesson11/jstxhpigtails.png)
 
 ## Shopping
 
@@ -35,7 +41,7 @@ The wires we'll be using are either 14 AWG or 24 AWG. To avoid using a crimper f
  * crimper for wire ferrules
  * variety pack of heat-shrink tubing in different sizes, all black, marine grade preferred but not required
  * variety pack of wire ferrules
- * pack of insulated spade terminals that fit 14 AWG wires and fits #8 screws
+ * pack of insulated fork connectors that fit 14 AWG wires and fits #8 screws
  * JST-XH pigtails, both male and female
  * cables for stepper motors, with connectors that work with the SKR Mini E3
 
@@ -43,11 +49,13 @@ Below is a massive image that shows all the things in the above list:
 
 [![](../images/lesson11/shopping.png)](../images/lesson11/shopping.png)
 
-## WARNING: JST-XH Polarity
+There might be more things, we'll cover them later.
 
-If you have a keen eye, you'll notice that the JST-XH pigtails from Amazon may have different arrangements of red and black, and may even be backwards from common cooling fans and such. In fact, the one listing I wanted you to buy actually have a 17% one-star rating with people complaining about how it is backwards. We will keep this in mind but we will also solve this later.
+## Polarity
 
-Keep in mind that the limit switches and thermistors do not have polarity. Switches are dumb devices without polarity, current can flow through them in any direction. Thermistors are just resistors, so they also allow current to flow through both ways, so polarity for thermistors also does not matter.
+Keep in mind that the limit switches, thermistors, and heating elements, **do not have polarity**. Switches are just dumb copper pieces touching each other, current can flow through them in any direction. Thermistors and heating elements are **just resistors**, so they also allow current to flow through both ways, so polarity for thermistors and heating elements also does not matter.
+
+For the cooling fans, especially the type we are using called BLDC (brushless DC), the polarity definitely matters, and reversing the polarity with a 12V power input will definitely cause damage to them. So make sure red goes to red (red = positive, positive goes to positive), and black goes to black.
 
 ## Limit Switches
 
@@ -75,11 +83,23 @@ The cooling fans come with wires and maybe a connector, but for the sake of maki
 
 ![](../images/lesson11/blowerfanpigtail.png)
 
-The choices for the connectors are made to make life easier later. The wire can be pretty thin because the fans are not power hungry. We will be making extension cables for these fans later.
+The choices for the connectors are made to make life easier later. The wire can be pretty thin (use 24 AWG) because the fans are not power hungry. We will be making extension cables for these fans later.
+
+## Nozzle Heater Cartridge
+
+The nozzle heater cartridge should have a 1 meter long wire that's glass insulated already. Extend this another 1 meter with pieces of 14 AWG wire, using soldering and heat-shrink tubing. On the ends, terminate with crimped on wire ferrules.
+
+![](../images/lesson11/nozzleheaterwireprep.png)
+
+## Thermistor Cartridge
+
+The thermistor cartridge for the heat-block is sold with a 1 meter dedicated wire. This wire will have a Molex Microfit connector, which we don't want to buy a crimper for so make sure you buy the combo with this wire. Extend this wire with 24 AWG wire, then splice it with a JST-XH female connector. Use soldering and heat-shrink tubing to do this.
+
+![](../images/lesson11/thermistorcable.png)
 
 ## Heated Bed
 
-This part you should do **after** the printer has been mostly assembled! You need to **prepare the drag chain, but not install it,** before wiring the heated bed!
+This part you should do **after** the printer has been mostly assembled! This step you should be doing **after** you prepare the drag chain, but **before** you install the drag chain to the frame.
 
 ![](../images/lesson11/heatedbedwireprep.png)
 
@@ -95,4 +115,16 @@ Be very careful not to break the solder joints while installing the heated bed t
 
 ## Extension Cables
 
-Make the following extension cables following the diagram.
+The big major cable is the 12V wire that runs from the power supply to the control circuit board. This uses 14 AWG wire, and is terminated with spade connectors on one end, and wire ferrules on the other end.
+
+Extending wires from the limit switches to the control circuit board is easy, just a long pieces of 24 AWG wire with JST-XH female connectors on each end. We need three of them, each one is a different length.
+
+Extending wires from the extruder cooling fan and the nozzle blower fan requires two differently made extension wires. Use 24 AWG wire. Both will have JST-XH female on the end where it connects to the control circuit. The one meant for the extruder cooling fan will have a JST-XH **female** on the last end, but the one meant for the nozzle blower fan will have a JST-XH **male** on the last end.
+
+## AC Power Input
+
+The AC power input module should have already come with wires that are terminated properly with crimped on spade connectors.
+
+![](../images/lesson8/powerinputsocket.png)
+
+![](../images/lesson11/acinputwireslabeled.png)
