@@ -2,11 +2,19 @@
 
 At this point, everything should be ready to be connected together. We have made extension cables where we need to.
 
-It'll be great if you had a multimeter right now to do some tests. If everything goes right, then you won't need it. If something goes wrong, we can use it to identify bad connections or bad parts. An infrared thermometer would be helpfun, or even a thermal imaging camera.
+It'll be great if you had a multimeter right now to do some tests.
 
 ![](../images/lesson11/multimeter.png)
 
-We will do this step by step and test after each step. This will prevent any power issues from blowing up any sensitive components. Keep a fire extinguisher near by. Do not leave the area if the power is on or if something is hot. Do not touch any wires or connectors if the AC power cord is plugged in. Never use your feelings to check temperature.
+If everything goes right, then you won't need it. If something goes wrong, we can use it to identify bad connections or bad parts. An infrared thermometer would be helpfun, or even a thermal imaging camera.
+
+![](../images/lesson11/thermalimaging.png)
+
+We will do this step by step and test after each step. This will prevent any power issues from blowing up any sensitive components. Keep a fire extinguisher near by.
+
+![](../images/lesson11/fireextinguisher.png)
+
+Do not leave the area if the power is on or if something is hot. Do not touch any wires or connectors if the AC power cord is plugged in. Never use your feelings to check temperature.
 
 ## Skill: Continuity Checking Wires
 
@@ -24,6 +32,8 @@ This works on all of our JST-XH female connectors, which includes the stepper mo
 
 Connect the AC power input to the 12VDC power supply. That means connecting the "**L**ive" (aka **H**ot), "**N**eutral", and "**G**round" wires.
 
+![](../images/lesson11/actopsuconnect.png)
+
 You also need to connect the negative output of the power supply to the ground somehow. This could be a simple 14 AWG wire. Recall what we [discussed before about grounding](lesson8).
 
 Once the connections are made, keep the area clear, plugin AC power and turn it on. There should be a small LED that lights up on the power supply.
@@ -40,11 +50,15 @@ The control circuit (SKR Mini E3) should be mounted inside its 3D printed box, s
 
 The LCD screen should also be mounted inside its own 3D printed box, secured with M3 standoffs and short M3 screws. Connect the LCD screen to the control circuit with the cable that came with it.
 
-Connect the power supply to the control circuit using the 14 AWG wires we prepared before.
+Connect the power supply to the control circuit using the 14 AWG wires [we prepared before already](lesson11a).
+
+![](../images/lesson11/psutocontrolcircuitconnect.png)
 
 Turn the power on, LEDs will start coming on and the LCD will start to show stuff (or at least light up as well). This is good. There's a chance that nothing on the LCD actually does anything when you press it though, don't worry, we'll configure the firmware later.
 
-Plug in a USB cable between the control circuit and your computer. Install all the drivers you need (check manufacturer's website). Download and install [Pronterface](https://www.pronterface.com/), run it and see if you can connect to your control circuit.
+Plug in a USB cable between the control circuit and your computer. Install all the drivers you need (check [manufacturer's website](https://github.com/bigtreetech/BIGTREETECH-SKR-mini-E3/tree/master/firmware/mapleDrv-USBdriver)). Download and install [Pronterface](https://www.pronterface.com/), run it and see if you can connect to your control circuit.
+
+![](../images/lesson11/pronterface.png)
 
 Turn the power off and unplug the AC power cord. Unplug the USB cable.
 
@@ -55,6 +69,8 @@ NOTE: The default firmware for the SKR Mini E3 should have been written for a Cr
 Input devices, like sensors, are low power, so we test them first. Plus, we depend on the temperature sensors to keep us safe when we test higher powered devices like the heaters.
 
 Connect all the sensors and switches to the control circuit. You've already made all the extension wires for them.
+
+![](../images/lesson11/connectsensors.png)
 
 Connect the USB cable, and power on the AC power. Connect to the control circuit from your computer using Pronterface.
 
@@ -74,17 +90,19 @@ When you are done, turn everything off and unplug everything.
 
 ## 4: Fans
 
-Connect the fans, again, we've already made the extension wires and splitter wires we need. But we need to watch out for which fan is connected to which connector. Follow the diagram.
+Connect the fans, we've already made the extension wires and splitter wires we need. But we need to watch out for which fan is connected to which connector. Follow the diagram.
+
+![](../images/lesson11/connectfansjst.png)
 
 Next we need to check the polarity of the blower fan. The circuit board with have plus (+) and minus (-) symbols, plus means positive and minus means negative. Red wire should go to positive, and black wire should go to negative. If the JST-XH wires do not match the connector polarity, then we need to swap the red and black wires inside the JST-XH connector housing.
 
-Power everything up and connect via Pronterface. As soon as power is applied, the extruder cooling fan and the circuit box cooling fan should both start spinning. This is good. If they don't turn on, the wiring has a problem or the fans are broken.
+Power everything up and connect via Pronterface. As soon as power is applied, the extruder cooling fan and the circuit box cooling fan should both start spinning (**FAN1** is a **"always on" fan** on this circuit board). This is good. If they don't turn on, the wiring has a problem or the fans are broken.
 
 Issue the following command:
 
  * M106 S255
 
-Did the blower fan turn on? If so, then we will turn it on at half speed, issue the following command:
+Did the blower fan turn on? If so, then we will turn it on at half speed (**FAN0** can be **PWM** controlled), issue the following command:
 
  * M106 S128
 
@@ -104,6 +122,8 @@ With everything powered off, AC power unplugged, use your hands to move the prin
 
 With the positions set, now plug in the stepper motors into the control circuit. Double check the colours of the wires. **Do not ever connect or disconnect stepper motors while the machine is powered on!**
 
+![](../images/lesson11/connectsteppermotors.png)
+
 Power everything up and connect via Pronterface. Use the movement interface to move the print head and the bed, do so with only 10mm increments and a slow speed.
 
  * Z minus means the bed moves up, Z plus means the bed moves down
@@ -122,11 +142,19 @@ Reapply the power and try again. Assuming your connections are good. When you ar
 
 Before this step, you must properly re-compile the firmware and flash the firmware to the control circuit. See the [page about the firmware (click here)](). We need the temperature sensor to keep everything safe while we test the nozzle heater, so the temperature sensor must be properly configured before we start.
 
-## 6: Bed Heater
+Connect the nozzle heater wires, already prepared with ferrules, to the control circuit.
+
+![](../images/lesson11/connectnozzleheater.png)
+
+## 7: Bed Heater
 
 Before this step, you must properly re-compile the firmware and flash the firmware to the control circuit. See the [page about the firmware (click here)](). We need the temperature sensor to keep everything safe while we test the bed heater, so the temperature sensor must be properly configured before we start.
 
-## 7: Electrical Stress Test
+Connect the nozzle heater wires, already prepared with ferrules, to the control circuit.
+
+![](../images/lesson11/connectbedheater.png)
+
+## 8: Electrical Stress Test
 
 First, remove the box cooling fan from the circuit box. Don't disconnect it, just remove it.
 
@@ -144,7 +172,7 @@ Turn off the power and unplug the power cable when you are done.
 
 ## Finishing Up
 
-Close up the circuit board box with the lid. Mount everything to the frame if you haven't already. Use zip-ties to secure all wires to the frame somehow, take advantage of the T-slots.
+Close up the circuit board box with the lid. Mount everything to the frame if you haven't already. Use zip-ties to secure all wires to the frame somehow, take advantage of the T-slots. The wires running up to the extruder should be zip-tied against the teflon tube.
 
 Congratulations! You've just built a 3D printer!
 

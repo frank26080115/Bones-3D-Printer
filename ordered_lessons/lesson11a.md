@@ -145,7 +145,7 @@ Both will have JST-XH female on the end where it connects to the control circuit
 
 You need to make a splitter as well, it will allow us to connect the extruder cooling fan and the circuit box cooling fan directly into 12V. This is a safety feature, as it prevents a firmware or MOSFET failure from killing the fans. Follow the diagram below.
 
-![](../images/lesson11/fansplitterferrule.png)
+![](../images/lesson11/fansplitter.png)
 
 ## AC Power Input
 
