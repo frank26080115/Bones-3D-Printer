@@ -85,6 +85,10 @@ Secure the wires to the 3D printed wire guide on the back of the forklift using 
 
 ![](../images/lesson10/bedrearwireguide.png)
 
+Use binder clips to attach the glass sheet to the bed heater.
+
+![](../images/lesson10/binderclipglassbed.png)
+
 ## Drag Chain Again
 
 Now you screw the drag chain to the 3D printed drag chain anchors, and then you screw the drag chain anchors to the frame of the 3D printer.

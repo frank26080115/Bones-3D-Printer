@@ -146,13 +146,41 @@ Connect the nozzle heater wires, already prepared with ferrules, to the control 
 
 ![](../images/lesson11/connectnozzleheater.png)
 
+Make sure the nozzle is at ambient temperature. Power up and connect up Pronterface. Issue the command:
+
+ * M303 E0 S200
+
+This will initiate [PID autotune](https://marlinfw.org/docs/gcode/M303.html) for the nozzle heater. It will start heating up, and when it reaches a certain temperature, it will cool down. It will go through this cycle 5 times automatically. The timing measurements and temperature measurements will be used to automatically computer the PID parameters used by the printer to keep a steady nozzle temperature. When it finishes, it should cool down and output the PID parameters to the Pronterface console, write it down. Then run the command:
+
+ * M500
+
+Which will [save](https://marlinfw.org/docs/gcode/M500.html) everything to non-volatile memory.
+
+If anything seems weird, if any connectors or wires start smoking or melting, disconnect the power immediately. When you are done, turn everything off and unplug everything.
+
+If the temperature does not rise, disconnect the power and start investigating the wires.
+
 ## 7: Bed Heater
 
 Before this step, you must properly re-compile the firmware and flash the firmware to the control circuit. See the [page about the firmware (click here)](). We need the temperature sensor to keep everything safe while we test the bed heater, so the temperature sensor must be properly configured before we start.
 
-Connect the nozzle heater wires, already prepared with ferrules, to the control circuit.
+Connect the bed heater wires, already prepared with ferrules, to the control circuit.
 
 ![](../images/lesson11/connectbedheater.png)
+
+Make sure the bed glass is affixed to the bed heater with binder clips. We need the glass to act as a thermal mass, a sponge for heat.
+
+Make sure the bed is at ambient temperature. Power up and connect up Pronterface. Issue the command:
+
+ * M303 E-1 S60
+
+This will initiate PID autotune for the bed heater. It's doing the exact same thing as before when we autotuned for the nozzle heater. When it's done, run the save-to-memory command:
+
+ * M500
+
+If anything seems weird, if any connectors or wires start smoking or melting, disconnect the power immediately. When you are done, turn everything off and unplug everything.
+
+If the temperature does not rise, disconnect the power and start investigating the wires.
 
 ## 8: Electrical Stress Test
 
@@ -160,9 +188,11 @@ First, remove the box cooling fan from the circuit box. Don't disconnect it, jus
 
 Get your test gear ready, and have a fire extinguisher near by.
 
-Then, power everything up and connect to the printer via Pronterface.
+Then, power everything up and connect to the printer via Pronterface. Before we start, make sure you've done the autotune for both the bed heater and nozzle heater already, the saved PID values will be loaded when the control circuit powers up.
 
 Command the bed to heat up to 80 degrees C, and command the nozzle to heat up to 250 degrees C.
+
+![](../images/lesson11/pronterfaceheatup.png)
 
 Leave the printer running like this for an hour or two. Check the temperatures of all the connectors and wires, nothing should reach dangerous temperatures during this time. You can check once every 15 minutes, read a book, but sit beside the printer.
 
