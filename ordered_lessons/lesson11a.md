@@ -57,6 +57,8 @@ Keep in mind that the limit switches, thermistors, and heating elements, **do no
 
 For the cooling fans, especially the type we are using called BLDC (brushless DC), the polarity definitely matters, and reversing the polarity with a 12V power input will definitely cause damage to them. So make sure red goes to red (red = positive, positive goes to positive), and black goes to black.
 
+Why are the fork connectors and wire ferrules both blue? Blue is the colour code for 14 AWG wire. The colours for these items most frequently indicate size, but double check that the wire is a good fit. Ferrules for 24 AWG are sometimes green, sometimes yellow, so check the fit yourself. The crimper for a blue fork connector will have a blue dot where the connector goes.
+
 ## Limit Switches
 
 There are three limit switches in our design, one for each axis of motion: X, Y, and Z.
@@ -113,13 +115,37 @@ Be very careful not to break the solder joints while installing the heated bed t
 
 ![](../images/lesson6/bedcableanchoroverview.png)
 
+## Stepper Motors
+
+The stepper motor we've purchased for the Z axis leadscrew should have a 1 meter long cable already, it should be enough.
+
+The X and Y axis stepper motors may need the wires extended. It may have a connector or it may have wires sticking out. Either way, you need to extend these with the stepper motor wires that you've purchased. Just make sure the colours of the wires match up, use soldering and heat-shrink tubing to make the splices.
+
+![](../images/lesson11/steppermotorextendcable.png)
+
+Make sure it ends with a JST-XH connector, so we can plug it into the control circuit later. The order of the colours might be wrong, but that's ok, we can swap the order later.
+
 ## Extension Cables
 
-The big major cable is the 12V wire that runs from the power supply to the control circuit board. This uses 14 AWG wire, and is terminated with spade connectors on one end, and wire ferrules on the other end.
+The big major cable is the 12V wire that runs from the power supply to the control circuit board. This uses 14 AWG wire, 800mm long, and is terminated with spade connectors on one end, and wire ferrules on the other end.
+
+![](../images/lesson11/mainpwrextensioncable.png)
 
 Extending wires from the limit switches to the control circuit board is easy, just a long pieces of 24 AWG wire with JST-XH female connectors on each end. We need three of them, each one is a different length.
 
-Extending wires from the extruder cooling fan and the nozzle blower fan requires two differently made extension wires. Use 24 AWG wire. Both will have JST-XH female on the end where it connects to the control circuit. The one meant for the extruder cooling fan will have a JST-XH **female** on the last end, but the one meant for the nozzle blower fan will have a JST-XH **male** on the last end.
+![](../images/lesson11/limitswitchextensionwire.png)
+
+Extending wires from the extruder cooling fan and the nozzle blower fan requires two differently made extension wires, they are both really long. Use 24 AWG wire. Follow the diagrams below.
+
+![](../images/lesson11/blowerfanextensionwire.png)
+
+![](../images/lesson11/extruderfanextensionwirejst.png)
+
+Both will have JST-XH female on the end where it connects to the control circuit. The one meant for the extruder cooling fan will have a JST-XH **female** on the last end, but the one meant for the nozzle blower fan will have a JST-XH **male** on the last end. This way, when route the wire up to the extruder, you won't be confused as to which one is which.
+
+You need to make a splitter as well, it will allow us to connect the extruder cooling fan and the circuit box cooling fan directly into 12V. This is a safety feature, as it prevents a firmware or MOSFET failure from killing the fans. Follow the diagram below.
+
+![](../images/lesson11/fansplitterferrule.png)
 
 ## AC Power Input
 

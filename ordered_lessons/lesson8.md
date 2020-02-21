@@ -107,6 +107,10 @@ Grounding also prevents build-up of static electricity, because the static charg
 
 You also want to ground the negative terminal of the DC output. This is because the conversion from AC to DC can still have a small bit of AC leaking into the DC side. It's most often not dangerous but you can still feel a small shock if you touched something with even a few millivolts of AC.
 
+Ground is usually indicated by one of the following symbols:
+
+![](../images/lesson8/groundsymbols.png)
+
 [Wikipedia: Grounding](https://en.wikipedia.org/wiki/Ground_(electricity))
 
 Since the 3D printer uses an aluminum frame, grounding everything is simpler, because we can use the frame as the ground conductor. There may be parts that are not connected to ground and should be, we'll check for that once the printer is built.
