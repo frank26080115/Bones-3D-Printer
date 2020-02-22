@@ -48,7 +48,7 @@ There are options that can be enabled (aka defined) or disabled, and if an optio
 
 Often we use comments to act as an ON/OFF switch for options, so that we don't forget that the option is available.
 
-There's a lot of these in the file, literally hundreds. To make this page short, go download our version of the **Configuration.h** file and the **Configuration_adv.h** file, inside, look for the word "Bones" to see where I've made a change to the configuration. Copy my files to overwrite the ones you've downloaded from Marlin's website before building.
+There's a lot of these in the file, literally hundreds. To make this page short, go download our version of the [**Configuration.h**](https://github.com/frank26080115/Bones-3D-Printer/blob/master/marlin_files/Configuration.h) file and the [**Configuration_adv.h**](https://github.com/frank26080115/Bones-3D-Printer/blob/master/marlin_files/Configuration_adv.h) file, inside, look for the word "Bones" to see where I've made a change to the configuration. Copy my files to overwrite the ones you've downloaded from Marlin's website before building.
 
 ## Reversing Motor Directions
 
@@ -92,13 +92,15 @@ Both the E3D branded thermistor cartridge and the Anet branded bed heater uses t
 
 ## Building
 
-There's a file "**platformio.ini**", modify it slightly, copy [my version of it (click here)](). This will tell the compiler that we are using the SKR Mini E3.
+There's a file ["**platformio.ini**"](https://github.com/frank26080115/Bones-3D-Printer/blob/master/marlin_files/platformio.ini), modify it slightly, copy [my version of it (click here)](). This will tell the compiler that we are using the SKR Mini E3.
 
 VSCode and PlatformIO should have an [extension to autobuild Marlin](https://marlinfw.org/docs/basics/auto_build_marlin.html), use that to do the build.
 
 ![](../images/lesson12/vscodebuild.png)
 
-You'll end up with a **firmware.bin** file, inside a folder named ".pio\build\STM32F103RC_bigtree".
+You'll end up with a **firmware.bin** file, inside a folder named ".pio\build\STM32F103RC_bigtree" (or similarly named path).
+
+Note: we are pushing the limits of the SKR Mini E3's memory size. It has 256KB of flash memory, but some of that is used for the bootloader and non-volatile storage. I believe it has 228KB of usable space (according to some guy on Reddit). My configuration file provided here has some neat features like S-curve acceleration and linear advance enabled, and of course I enabled every safety feature it needs. But this takes up space. It might not be feasible to enable more features like the complicated automatic bed leveling. For $30 this is pretty damn good.
 
 ## Firmware Update
 
@@ -126,7 +128,7 @@ Turn on the printer and connect to it via Pronterface. Click the **Home Z** butt
 
 Using the Z axis movement buttons, move the bed up. You can choose how far it moves per click. Move it up gradually, use 10mm increments when the bed surface is more than 10mm away from the nozzle, otherwise, move in 1mm increments. Keep a count of how much you've moved it so far, until the heated bed surface is about 3mm away from the nozzle. You can check by sliding the glass under the nozzle, if it fits, move it up more 1mm at a time until it doesn't fit. The count you are keeping is the height measurement.
 
-We do not want decimal places in this measurement! Whole millimeters only. adjustments smaller than a millimeter should be taken care of by adjusting the springs.
+We do not want decimal places in this measurement! **Whole millimeters only**. adjustments smaller than a millimeter should be taken care of by adjusting the springs.
 
 When you have finalized this height measurement, then write it to the **Z_MAX_POS** setting inside the Configuration.h file, rebuild the firmware, and update the firmware with the microSD card again. To verify these changes, restart the printer with the new firmware, then home the Z axis, then use following command:
 
@@ -149,6 +151,6 @@ The constants are stored in non-volatile memory, and they can be edited through 
 
 NOTE: PID for the bed may be disabled in the firmware. The bed has a large thermal mass that's slow to heat up, so it does not need a PID control loop. PID control loops are more important in places where the temperature could overheat very fast (aka overshoot), such as the nozzle.
 
-## Other Firmware Options
+## Other Firmwares
 
 If you are using a [Duet WiFi](https://www.duet3d.com/DuetWifi) control circuit board, like [my Hephaestus 3D printer](https://eleccelerator.com/hephaestus-my-own-3d-printer/), then you will be running the [RepRapFirmware](https://duet3d.dozuki.com/c/RepRapFirmware). This firmware is awesome because you don't need to recompile the whole firmware to make changes to any setting, you simply edit a file through the web interface over WiFi (or write the settings to a file on the SD card).

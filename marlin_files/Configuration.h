@@ -86,7 +86,7 @@
  */
 
 // Show the Marlin bootscreen on startup. ** ENABLE FOR PRODUCTION **
-#define SHOW_BOOTSCREEN
+//#define SHOW_BOOTSCREEN  // Disabled for Bones to save memory
 
 // Show the bitmap in Marlin/_Bootscreen.h on startup.
 //#define SHOW_CUSTOM_BOOTSCREEN
@@ -833,7 +833,7 @@ it's datasheet specifies to use 408 while under 16x microstepping
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-//#define S_CURVE_ACCELERATION
+#define S_CURVE_ACCELERATION  // Enabled for Bones
 
 //===========================================================================
 //============================= Z Probe Options =============================
@@ -1451,7 +1451,7 @@ it's datasheet specifies to use 408 while under 16x microstepping
  *   M501 - Read settings from EEPROM. (i.e., Throw away unsaved changes)
  *   M502 - Revert settings to "factory" defaults. (Follow with M500 to init the EEPROM.)
  */
-#define EEPROM_SETTINGS     // Persistent storage with M500 and M501    // Changed for Bones, of couse we need non-volatile storage
+#define EEPROM_SETTINGS     // Persistent storage with M500 and M501    // Enabled for Bones, of couse we need non-volatile storage
 //#define DISABLE_M503        // Saves ~2700 bytes of PROGMEM. Disable for release!
 #define EEPROM_CHITCHAT       // Give feedback on EEPROM commands. Disable to save PROGMEM.
 #if ENABLED(EEPROM_SETTINGS)
@@ -1606,7 +1606,7 @@ it's datasheet specifies to use 408 while under 16x microstepping
  *
  * View the current statistics with M78.
  */
-#define PRINTCOUNTER    // Changed for Bones, enabled for fun
+//#define PRINTCOUNTER    // Disabled for Bones, to save space, sorry
 
 //=============================================================================
 //============================= LCD and SD support ============================
@@ -1648,7 +1648,7 @@ it's datasheet specifies to use 408 while under 16x microstepping
  *
  * :['JAPANESE', 'WESTERN', 'CYRILLIC']
  */
-#define DISPLAY_CHARSET_HD44780 WESTERN
+// #define DISPLAY_CHARSET_HD44780 WESTERN  // Disabled for Bones, not applicable for graphical displays
 
 /**
  * Info Screen Style (0:Classic, 1:Prusa)
@@ -1664,7 +1664,7 @@ it's datasheet specifies to use 408 while under 16x microstepping
  * you must uncomment the following option or it won't work.
  *
  */
-#define SDSUPPORT    // Changed for Bones, of course we want this enabled
+#define SDSUPPORT    // Enabled for Bones, of course we want this enabled
 
 /**
  * SD CARD: SPI SPEED
@@ -1681,7 +1681,7 @@ it's datasheet specifies to use 408 while under 16x microstepping
  *
  * Use CRC checks and retries on the SD communication.
  */
-#define SD_CHECK_AND_RETRY    // Changed for Bones, of course we want this enabled
+#define SD_CHECK_AND_RETRY    // Enabled for Bones, of course we want this enabled
 
 /**
  * LCD Menu Items
@@ -1744,7 +1744,7 @@ it's datasheet specifies to use 408 while under 16x microstepping
 //
 // Add individual axis homing items (Home X, Home Y, and Home Z) to the LCD menu.
 //
-#define INDIVIDUAL_AXIS_HOMING_MENU    // Changed for Bones
+#define INDIVIDUAL_AXIS_HOMING_MENU    // Optional for Bones
 
 //
 // SPEAKER/BUZZER
@@ -1775,7 +1775,7 @@ it's datasheet specifies to use 408 while under 16x microstepping
 //
 // Note: Usually sold with a white PCB.
 //
-//#define REPRAP_DISCOUNT_SMART_CONTROLLER // TODO for Bones
+//#define REPRAP_DISCOUNT_SMART_CONTROLLER // Maybe for Bones
 
 //
 // Original RADDS LCD Display+Encoder+SDCardReader
@@ -1915,7 +1915,7 @@ it's datasheet specifies to use 408 while under 16x microstepping
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER // TODO for Bones
+//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER // Maybe for Bones
 
 //
 // ReprapWorld Graphical LCD
@@ -1976,7 +1976,7 @@ it's datasheet specifies to use 408 while under 16x microstepping
 // MKS MINI12864 with graphic controller and SD support
 // https://reprap.org/wiki/MKS_MINI_12864
 //
-//#define MKS_MINI_12864 // TODO for Bones
+//#define MKS_MINI_12864
 
 //
 // FYSETC variant of the MINI12864 graphic controller with SD support
@@ -1995,12 +1995,12 @@ it's datasheet specifies to use 408 while under 16x microstepping
 // This is RAMPS-compatible using a single 10-pin connector.
 // (For CR-10 owners who want to replace the Melzi Creality board but retain the display)
 //
-#define CR10_STOCKDISPLAY // Changed for Bones, this one is the one that BIGTREETECH should be compatible with
+#define CR10_STOCKDISPLAY // Selected for Bones, this one is the one that BIGTREETECH should be compatible with
 
 //
 // Ender-2 OEM display, a variant of the MKS_MINI_12864
 //
-//#define ENDER2_STOCKDISPLAY // TODO for Bones
+//#define ENDER2_STOCKDISPLAY
 
 //
 // ANET and Tronxy Graphical Controller
@@ -2139,7 +2139,7 @@ it's datasheet specifies to use 408 while under 16x microstepping
 // Use software PWM to drive the fan, as for the heaters. This uses a very low frequency
 // which is not as annoying as with the hardware PWM. On the other hand, if this frequency
 // is too low, you should also increment SOFT_PWM_SCALE.
-//#define FAN_SOFT_PWM
+//#define FAN_SOFT_PWM  // Optional for Bones, recommended by Reddit
 
 // Incrementing this by 1 will double the software PWM frequency,
 // affecting heaters, and the fan if FAN_SOFT_PWM is enabled.
