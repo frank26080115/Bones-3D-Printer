@@ -1,4 +1,4 @@
-# Electronics Assembly Part 1
+# Electronics Preparation
 
 This page will have the stuff you need to do before you do mechanical assembly!
 

@@ -76,6 +76,8 @@ Recall in [lesson 3](lesson3) we talked about what happens if a leg of the print
 
 [Link to Model](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/ffe99086e5938267dbd1d906)
 
+[Link to Model version 2](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/9fff88d5d5309237cd05f5d7)
+
 ## Upgrades
 
 ### Duet 2 WiFi Box

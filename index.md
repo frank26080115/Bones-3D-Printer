@@ -71,10 +71,10 @@ Table of Contents
  * [Lesson 7](ordered_lessons/lesson7.md): Part CAD Design Walkthrough (more homework)
  * [Lesson 8](ordered_lessons/lesson8.md): 3D Printer Electronics
  * [Lesson 9](ordered_lessons/lesson9.md): Assembly Preparation
- * [Lesson 11a](ordered_lessons/lesson11a.md): Electrical Assembly Part 1
+ * [Lesson 11a](ordered_lessons/lesson11a.md): Electronics Preparation
  * [Lesson 10a](ordered_lessons/lesson10a.md): Mechanical Assembly Part 1
  * [Lesson 10b](ordered_lessons/lesson10b.md): Mechanical Assembly Part 2
- * [Lesson 11b](ordered_lessons/lesson11b.md): Electrical Assembly Part 2
+ * [Lesson 11b](ordered_lessons/lesson11b.md): Electronics Bring-Up
  * [Lesson 12](ordered_lessons/lesson12.md): Firmware
  * [Lesson 13](ordered_lessons/lesson13.md): Software
  * [Lesson 14](ordered_lessons/lesson14.md): Operating the 3D Printer

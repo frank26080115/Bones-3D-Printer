@@ -1,4 +1,4 @@
-# Mechanical Assembly Part 1
+# Mechanical Assembly
 
 ## Reminders before you begin
 

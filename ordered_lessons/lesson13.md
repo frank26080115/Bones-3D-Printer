@@ -65,3 +65,11 @@ NOTE: You might want to edit the prime amount and the retract amount in the star
 Use Cura to open up a STL file, click "prepare", save the file to a microSD card. Move on to the [next lesson](lesson14), when you will start your first print!
 
 NOTE: It is very unlikely that the time estimate that Cura gives you is correct.
+
+I would start with a simple [calibration cube](https://www.thingiverse.com/thing:1278865), then move on to printing some of the [optional accessories for this printer](../other_pages/optional3dprintedparts). Here are some more popular test prints:
+
+ * [Cali Cat](https://www.thingiverse.com/thing:1545913)
+ * [3D Benchy](http://www.3dbenchy.com/)
+ * [All in One 3D Printer Test](https://www.thingiverse.com/thing:2656594)
+
+Do not worry about fine tuning parameters for now.

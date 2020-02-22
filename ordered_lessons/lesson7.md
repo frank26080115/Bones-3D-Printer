@@ -168,7 +168,7 @@ Remember the Z axis linear rods, and the 3D printed plastic clamps that secure t
 
 ![](../images/lesson3/zrodholder3dview.png)
 
-**Design those clamps**. I am providing a starting point that includes the aluminum extrusion beam and the rod itself. You can use constraints and those starting pieces to make your sketches and extrudes. To start, make a fork of this Onshape model into your own account, and start editing: *TODO insert URL*
+**Design those clamps**. I am providing a starting point that includes the aluminum extrusion beam and the rod itself. You can use constraints and those starting pieces to make your sketches and extrudes. To start, make a fork of this Onshape model into your own account, and start editing: [click here](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/8b0404f633dc661a53533d76)
 
 #### Design a Box, for a LCD Screen
 
@@ -181,4 +181,4 @@ There's no starting point, because you can put it anywhere on the 3D printer. Th
  * [TFT35-V3](https://github.com/bigtreetech/BIGTREETECH-TFT35-V3.0/tree/master/Hardware)
  * [TFT35-E3-V3](https://github.com/bigtreetech/BTT-TFT35-E3-V3.0/tree/master/Hardware)
 
-WARNING: I've never actually used the TFT35 myself, but I heard the WiFi is really slow. If you want good WiFi, get a Duet 2 WiFi as the control board, design a box for that. (beware that the Duet is $170, worth every penny)
+WARNING: I've never actually used the TFT35 myself, but I heard the WiFi feature on it is really slow (I think it uses the UART on the ESP8266, which is a snail for handling large files). If you want good WiFi performance, get a [Duet 2 WiFi](https://www.duet3d.com/DuetWifi) as the control board, design a box for that. (beware that the Duet is $170, worth every penny)

@@ -23,3 +23,13 @@ The other way is to simply start printing. Usually the print starts with a skirt
 Put the microSD card into the printer. Use the LCD screen to select the file and start the print.
 
 This will take a while...
+
+## Troubleshooting
+
+There's a billion things that could go wrong. Here are some resources to help you troubleshoot problems with 3D prints
+
+ * Simplify3D: [Print Quality Troubleshooting Guide](https://www.simplify3d.com/support/print-quality-troubleshooting/)
+ * rigid.ink: [The Ultimate 3D Print Quality Troubleshooting Guide 2019](https://rigid.ink/pages/ultimate-troubleshooting-guide)
+ * MatterHackers: [3D Printer Troubleshooting Guide](https://www.matterhackers.com/articles/3d-printer-troubleshooting-guide)
+ * Prusa3D: [3D Print Quality Troubleshooting Guide](https://www.prusa3d.com/print-quality-troubleshooting/)
+ * All3DP: [Problem Solved - Troubleshooting Guide to Common 3D Printing Problems](https://all3dp.com/1/common-3d-printing-problems-troubleshooting-3d-printer-issues/)

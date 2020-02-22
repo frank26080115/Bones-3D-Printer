@@ -151,4 +151,4 @@ NOTE: PID for the bed may be disabled in the firmware. The bed has a large therm
 
 ## Other Firmware Options
 
-If you are using a [Duet WiFi](https://www.duet3d.com/Duet2Maestro) control circuit board, like [my Hephaestus 3D printer](https://eleccelerator.com/hephaestus-my-own-3d-printer/), then you will be running the [RepRapFirmware](https://duet3d.dozuki.com/c/RepRapFirmware). This firmware is awesome because you don't need to recompile the whole firmware to make changes to any setting, you simply edit a file through the web interface over WiFi (or write the settings to a file on the SD card).
+If you are using a [Duet WiFi](https://www.duet3d.com/DuetWifi) control circuit board, like [my Hephaestus 3D printer](https://eleccelerator.com/hephaestus-my-own-3d-printer/), then you will be running the [RepRapFirmware](https://duet3d.dozuki.com/c/RepRapFirmware). This firmware is awesome because you don't need to recompile the whole firmware to make changes to any setting, you simply edit a file through the web interface over WiFi (or write the settings to a file on the SD card).

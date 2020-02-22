@@ -1,4 +1,4 @@
-# Electronics Assembly Part 2
+# Electronics Bring-Up
 
 At this point, everything should be ready to be connected together. We have made extension cables where we need to.
 
@@ -36,7 +36,7 @@ Connect the AC power input to the 12VDC power supply. That means connecting the 
 
 You also need to connect the negative output of the power supply to the ground somehow. This could be a simple 14 AWG wire. Recall what we [discussed before about grounding](lesson8#grounding-aka-earthing).
 
-Once the connections are made, mount the AC socket assembly and the power supply to the frame of the printer. (including the 3D printed safety shield pieces)
+Once the connections are made, mount the AC socket assembly and the power supply to the frame of the printer. The power supply mounts to the frame using 3D printed clamps, M5 flanged screws fastens the clamps to the frame, and M4 screws fastens the power supply to the clamps. Remember to slip on the 3D printed safety cover for the power supply, which is also secured with M4 screws through the slots on the safety cover. The safety cover for the AC socket assembly has cavities for M3 square nuts, which is used to fasten the assembly via M3 screws. If you need countersink M3 screws, you can still use button head M3 screws, because there's not a lot of forces involved.
 
 ![](../images/lesson11/mounttheacsocketandpsu.png)
 
@@ -132,12 +132,20 @@ With the positions set, now plug in the stepper motors into the control circuit.
 
 ![](../images/lesson11/connectsteppermotors.png)
 
-Power everything up and connect via Pronterface. Use the movement interface to move the print head and the bed, do so with only 10mm increments and a slow speed.
+Power everything up and connect via Pronterface.
+
+First, issue the following command:
+
+ * M302 P1
+
+(the above command allows for the extruder motor to spin even if the hot-end is cold)
+
+Use the movement interface to move the print head and the bed, do so with only 10mm increments and a slow speed.
 
  * Z minus means the bed moves up, Z plus means the bed moves down
  * X minus means the print head moves left, X plus means the print head moves right
  * Y minus means the print head moves towards you, Y plus means the print head moves away from you
- * press extrude to spin the Hemera's stepper motor
+ * press extrude to spin the Hemera's stepper motor, the gears should turn in a way that extrudes plastic
 
 ![](../images/lesson11/pronterfacesteppermotortest.png)
 
