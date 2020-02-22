@@ -250,7 +250,7 @@ This short distance means less wires needed for the more dangerous higher voltag
 
 ![](../images/lesson6/psuclamps.png)
 
-This also ensures that the outer enclosure of the power supply is directly in contact with the aluminum frame, which provides a simple yet important grounding connection electrically.
+This also ensures that the outer enclosure of the power supply is directly in contact with the aluminum frame, which provides a simple yet important [grounding connection electrically](lesson8#grounding-aka-earthing).
 
 There is a 3D printed cover for the power supply, which you can slide along the power supply and secure in place. There are screws that can be fastened to the sides of the power supply, and they will sit in slots on the 3D printed cover so they can slide. You will slide the cover out of the way during wiring, and when you are finished, slide it into final position to protect the connectors and to prevent you from poking your fingers into dangerous high voltages.
 
@@ -314,7 +314,7 @@ The design of this part is much more complex so I did it in another file. Have a
 
 ![](../images/lesson6/advancedfanductdesign.png)
 
-(none of this is science, the 5mm and 30 degree angle are just guesses, it looks good enough to me)
+(none of this is science, the 5mm and 30&deg; angle are just guesses, it looks good enough to me)
 
 The bad news with this design is that the height is not adjustable, which would be handy. If for some reason you need to adjust the height, the whole part needs to be re-printed. It also sticks out the back a little bit, but according to the positioning of the print bed, there's enough room in the back and won't hit anything.
 

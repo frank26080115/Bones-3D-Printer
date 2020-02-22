@@ -106,11 +106,11 @@ This hole is designed to grip a ball bearing. But the hole is vertical, so if we
 
 ![](../images/lesson4/droopyhole.png)
 
-The solution is to find the point in the circle where the slope is a managable 45 degrees overhang, and then continue in a straight line instead of a curve.
+The solution is to find the point in the circle where the slope is a managable 45&deg; overhang, and then continue in a straight line instead of a curve.
 
 ![](../images/lesson4/holewithhat.png)
 
-The two 45 degree slopes meet at the top at a point, forming a 90 degree corner. We want to avoid sharp corners so we make the top of the hole flat, giving it some room to droop without touching the ball bearing.
+The two 45&deg; slopes meet at the top at a point, forming a 90&deg; corner. We want to avoid sharp corners so we make the top of the hole flat, giving it some room to droop without touching the ball bearing.
 
 ![](../images/lesson4/finalholewithoverhang.png)
 

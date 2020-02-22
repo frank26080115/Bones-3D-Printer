@@ -12,8 +12,6 @@ If everything goes right, then you won't need it. If something goes wrong, we ca
 
 We will do this step by step and test after each step. This will prevent any power issues from blowing up any sensitive components. Keep a fire extinguisher near by.
 
-![](../images/lesson11/fireextinguisher.png)
-
 Do not leave the area if the power is on or if something is hot. Do not touch any wires or connectors if the AC power cord is plugged in. Never use your feelings to check temperature.
 
 ## Skill: Continuity Checking Wires
@@ -30,17 +28,23 @@ This works on all of our JST-XH female connectors, which includes the stepper mo
 
 ## 1: Power Supply
 
-Connect the AC power input to the 12VDC power supply. That means connecting the "**L**ive" (aka **H**ot), "**N**eutral", and "**G**round" wires.
+Connect the AC power input to the 12VDC power supply. That means connecting the "**L**ive" (aka hot), "**N**eutral", and "**G**round" wires.
 
 ![](../images/lesson11/actopsuconnect.png)
 
-You also need to connect the negative output of the power supply to the ground somehow. This could be a simple 14 AWG wire. Recall what we [discussed before about grounding](lesson8).
+![](../images/lesson11/iecsignals.png)
 
-Once the connections are made, keep the area clear, plugin AC power and turn it on. There should be a small LED that lights up on the power supply.
+You also need to connect the negative output of the power supply to the ground somehow. This could be a simple 14 AWG wire. Recall what we [discussed before about grounding](lesson8#grounding-aka-earthing).
+
+Once the connections are made, mount the AC socket assembly and the power supply to the frame of the printer. (including the 3D printed safety shield pieces)
+
+![](../images/lesson11/mounttheacsocketandpsu.png)
+
+When you are ready to power up, keep the area clear, plugin AC power and turn it on. There should be a small LED that lights up on the power supply.
 
 If you can, measure the DC output, it should be about 12V.
 
-Keep it running for 10 minutes. No smoke should come out, nothing should be warmer than 45 degrees C. For all the other tests, also make sure nothing smokes and nothing gets too warm.
+Keep it running for 10 minutes. No smoke should come out, nothing should be warmer than 45&deg;C. For all the other tests, also make sure nothing smokes and nothing gets too warm.
 
 Turn the power off and unplug the AC power cord.
 
@@ -56,7 +60,11 @@ Connect the power supply to the control circuit using the 14 AWG wires [we prepa
 
 Turn the power on, LEDs will start coming on and the LCD will start to show stuff (or at least light up as well). This is good. There's a chance that nothing on the LCD actually does anything when you press it though, don't worry, we'll configure the firmware later.
 
-Plug in a USB cable between the control circuit and your computer. Install all the drivers you need (check [manufacturer's website](https://github.com/bigtreetech/BIGTREETECH-SKR-mini-E3/tree/master/firmware/mapleDrv-USBdriver)). Download and install [Pronterface](https://www.pronterface.com/), run it and see if you can connect to your control circuit.
+Plug in a USB cable between the control circuit and your computer.
+
+![](../images/lesson11/pluginusb.png)
+
+Install all the drivers you need (check [manufacturer's website](https://github.com/bigtreetech/BIGTREETECH-SKR-mini-E3/tree/master/firmware/mapleDrv-USBdriver)). Download and install [Pronterface](https://www.pronterface.com/), run it and see if you can connect to your control circuit.
 
 ![](../images/lesson11/pronterface.png)
 
@@ -94,7 +102,7 @@ Connect the fans, we've already made the extension wires and splitter wires we n
 
 ![](../images/lesson11/connectfansjst.png)
 
-Next we need to check the polarity of the blower fan. The circuit board with have plus (+) and minus (-) symbols, plus means positive and minus means negative. Red wire should go to positive, and black wire should go to negative. If the JST-XH wires do not match the connector polarity, then we need to swap the red and black wires inside the JST-XH connector housing.
+Next we need to **check the polarity** of the blower fan. The circuit board with have plus (+) and minus (-) symbols, plus means positive and minus means negative. Red wire should go to positive, and black wire should go to negative. If the JST-XH wire colours do not match the polarity **shown on the circuit board**, then we need to **swap the red and black wires** inside the JST-XH connector housing.
 
 Power everything up and connect via Pronterface. As soon as power is applied, the extruder cooling fan and the circuit box cooling fan should both start spinning (**FAN1** is a **"always on" fan** on this circuit board). This is good. If they don't turn on, the wiring has a problem or the fans are broken.
 
@@ -129,8 +137,11 @@ Power everything up and connect via Pronterface. Use the movement interface to m
  * Z minus means the bed moves up, Z plus means the bed moves down
  * X minus means the print head moves left, X plus means the print head moves right
  * Y minus means the print head moves towards you, Y plus means the print head moves away from you
+ * press extrude to spin the Hemera's stepper motor
 
-Do all the motors respond? They don't have to move in the right direction, they just have to move to prove our wiring is correct. We can flip the direction later when we configure the firmware. But remember which ones need to be flipped.
+![](../images/lesson11/pronterfacesteppermotortest.png)
+
+Do all the motors respond? They don't have to move in the right direction, they just have to move to prove our wiring is correct. We can flip the direction later when we [configure the firmware](lesson12). But remember which ones need to be flipped.
 
 If a motor is not moving, or only twitching, making a noise, then we need to check the wiring. Power off the printer and unplug the power cord. Unplug the offending stepper motor cable from the control circuit. Check the resistance between red and blue wires, then check the resistance between the black and green wires. The resistance should be close to the coil resistance specified in the stepper motor's datasheet. If the resistance is too high or infinity, then the wire has a bad connection somewhere. If the resistance is too low, like, zero, then there may be a short circuit somewhere.
 
@@ -138,9 +149,21 @@ If both of these checks pass, then you may simply need to swap some wires around
 
 Reapply the power and try again. Assuming your connections are good. When you are done, turn everything off and unplug everything.
 
+#### Ground the Stepper Motors
+
+There are four stepper motors in this design that are mounted to plastic, which means they are not [grounded (click for prev lesson)](lesson8#grounding-aka-earthing) to the printer's aluminum frame. This is not a problem in terms of getting shocked by 120VAC (the 120VAC would need to break the power supply first, then toast the motor drivers in a weird way). But there's a small chance that static electricity could build up and give you small annoying shocks once in a while, if you are printing in a very dry area.
+
+The easiest way to ground the motors are to use 24 AWG wire to connect the screws between the holes in the following few diagrams. The wire's ends can be stripped without any connectors.
+
+![](../images/lesson11/groundsteppermotor.png)
+
+![](../images/lesson11/groundextrudermotor.png)
+
+![](../images/lesson11/groundzaxismotor.png)
+
 ## 6: Nozzle Heater
 
-Before this step, you must properly re-compile the firmware and flash the firmware to the control circuit. See the [page about the firmware (click here)](). We need the temperature sensor to keep everything safe while we test the nozzle heater, so the temperature sensor must be properly configured before we start.
+Before this step, you must properly re-compile the firmware and flash the firmware to the control circuit. See the [page about the firmware (click here)](lesson12). We need the temperature sensor to keep everything safe while we test the nozzle heater, so the temperature sensor must be properly configured before we start. Also, the nozzle heater must be installed inside the heat-block of the hot-end before initiating this test! Otherwise, the thermistor won't detect if the heater is indeed working.
 
 Connect the nozzle heater wires, already prepared with ferrules, to the control circuit.
 
@@ -162,41 +185,35 @@ If the temperature does not rise, disconnect the power and start investigating t
 
 ## 7: Bed Heater
 
-Before this step, you must properly re-compile the firmware and flash the firmware to the control circuit. See the [page about the firmware (click here)](). We need the temperature sensor to keep everything safe while we test the bed heater, so the temperature sensor must be properly configured before we start.
+Before this step, you must properly re-compile the firmware and flash the firmware to the control circuit. See the [page about the firmware (click here)](lesson12). We need the temperature sensor to keep everything safe while we test the bed heater, so the temperature sensor must be properly configured before we start.
 
 Connect the bed heater wires, already prepared with ferrules, to the control circuit.
 
 ![](../images/lesson11/connectbedheater.png)
 
-Make sure the bed glass is affixed to the bed heater with binder clips. We need the glass to act as a thermal mass, a sponge for heat.
-
-Make sure the bed is at ambient temperature. Power up and connect up Pronterface. Issue the command:
-
- * M303 E-1 S60
-
-This will initiate PID autotune for the bed heater. It's doing the exact same thing as before when we autotuned for the nozzle heater. When it's done, run the save-to-memory command:
-
- * M500
-
-If anything seems weird, if any connectors or wires start smoking or melting, disconnect the power immediately. When you are done, turn everything off and unplug everything.
-
-If the temperature does not rise, disconnect the power and start investigating the wires.
+Make sure the bed glass is affixed to the bed heater with binder clips. We need the glass to act as a thermal mass, a sponge for heat. Once everything is ready, move on to the stress test, which is when we will power up the bed.
 
 ## 8: Electrical Stress Test
 
 First, remove the box cooling fan from the circuit box. Don't disconnect it, just remove it.
 
-Get your test gear ready, and have a fire extinguisher near by.
+Get your test gear ready, and have a fire extinguisher (must handle ABC type fires) near by.
+
+![](../images/lesson11/fireextinguisher.png)
 
 Then, power everything up and connect to the printer via Pronterface. Before we start, make sure you've done the autotune for both the bed heater and nozzle heater already, the saved PID values will be loaded when the control circuit powers up.
 
-Command the bed to heat up to 80 degrees C, and command the nozzle to heat up to 250 degrees C.
+Command the bed to heat up to 80&deg;C, and command the nozzle to heat up to 250&deg;C.
 
 ![](../images/lesson11/pronterfaceheatup.png)
 
 Leave the printer running like this for an hour or two. Check the temperatures of all the connectors and wires, nothing should reach dangerous temperatures during this time. You can check once every 15 minutes, read a book, but sit beside the printer.
 
-If something on the circuit board gets warmer than 60 degrees C, then install the cooling fan back into the box and continue the test.
+If something on the circuit board gets warmer than 60&deg;C, then install the cooling fan back into the box and continue the test.
+
+The temperatures of both the bed and nozzle should rise to the target within 10 minutes. If one or both of them do not rise, then something is wrong, and most likely, the safety feature called thermal runaway protection will kick in and the heating will stop automatically. If the temperature does rise but do not reach the target fast enough, it means there's not enough power being fed into the heater. It could be a bad PID value, or bad wiring, or bad heater, or you are in a very cold room.
+
+NOTE: Typical 3D printing of PLA filament is done at a nozzle temperature of 200&deg;C and a bed temperature of 60&deg;C, we are using higher numbers for testing because we are **stress testing**.
 
 Turn off the power and unplug the power cable when you are done.
 
@@ -208,8 +225,6 @@ Congratulations! You've just built a 3D printer!
 
 The next steps are to:
 
- * configure the firmware
- * tune the temperature controlling PID loop
- * setup and configure the slicer software
- * print stuff
-
+ * [configure the firmware](lesson12)
+ * [setup and configure the slicer software](lesson13)
+ * [print stuff](lesson14)

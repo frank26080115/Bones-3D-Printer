@@ -75,8 +75,9 @@ Table of Contents
  * [Lesson 10a](ordered_lessons/lesson10a.md): Mechanical Assembly Part 1
  * [Lesson 10b](ordered_lessons/lesson10b.md): Mechanical Assembly Part 2
  * [Lesson 11b](ordered_lessons/lesson11b.md): Electrical Assembly Part 2
- * Lesson 12: Firmware Setup
- * Lesson 13: Software Setup
+ * [Lesson 12](ordered_lessons/lesson12.md): Firmware
+ * [Lesson 13](ordered_lessons/lesson13.md): Software
+ * [Lesson 14](ordered_lessons/lesson14.md): Operating the 3D Printer
  * [Optional 3D Printed Parts](other_pages/optional3dprintedparts.md)
  * [Flaws, Mistakes, Improvements](other_pages/flawsmistakesimprovements.md)
 

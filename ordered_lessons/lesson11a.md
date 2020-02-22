@@ -41,7 +41,7 @@ The wires we'll be using are either 14 AWG or 24 AWG. To avoid using a crimper f
  * crimper for wire ferrules
  * variety pack of heat-shrink tubing in different sizes, all black, marine grade preferred but not required
  * variety pack of wire ferrules
- * pack of insulated fork connectors that fit 14 AWG wires and fits #8 screws
+ * pack of insulated fork connectors that fit 14 AWG wires and fits #6 screws
  * JST-XH pigtails, both male and female
  * cables for stepper motors, with connectors that work with the SKR Mini E3
 
@@ -147,6 +147,8 @@ You need to make a splitter as well, it will allow us to connect the extruder co
 
 ![](../images/lesson11/fansplitter.png)
 
+**NOTE**: It is much easier to see how much wire length you actually need if you build the whole printer first. My own estimates here are very generous, obtained through the measurements done with the 3D model.
+
 ## AC Power Input
 
 The AC power input module should have already come with wires that are terminated properly with crimped on spade connectors.
@@ -154,3 +156,5 @@ The AC power input module should have already come with wires that are terminate
 ![](../images/lesson8/powerinputsocket.png)
 
 ![](../images/lesson11/acinputwireslabeled.png)
+
+![](../images/lesson11/iecsignals.png)

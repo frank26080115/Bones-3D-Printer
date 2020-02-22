@@ -109,6 +109,8 @@ Go up and down repeatedly, and tighten slightly repeatedly, until the motion is 
 
 The leadscrew should not bend too much. It is **allowed to bend slightly**, just not too much. What we said about **elastic deformation** applies here.
 
+Tighten down all the parts on the fork lift now. Make sure the limit switch actuator is positioned correctly so that it can activate the limit switch beneath it.
+
 ## Gantry
 
 ### Side Linear Rods

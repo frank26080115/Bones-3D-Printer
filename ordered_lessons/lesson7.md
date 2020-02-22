@@ -110,7 +110,7 @@ Use that new plane as the sketch plane. Draw the clamp shape, using some of the 
 
 [![](../images/lesson7/yaxisstartsketch.png)](../images/lesson7/yaxisstartsketch.png)
 
-This time, the opening of the arc terminates with a line that's at a 45 degree angle. This is to control the overhang slope angle, as covered in [lesson 4](lesson4). A lot of mirroring is used again. I believe you can where the mirror constraints are already. The next image will show you how I can use projection to set the diameter of the circle equal to the circle drawn in the very old first sketch.
+This time, the opening of the arc terminates with a line that's at a 45&deg; angle. This is to control the overhang slope angle, as covered in [lesson 4](lesson4). A lot of mirroring is used again. I believe you can where the mirror constraints are already. The next image will show you how I can use projection to set the diameter of the circle equal to the circle drawn in the very old first sketch.
 
 [![](../images/lesson7/projectingcircleforyaxis.png)](../images/lesson7/projectingcircleforyaxis.png)
 
