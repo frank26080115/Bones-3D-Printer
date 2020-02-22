@@ -14,6 +14,13 @@
 	width: 700px;
 }
 
+@media print {
+	#main-content img
+	{
+		max-width: 3in;
+	}
+}
+
 @media print, screen and (max-width: 1060px) {
 	#main-content
 	{
