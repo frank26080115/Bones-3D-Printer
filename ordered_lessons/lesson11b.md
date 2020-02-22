@@ -52,7 +52,9 @@ Turn the power off and unplug the AC power cord.
 
 The control circuit (SKR Mini E3) should be mounted inside its 3D printed box, secured with M3 standoffs and short M3 screws. The lid should be removed. We do not need the cooling fan yet.
 
-The LCD screen should also be mounted inside its own 3D printed box, secured with M3 standoffs and short M3 screws. Connect the LCD screen to the control circuit with the cable that came with it.
+The LCD screen should also be mounted inside its own 3D printed box, secured with M3 standoffs and short M3 screws. But before you tighten down the screws, connect the LCD screen to the control circuit with the cable that came with it.
+
+![](../images/lesson11/connectlcd.png)
 
 Connect the power supply to the control circuit using the 14 AWG wires [we prepared before already](lesson11a).
 

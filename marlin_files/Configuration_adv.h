@@ -2194,7 +2194,7 @@
   #define STEALTHCHOP_XY
   #define STEALTHCHOP_Z
   #define STEALTHCHOP_E
-  // If you think you want to print faster but can't, then disable StealthChop, use the M569 command
+  // Hybrid mode will enable and disable StealthChop automatically, see HYBRID_THRESHOLD
 
   /**
    * Optimize spreadCycle chopper parameters by using predefined parameter sets

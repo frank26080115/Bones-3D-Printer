@@ -329,6 +329,7 @@ You can try getting the combo with the TFT24 LCD screen. [AmazonSmile link to co
 
  * Recommended: [BIGTREETECH TFT24](https://www.biqu.equipment/collections/lcd/products/bigtreetech-tft24-v1-1-display-two-working-modes)
     * if buying from Amazon, see above part about the SKR Mini E3 combo
+    * if you are not getting a combo, then make sure you get the cable meant for the Ender 3
  * Dirt cheap option: 12864 LCD Graphic Smart Display, [AmazonSmile link](https://smile.amazon.com/KINGPRINT-Graphic-Display-Controller-Adapter/dp/B076WQQX5K/ref=sr_1_16?) or [BIGTREETECH link](https://www.biqu.equipment/collections/lcd/products/ramps1-4-lcd-12864-lcd-control-panel-for-3d-printer-smart-controller-mega-2560)
 
 ![](../images/lesson6/tft24.png)
