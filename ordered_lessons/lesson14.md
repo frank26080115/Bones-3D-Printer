@@ -35,3 +35,7 @@ There's a billion things that could go wrong. Here are some resources to help yo
  * MatterHackers: [3D Printer Troubleshooting Guide](https://www.matterhackers.com/articles/3d-printer-troubleshooting-guide)
  * Prusa3D: [3D Print Quality Troubleshooting Guide](https://www.prusa3d.com/print-quality-troubleshooting/)
  * All3DP: [Problem Solved - Troubleshooting Guide to Common 3D Printing Problems](https://all3dp.com/1/common-3d-printing-problems-troubleshooting-3d-printer-issues/)
+
+#### Electromagnetic Interference
+
+Does your print randomly stop and the printer shows an error? Perhaps a temperature related error or a limit switch related error? First, use a multimeter to double check your wiring. If the wiring is fine but these errors still happen, then perhaps the wires for the switches or sensors might be put too close to the wires for a stepper motor. The stepper motors are driven with a very strong and constantly changing signal, this kind of signal generates a ton of electromagnetic radiation. This could cause crosstalk ([Wikipedia article click here](https://en.wikipedia.org/wiki/Crosstalk)) into other wires with weak signals, just like our sensors and switches. To fix this, simply move the wires for the sensors and switches away from the wires of the stepper motors. Other ways of fixing this is to use shielded cables, but that would get really expensive.

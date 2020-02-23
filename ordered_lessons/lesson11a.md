@@ -59,6 +59,14 @@ For the cooling fans, especially the type we are using called BLDC (brushless DC
 
 Why are the fork connectors and wire ferrules both blue? Blue is the colour code for 14 AWG wire. The colours for these items most frequently indicate size, but double check that the wire is a good fit. Ferrules for 24 AWG are sometimes green, sometimes yellow, so check the fit yourself. The crimper for a blue fork connector will have a blue dot where the connector goes.
 
+## Twisting Wires
+
+Whenever you have two wires, one positive and one negative (one red and one black), it's a good idea to twist them together.
+
+![](../images/lesson11/twistedwires.png)
+
+Why? Not only does it prevent wire tangles, it also lowers electromagnetic radiation and rejects noise (and crosstalk) better. It's a rather advanced topic but here's a [Wikipedia article about it](https://en.wikipedia.org/wiki/Twisted_pair).
+
 ## Limit Switches
 
 There are three limit switches in our design, one for each axis of motion: X, Y, and Z.
