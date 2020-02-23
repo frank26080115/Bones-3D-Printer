@@ -80,6 +80,14 @@ Recall in [lesson 3](lesson3) we talked about what happens if a leg of the print
 
 ## Upgrades
 
+### Angled TFT24 Box
+
+This is another box for the TFT24 LCD screen. It's angled upwards, and it has openings both sides so both USB drives and SD cards can be used.
+
+![](../images/other/tft24boxangled.png)
+
+[Link to Model](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/cdc93c4504e058bfb7a438bf)
+
 ### Duet 2 WiFi Box
 
 If you decide to upgrade the electronics to use the [Duet 2 WiFi](https://www.duet3d.com/DuetWifi) (it's awesome!), then I've designed a box for it already. It's similar to the one designed for the SKR Mini E3, and it has active fan cooling as well.
