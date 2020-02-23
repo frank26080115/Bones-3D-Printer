@@ -56,9 +56,13 @@ The control circuit (SKR Mini E3) should be mounted inside its 3D printed box, s
 
 The LCD screen should also be mounted inside its own 3D printed box, secured with M3 standoffs and short M3 screws. But before you tighten down the screws, connect the LCD screen to the control circuit with the cable that came with it.
 
-[![](../images/lesson11/connectlcd.png)](../images/lesson11/connectlcd.png)
+![](../images/lesson11/connectlcd.png)
+   
+![](../images/lesson11/connectlcd2.png)
+   
+![](../images/lesson11/connectlcd3.png)
 
-[![](../images/lesson11/connectlcdall.png)](../images/lesson11/connectlcdall.png)
+Be really careful about plugging in the cables the right way! BigTreeTech seems to have put some connectors backwards. So I made those diagrams extremely detailed, follow every wire in the diagram to make sure the connectors are orientated correctly.
 
 ## 3: Power Supply to Control Circuit
 
