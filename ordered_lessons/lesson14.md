@@ -24,6 +24,8 @@ Put the microSD card into the printer. Use the LCD screen to select the file and
 
 This will take a while...
 
+Are you confident that the machine won't catch fire? Don't leave your machine alone for the first few hours. Continue to monitor it, monitor it's connectors. Watch for smoke and fires. Progressively do bigger and bigger prints until you're sure it can handle very long jobs without problems. Perform more stress tests if you wish.
+
 ## Troubleshooting
 
 There's a billion things that could go wrong. Here are some resources to help you troubleshoot problems with 3D prints

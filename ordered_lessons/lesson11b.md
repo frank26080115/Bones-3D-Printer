@@ -34,7 +34,9 @@ Connect the AC power input to the 12VDC power supply. That means connecting the 
 
 ![](../images/lesson11/iecsignals.png)
 
-You also need to connect the negative output of the power supply to the ground somehow. This could be a simple 14 AWG wire. Recall what we [discussed before about grounding](lesson8#grounding-aka-earthing).
+You also need to connect the negative output of the power supply to the ground somehow. This could be a simple piece of bare 14 AWG wire tucked under both the ground terminal and the adjacent V-negative terminal. Recall what we [discussed before about grounding](lesson8#grounding-aka-earthing).
+
+![](../images/lesson11/grounddcnegative.png)
 
 Once the connections are made, mount the AC socket assembly and the power supply to the frame of the printer. The power supply mounts to the frame using 3D printed clamps, M5 flanged screws fastens the clamps to the frame, and M4 screws fastens the power supply to the clamps. Remember to slip on the 3D printed safety cover for the power supply, which is also secured with M4 screws through the slots on the safety cover. The safety cover for the AC socket assembly has cavities for M3 square nuts, which is used to fasten the assembly via M3 screws. If you need countersink M3 screws, you can still use button head M3 screws, because there's not a lot of forces involved.
 
@@ -48,13 +50,17 @@ Keep it running for 10 minutes. No smoke should come out, nothing should be warm
 
 Turn the power off and unplug the AC power cord.
 
-## 2: Power Supply to Control Circuit
+## 2: LCD Screen
 
 The control circuit (SKR Mini E3) should be mounted inside its 3D printed box, secured with M3 standoffs and short M3 screws. The lid should be removed. We do not need the cooling fan yet.
 
 The LCD screen should also be mounted inside its own 3D printed box, secured with M3 standoffs and short M3 screws. But before you tighten down the screws, connect the LCD screen to the control circuit with the cable that came with it.
 
-![](../images/lesson11/connectlcd.png)
+[![](../images/lesson11/connectlcd.png)](../images/lesson11/connectlcd.png)
+
+[![](../images/lesson11/connectlcdall.png)](../images/lesson11/connectlcdall.png)
+
+## 3: Power Supply to Control Circuit
 
 Connect the power supply to the control circuit using the 14 AWG wires [we prepared before already](lesson11a).
 
@@ -74,7 +80,7 @@ Turn the power off and unplug the AC power cord. Unplug the USB cable.
 
 NOTE: The default firmware for the SKR Mini E3 should have been written for a Creality Ender 3 printer. We are using very similar components so things should work out-of-the-box. But we do need to reconfigure things later.
 
-## 3: Sensors and Switches
+## 4: Sensors and Switches
 
 Input devices, like sensors, are low power, so we test them first. Plus, we depend on the temperature sensors to keep us safe when we test higher powered devices like the heaters.
 
@@ -98,7 +104,7 @@ If you are seeing weird behaviour, then disconnect the wires and use tweezers to
 
 When you are done, turn everything off and unplug everything.
 
-## 4: Fans
+## 5: Fans
 
 Connect the fans, we've already made the extension wires and splitter wires we need. But we need to watch out for which fan is connected to which connector. Follow the diagram.
 
@@ -126,7 +132,7 @@ If you are troubleshooting a problem with a multimeter, check that the fan outpu
 
 When you are done, turn everything off and unplug everything.
 
-## 5: Stepper Motors
+## 6: Stepper Motors
 
 With everything powered off, AC power unplugged, use your hands to move the print head to the middle of the bed, and move the bed vertically to the middle height of the printer. In this position, it is safe to spin the stepper motors slightly just to check if they work.
 
@@ -171,7 +177,7 @@ The easiest way to ground the motors are to use 24 AWG wire to connect the screw
 
 ![](../images/lesson11/groundzaxismotor.png)
 
-## 6: Nozzle Heater
+## 7: Nozzle Heater
 
 Before this step, you must properly re-compile the firmware and flash the firmware to the control circuit. See the [page about the firmware (click here)](lesson12). We need the temperature sensor to keep everything safe while we test the nozzle heater, so the temperature sensor must be properly configured before we start. Also, the nozzle heater must be installed inside the heat-block of the hot-end before initiating this test! Otherwise, the thermistor won't detect if the heater is indeed working.
 
@@ -193,7 +199,7 @@ If anything seems weird, if any connectors or wires start smoking or melting, di
 
 If the temperature does not rise, disconnect the power and start investigating the wires.
 
-## 7: Bed Heater
+## 8: Bed Heater
 
 Before this step, you must properly re-compile the firmware and flash the firmware to the control circuit. See the [page about the firmware (click here)](lesson12). We need the temperature sensor to keep everything safe while we test the bed heater, so the temperature sensor must be properly configured before we start.
 
@@ -203,7 +209,7 @@ Connect the bed heater wires, already prepared with ferrules, to the control cir
 
 Make sure the bed glass is affixed to the bed heater with binder clips. We need the glass to act as a thermal mass, a sponge for heat. Once everything is ready, move on to the stress test, which is when we will power up the bed.
 
-## 8: Electrical Stress Test
+## 9: Electrical Stress Test
 
 First, remove the box cooling fan from the circuit box. Don't disconnect it, just remove it.
 
