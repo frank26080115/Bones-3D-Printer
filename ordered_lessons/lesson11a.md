@@ -41,7 +41,7 @@ The wires we'll be using are either 14 AWG or 24 AWG. To avoid using a crimper f
  * crimper for wire ferrules
  * variety pack of heat-shrink tubing in different sizes, all black, marine grade preferred but not required
  * variety pack of wire ferrules
- * pack of insulated fork connectors that fit 14 AWG wires and fits #6 screws
+ * pack of insulated fork connectors that fit 14 AWG wires and fits #8 studs
  * JST-XH pigtails, both male and female
  * cables for stepper motors, with connectors that work with the SKR Mini E3
 

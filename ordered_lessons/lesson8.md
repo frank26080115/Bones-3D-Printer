@@ -41,19 +41,19 @@ We'll very roughly add up the power consumption in our 3D printer:
 
  * 120W for the heated bed
  * 30W for the nozzle heater
- * 3 stepper motors, 5W each
+ * 3 stepper motors, 10W each (this is an overestimate)
 
-The supporting electronics, such as the microcontroller, won't draw much, it should be drawing current in only milliamperes.
+The supporting electronics, such as the microcontroller, won't draw much, it should be drawing current in only milliamperes. The three cooling fans might use 2 more watts.
 
-We have 175W total, and if we give it some safety margin, we can look for a 200W or better power supply. You can find one higher if you plan on doing upgrades.
+Summing it up, we got 182W as an estimate (for the rest of the math, I'll use 180 instead of 182). To give us a safety margin, we can round this up to 200W. We can look for a 200W or better power supply. You can find one even higher if you plan on doing upgrades.
 
-If we are using 178W at 12V, then we can calculate the current consumption at this power consumption:
+If we are using 180W at 12V, then we can calculate the current consumption at this power consumption:
 
 <nobr> Voltage * Current = Power ,</nobr> so <nobr> Power &divide; Voltage = Current </nobr>
 
-<nobr> 175W &divide; 12V = 14.6A </nobr> (we might round this to 15A later)
+<nobr> 180W &divide; 12V = 15A </nobr>
 
-(175W is the worst case scenario, typically your bed heater is only fully powered up during pre-heat, and doesn't use much power to maintain heat)
+(182W is the worst case scenario, typically your bed heater is only fully powered up during pre-heat, and doesn't use much power to maintain heat)
 
 ### AC Input and Conversion
 
@@ -61,23 +61,23 @@ When converting between different voltages, remember the [Law of Conservation of
 
 We know our printer is using about 15A from the 12VDC output. Then using the same calculation, we can calculate how much current is going into the 120VAC input:
 
-<nobr> 175W &divide; 120V = 1.46A </nobr> (we might round this to 1.5A later)
+<nobr> 180W &divide; 120V = 1.5A </nobr>
 
-The conversion isn't perfect though. Remember that everything in the universe is a resistor, even copper. The components inside the PSU has some resistance that will waste some power as heat while it is doing the conversion. The efficiency is advertised as "up to 89% efficient". If we are using 175W from the 12VDC output, then how much power are we actually taking?
+The conversion isn't perfect though. Remember that everything in the universe is a resistor, even copper. The components inside the PSU has some resistance that will waste some power as heat while it is doing the conversion. The efficiency is advertised as "up to 89% efficient". If we are using 180W from the 12VDC output, then how much power are we actually taking?
 
-<nobr> 175W &divide; 0.89 = 196.6W </nobr>
+<nobr> 180W &divide; 0.89 = 202.2W </nobr>
 
-We are using 196.6W from your wall outlet. Let's do that current consumption calculation using this more realistic power consumption value:
+We are using 202.2W from your wall outlet. Let's do that current consumption calculation using this more realistic power consumption value:
 
-<nobr> 196.6W &divide; 120V = 1.64A </nobr>
+<nobr> 202.2W &divide; 120V = 1.69A </nobr>
 
 ### What's the important takeaway?
 
-Safety First! But don't worry, a typical desktop computer uses about 500W, a microwave uses much more than 1000W. Your house should be protected by many circuit breakers, typically 10A or 15A, and our 3D printer will not trip those circuit breakers.
+We care about safety first and foremost, let's put things in perspective: a typical desktop computer uses about 500W, a microwave uses much more than 1000W. Your house should be protected by many circuit breakers, typically 10A or 15A, and our 3D printer will not trip those circuit breakers (on its own) if it's using only 1.69A at most.
 
-On the AC power input side, you only need to handle 1.64A of current, this means you need to use wires that have an insulation rated for more than 120VAC, and copper thickness that can handle 1.64A of current. If you think about it, a iPad charging cable can handle 2A easily but doesn't have thick insulation. This isn't very scary.
+On the AC power input side, you only need to handle 1.69A of current, this means you need to use wires that have an insulation rated for more than 120VAC, and copper thickness that can handle 1.69A of current. If you think about it, a iPad charging cable can handle 2A easily but doesn't have thick insulation. This isn't very scary.
 
-You'll want to use a fuse on the AC power input side, rated anywhere between 1.8A and 5A would be fine.
+You'll want to use a fuse on the AC power input side, rated anywhere between 2A and 5A would be fine.
 
 On the DC power output side, you'll want wires that can handle 15A of current for the main bus wire, and insulated to handle 12VDC. You will need a 20A fuse, typically installed on the control circuit board.
 
@@ -191,7 +191,7 @@ Pretend we've told the steppper motor driver to limit the current at 1.5A, then,
 
 Which would be fine. It's not about how much voltage is going into the stepper motor driver chip, it's all about how much current that chip is outputting.
 
-Remember how I guessed that each stepper motor uses 5W? I simply multiplied 1.7A by 2.9V which gave me 4.9W
+Remember how I guessed that each stepper motor uses 10W? I simply multiplied 1.7A by 2.9V which gave me 4.9W, and each motor has two coils.
 
 ## Temperature Sensors
 

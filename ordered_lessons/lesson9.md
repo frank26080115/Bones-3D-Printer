@@ -468,7 +468,7 @@ My own Hephaestus 3D printer used locking nuts and locking washers everywhere be
 
 We've coverd fuses in the [electrical lesson](lesson8). If you blow a fuse, you need to first fix what caused the problem, then replace the fuse.
 
-For the AC power input, the fuse is a glass fuse, 20mm x 5mm size, rated for 120VAC (or 220VAC), trip point at 1.8A to 5A, must be fast blow. [example on Digi-Key (Littelfuse 0235004.MXP)](https://www.digikey.com/product-detail/en/littelfuse-inc/0235004.MXP/1294-0235004.MXP-CHP/9857094)
+For the AC power input, the fuse is a glass fuse, 20mm x 5mm size, rated for 120VAC (or 220VAC), trip point between 2A to 5A, must be fast blow. [example on Digi-Key (Littelfuse 0235004.MXP)](https://www.digikey.com/product-detail/en/littelfuse-inc/0235004.MXP/1294-0235004.MXP-CHP/9857094)
 
 For the DC fuse holder on the SKR Mini E3 circuit board, it's a 20A mini ATC fuse. [example on Digi-Key (Littelfuse 0297020.WXNV)](https://www.digikey.com/product-detail/en/littelfuse-inc/0297020.WXNV/F993-ND/146599)
 
