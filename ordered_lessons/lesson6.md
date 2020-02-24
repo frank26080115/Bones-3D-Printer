@@ -1,4 +1,4 @@
-# Continued Design Walkthrough
+# Continued Design Tour
 
 We've already looked at many parts of the printer during the previous lessons, we will not look at the ones we've missed and talk about what they do.
 

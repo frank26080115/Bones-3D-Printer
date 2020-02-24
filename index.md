@@ -67,7 +67,7 @@ Table of Contents
  * [Lesson 3](ordered_lessons/lesson3.md): Construction Tolerance
  * [Lesson 4](ordered_lessons/lesson4.md): Designing 3D Printed Parts
  * [Lesson 5](ordered_lessons/lesson5.md): 3D Printer Motion
- * [Lesson 6](ordered_lessons/lesson6.md): Continued Design Walkthrough
+ * [Lesson 6](ordered_lessons/lesson6.md): Continued Design Tour
  * [Lesson 7](ordered_lessons/lesson7.md): Part CAD Design Walkthrough (more homework)
  * [Lesson 8](ordered_lessons/lesson8.md): 3D Printer Electronics
  * [Extra Lesson](other_pages/externalmosfet): Design an External MOSFET Circuit
