@@ -14,7 +14,7 @@ For my previous robotics class, I wrote a [circuit-basics class](http://eleccele
 
 ![](../images/lessonexternalmosfet/differentpackages.png)
 
-A MOSFET is a type of transistor. Transistors are semiconductor devices that we can use to act as a switch, a switch that is switched by giving it an electrical signal. We can use it to switch a big signal by giving it a small signal.
+A MOSFET [(Wikipedia article)](https://en.wikipedia.org/wiki/MOSFET) is a type of transistor. Transistors are semiconductor devices that we can use to act as a switch, a switch that is switched by giving it an electrical signal. We can use it to switch a big signal by giving it a small signal.
 
 MOSFETs come in two main flavors: **N**-channel and **P**-channel
 
@@ -144,11 +144,11 @@ People who buy these external MOSFET circuits might want to use a even more powe
 
 What should we do?
 
-A diode is a semiconductor device that allows current to flow only in one direction. Zener diodes are a special type of diode that does the same thing, except when the backward voltage is too much, then it allows current to flow the other way. A common usage for a zener diode is to set a voltage limit. We can limit the gate voltage to 8V by using a 8V zener diode. This will keep the beefy MOSFET safe from a power supply that's outputting more voltage. Watch the following animation where the voltage is increased, and watch the gate voltages, see how they are limited by the zener diodes.
+A diode is a semiconductor device that allows current to flow only in one direction. Zener diodes [(Wikipedia article)](https://en.wikipedia.org/wiki/Zener_diode) are a special type of diode that does the same thing, except when the backward voltage is too much, then it allows current to flow the other way. A common usage for a zener diode is to set a voltage limit. We can limit the gate voltage to 8V by using a 8V zener diode. This will keep the beefy MOSFET safe from a power supply that's outputting more voltage. Watch the following animation where the voltage is increased, and watch the gate voltages, see how they are limited by the zener diodes.
 
 ![](../images/lessonexternalmosfet/zenerdiodedifferentvoltages.gif)
 
-But static electricity is hundreds or thousands of volts, and it could be positive or negative. It's a good idea to also add some diodes that are made specifically to handle static electricity, such as bi-directional TVS diodes.
+But static electricity is hundreds or thousands of volts, and it could be positive or negative. It's a good idea to also add some diodes that are made specifically to handle static electricity, such as bi-directional TVS diodes [(Wikipedia article)](https://en.wikipedia.org/wiki/Transient-voltage-suppression_diode).
 
 ![](../images/lessonexternalmosfet/tvsdiodesymbol.png)
 
@@ -192,15 +192,15 @@ The takeaway here is that when somebody sells you a 30A MOSFET... that doesn't m
 
 ## Opto-Isolation
 
-If you've shopped around for an external MOSFET online, you might've noticed they often mention optoisolation or optocouplers.
+If you've shopped around for an external MOSFET online, you might've noticed they often mention optoisolation or optocouplers [(Wikipedia article)](https://en.wikipedia.org/wiki/Opto-isolator).
 
 ![](../images/lessonexternalmosfet/optocouplersymbol.png)
 
 These devices are literally a LED with a transistor next to the LED. Did you know that all diodes and transistors are also kind of microscopic solar panels? When photons hits the silicon juntions of a diode or transistor, there's some electrons that gets ejected from the silicon atoms. So if you light up a LED beside this microscopic transistor, you get a transistor that's activated by light instead of electricity.
 
-Optocouplers are used for isolation between circuits that are at different voltages, they don't even need to share the same ground reference. Electricity can't travel between the LED and the transistor inside, only light can cross that gap. This allows one side to be operating at a much different voltage without affecting the other side, even when components starts to fail. For the external MOSFETs that 3D printers use, it allows people to use vastly higher voltages, like maybe a 48 volt power supply just for the heated bed, while still running the stepper motors with 12 volts.
+Optocouplers are used for isolation between circuits that are at different voltages, different voltage references, and over long distances. Electricity can't travel between the LED and the transistor inside, only light can cross that gap. This allows one side to be operating at a much different voltage without affecting the other side, even when components starts to fail. For the external MOSFETs that 3D printers use, it allows people to use vastly higher voltages, like maybe a 48 volt power supply just for the heated bed, while still running the stepper motors with 12 volts.
 
-Another thing is that the signal to the LED needs to be strong, and that actually means it's almost completely immune to noise.
+Another thing is that the signal to the LED needs to be strong, and that actually means it's almost completely immune to noise. This makes it easy to use a long wire to control something.
 
 If we wanted to add one to our circuit, it would look like this:
 
@@ -210,15 +210,15 @@ Notice how we are using both of the wires from the control circuit. Optocouplers
 
 ## AC Power?
 
-MOSFETs cannot be used with **A**lternating **C**urrent most of the time. The way that MOSFETs are constructed means that if you try to reverse the current, it cannot be stopped, even if the MOSFET is OFF. This is because the way the silicon must be arranged inside a MOSFET also forms a diode, this is called a **body diode** and cannot be avoided.
+MOSFETs cannot be used with **A**lternating **C**urrent most of the time. The way that MOSFETs are constructed means that if you try to reverse the current, it cannot be stopped, even if the MOSFET is OFF. This is because the way the silicon must be arranged inside a MOSFET also involves a diode, this is called a **body diode** [(Wikipedia article)](https://en.wikipedia.org/wiki/Power_MOSFET#Body_diode) and cannot be avoided, if this diode is missing, the MOSFET could become stuck ON.
 
-There's also a whole bunch of other reasons that makes it a bad idea. I can't think of a way to hook up AC power to a MOSFET without blowing up the gate.
+There's also a whole bunch of other reasons that makes it a bad idea. I can't think of a way to hook up AC power to a MOSFET without blowing up the gate. The gate voltage is referenced to the voltage at the source pin, so even if you had only 3V at the gate, but -100V at the source pin, your gate will fail because the difference is 105 volts. Of course there are solutions to this problem but you are better off using the right components for the right job.
 
-Big 3D printer builders might want to use AC because the AC is usually 120V or 220V, much higher, so it can drive a much more powerful heated bed. To switch AC on or off, you want to use a relay. But a typical relay is not a good idea, they don't like switching high voltages very often. This is because high voltages will spark, and sparking will slowly damage the relay contacts. To get around this, there's a device called a SSR, **S**olid **S**tate **R**elay.
+Big 3D printer builders might want to use AC because the AC is usually 120V or 220V, much higher, so it can drive a much more powerful heated bed. To switch AC on or off, you want to use a relay. But a typical relay is not a good idea, they don't like switching high voltages very often. This is because high voltages will spark, and sparking will slowly damage the relay contacts. To get around this, there's a device called a SSR, **S**olid-**S**tate **R**elay [(Wikipedia article)](https://en.wikipedia.org/wiki/Solid-state_relay).
 
 ![](../images/lessonexternalmosfet/ssr.png)
 
-SSRs are typically built with a optocouplers controlling a TRIAC (**tri**ode for **a**lternating **c**urrent). TRIACs are semiconductor switches designed specifically for AC. The scary part is that once a TRIAC is turned ON, it cannot be turned off until the AC voltage hits zero volts. But the good news is that... by definition, AC must hit zero volts once in a while, otherwise it wouldn't be alternating... you can't go from being positive to being negative without being zero somewhere in the middle.
+SSRs are typically built with a optocouplers controlling a TRIAC (**tri**ode for **a**lternating **c**urrent) [(Wikipedia article)](https://en.wikipedia.org/wiki/TRIAC). TRIACs are semiconductor switches designed specifically for AC. The scary part is that once a TRIAC is turned ON, it cannot be turned off until the AC voltage hits zero volts. But the good news is that... by definition, AC must hit zero volts once in a while, otherwise it wouldn't be alternating... you can't go from being positive to being negative without being zero somewhere in the middle.
 
 I don't recommend you try playing with AC powered heated beds, you definitely don't need it. Cheap SSRs, or improperly cooled SSRs (they get HOT, they must have a heatsink, maybe even a cooling fan), could fail and cause an unstoppable thermal runaway, leading to a fire or a burn.
 
