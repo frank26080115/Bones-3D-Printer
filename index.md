@@ -70,6 +70,7 @@ Table of Contents
  * [Lesson 6](ordered_lessons/lesson6.md): Continued Design Walkthrough
  * [Lesson 7](ordered_lessons/lesson7.md): Part CAD Design Walkthrough (more homework)
  * [Lesson 8](ordered_lessons/lesson8.md): 3D Printer Electronics
+ * [Extra Lesson](other_pages/externalmosfet): Design an External MOSFET Circuit
  * [Lesson 9](ordered_lessons/lesson9.md): Assembly Preparation
  * [Lesson 11a](ordered_lessons/lesson11a.md): Electronics Preparation
  * [Lesson 10a](ordered_lessons/lesson10a.md): Mechanical Assembly Part 1

@@ -365,3 +365,5 @@ Basically, the external MOSFET board is a circuit board with a much bigger MOSFE
 Note: Some people actually buy these as an *insurance policy* when they purchase a cheap printer. For example, people frequently tell other people that if you want to order a Anet 3D printer, you should just buy one of these MOSFETs because Anet essentially build ticking time bombs.
 
 **Advanced Homework:** Design and build your own external MOSFET circuit board, and then design a 3D printed box to protect it. If you do it right, this is a way to absolutely guarantee that your MOSFET will never fail, because you can buy a MOSFET rated for 200A if you wanted to.
+
+(lesson dedicated to this homework: [click here](../other_pages/externalmosfet))
