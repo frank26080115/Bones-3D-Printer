@@ -90,9 +90,9 @@ You should be assembling your printer properly! But if the skew is still there, 
 
 (more reading: [Marlin source code comment describing skew compensation](https://github.com/MarlinFirmware/Marlin/blob/e4679c1b787887c466fa607b7408f69e420f4b90/Marlin/Configuration.h#L1364) and [Marlin gcode for skew compensation](https://marlinfw.org/docs/gcode/M852.html) , it's a bit of an advanced topic)
 
-## Metal-on-metal
+## Metal Surfaces
 
-There are some places in this design where we try to butt up metal up against other metal. Have a look at the design of the plastic clamp that holds the Z axis rods:
+There are some places in this design where we try to butt up metal marts up against other metal surfaces. Have a look at the design of the plastic clamp that holds the Z axis rods:
 
 ![](../images/lesson3/zrodholder3dview.png)
 
@@ -100,7 +100,7 @@ Notice how the tangent constraint is used in the 3D model to make the steel rod 
 
 ![](../images/lesson3/zrodholdersketchwithgap.png)
 
-When you screw the plastic clamp down to the aluminum beam, the plastic will squish the steel rod up against the aluminum beam. Plastic is softer than metal so the plastic will bend a little bit when the screws are really tightened down, this keeps the rod extremely secure.
+When you screw the plastic clamp down to the aluminum beam, the plastic will squish the steel rod up against the aluminum beam. **Plastic is softer than metal** so the plastic will **bend and squish** a little bit when the screws are really tightened down, this keeps the rod extremely secure.
 
 ![](../images/lesson3/gapforces.png)
 
@@ -114,7 +114,7 @@ Pretend the Z axis rod is made with +/- 0.1mm diameter tolerance (ie. +/- 0.05mm
 
 ![](../images/lesson3/zrodholdertotalerrors.png)
 
-As you can see, butting up the metal rod against another chunk of metal is clearly the best way to go. It has better overall positional tolerance and handles more errors in manufacturing.
+As you can see, butting up the metal rod against another chunk of metal is clearly the best way to go. The metal is not squishy like plastic. This mounting method has better overall positional tolerance and handles more errors in manufacturing.
 
 The same principle is applied to the sliding block part that holds a brass graphite bushing and the middle axis steel rods. Have a look:
 

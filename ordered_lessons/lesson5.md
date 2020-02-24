@@ -76,7 +76,7 @@ We will be using very special brass bushings to slide along the *side rods*. We 
 
 ![](../images/lesson5/pictures/graphitebrassbushings.png)
 
-I say these brass bushings are special because they use self-lubricating graphite, which keeps the motion smooth and the durability of the bushing high. These should last many years and do not require you to add lubrication. (they are sometimes called "**oil-less** or **oil-free** bearings")
+I say these brass bushings are special because they use self-lubricating graphite, which keeps the motion smooth and the durability of the bushing high. These should last many years and do not require you to add lubrication. (they are sometimes called "**oil-less**" or "**oil-free** bearings")
 
 **Tech Specs:** 8mm inner diameter, 12mm outer diameter, 24mm length, self-lubricating graphite (oil-less or oil-free) brass bushing
 
