@@ -110,3 +110,7 @@ The other end of the tube should be zip-tied to the back of the Hemera extruder,
 Everything else should be attached using M5 8mm long flanged screws and M5 T-slot nuts. Have fun!
 
 You may want to complete all the electrical wiring before fastening the electronics.
+
+## Next Lesson
+
+ * [Lesson 11b](ordered_lessons/lesson11b.md): Electronics Bring-Up

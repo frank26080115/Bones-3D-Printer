@@ -60,3 +60,7 @@ Notice how the nozzle is 24.2mm below the bottom screws. Now we know where the t
 Much later, the gantry bearing mounts will be designed and the centers of the bearings are constrained to the belt planning sketch:
 
 ![sketch relationships with bearing mount](../images/lesson2/beltplantobearingmount.png)
+
+## Next Lesson
+
+click here for the next [lesson on "Construction Tolerance"](lesson3)

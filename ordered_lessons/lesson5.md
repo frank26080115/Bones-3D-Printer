@@ -269,3 +269,7 @@ One particular German brand named "igus" became the most popular, with products 
  * LM16UU Replacement: RJ4JP-01-16
 
 [igus product page for RJ4JP-01-XX](https://www.igus.com/product/990)
+
+## Next Lesson
+
+The next lesson is where we [continue the tour of our 3D printer](lesson6)

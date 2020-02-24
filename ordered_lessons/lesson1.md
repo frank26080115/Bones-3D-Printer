@@ -173,4 +173,4 @@ Then use the circular pattern tool, select the horizontal beams at the rear, and
 
 Congratulations, you've made a 3D plan of your 3D printer's frame!
 
-Onto the next lesson!
+Onto the [next lesson](lesson2)!

@@ -166,3 +166,9 @@ The AC power input module should have already come with wires that are terminate
 ![](../images/lesson11/acinputwireslabeled.png)
 
 ![](../images/lesson11/iecsignals.png)
+
+## Next Lesson
+
+ * [Lesson 10a](ordered_lessons/lesson10a.md): Mechanical Assembly Part 1
+ * [Lesson 10b](ordered_lessons/lesson10b.md): Mechanical Assembly Part 2
+ * [Lesson 11b](ordered_lessons/lesson11b.md): Electronics Bring-Up

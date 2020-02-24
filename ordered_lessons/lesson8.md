@@ -367,3 +367,7 @@ Note: Some people actually buy these as an *insurance policy* when they purchase
 **Advanced Homework:** Design and build your own external MOSFET circuit board, and then design a 3D printed box to protect it. If you do it right, this is a way to absolutely guarantee that your MOSFET will never fail, because you can buy a MOSFET rated for 200A if you wanted to.
 
 (lesson dedicated to this homework: [click here](../other_pages/externalmosfet))
+
+## Next Lesson
+
+We are about to start building this printer, the next lesson will be about [shopping for the parts, and other preparation steps](lesson9).

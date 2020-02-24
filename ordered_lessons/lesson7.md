@@ -182,3 +182,7 @@ There's no starting point, because you can put it anywhere on the 3D printer. Th
  * [TFT35-E3-V3](https://github.com/bigtreetech/BTT-TFT35-E3-V3.0/tree/master/Hardware)
 
 WARNING: I've never actually used the TFT35 myself, but I heard the WiFi feature on it is really slow (I think it uses the UART on the ESP8266, which is a snail for handling large files). If you want good WiFi performance, get a [Duet 2 WiFi](https://www.duet3d.com/DuetWifi) as the control board, design a box for that. (beware that the Duet is $170, worth every penny)
+
+## Next Lesson
+
+The next lesson is on [3D Printer Electronics](lesson8)

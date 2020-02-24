@@ -325,3 +325,5 @@ Due to the more complex geometry, I had to be extra thoughtful about managing ov
 ## That's all for now
 
 For now that's all the important bits and pieces!
+
+The next lesson is ["Part CAD Design Walkthrough"](lesson7). We will go into detail about how to design a 3D printed part with CAD.

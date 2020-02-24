@@ -2,6 +2,10 @@
 
 I can't write this section well, because I never actually built this printer or used Marlin myself. Everything should be pretty obvious from the LCD screen's menu system though. Good luck.
 
+## Buying Filament
+
+This 3D printer is designed to use 1.75mm diameter plastic filament. The best type of plastic to start with would be PLA, which is easy to print. It's got a low melting point and wouldn't survive in hot water or extreme sunlight. If you need something stronger, try PETG, but the settings would need a bit more tuning. The hot-end of the Hemera extruder should be able to handle nylon and TPU just fine as well. Stay away from ABS, it tends to crack unless you've got a really hot bed and a very warm room to print in, plus it gives off toxic fumes.
+
 ## Loading Filament
 
 The LCD screen should have a menu option that allows you to load and unload filament. Use that, it will guide you. Also remember that the Hemera has a lever that releases the filament.

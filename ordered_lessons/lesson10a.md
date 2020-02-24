@@ -196,3 +196,8 @@ Repeat for both X axis and Y axis.
 ## Stop Here For Now
 
 I don't want to make this page super long. Take a break. Continue to the next part of the assembly instructions.
+
+Next:
+
+ * [Lesson 10b](ordered_lessons/lesson10b.md): Mechanical Assembly Part 2
+ * [Lesson 11b](ordered_lessons/lesson11b.md): Electronics Bring-Up

@@ -119,3 +119,7 @@ As you can see, butting up the metal rod against another chunk of metal is clear
 The same principle is applied to the sliding block part that holds a brass graphite bushing and the middle axis steel rods. Have a look:
 
 ![](../images/lesson3/slidingblockgap.png)
+
+## Next Lesson
+
+The next lesson is on "[Designing 3D Printed Parts](lesson4)"

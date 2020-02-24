@@ -191,3 +191,7 @@ So really this is only an aesthetic problem, because looking from the top of the
 A chamfer of about 0.6mm seems to work well for all situations, for most layer heights and most nozzle sizes. You don't have to get that line exactly right in the middle of the gap, you just have to cover it slightly.
 
 The other solution is to adjust the extrusion factor, but I prefer not to do this as different brands and even different spools of filament may have different optimal extrusion factors.
+
+## Next Lesson
+
+The next lesson is on [3D Printer Motion](lesson5)
