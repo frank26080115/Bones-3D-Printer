@@ -6,7 +6,7 @@ You, yes, you. If you've received a direct invitation to view this project from 
 
 You know me, so I bet you already know it'll be good. Reply back to my invitation to start.
 
-This website is still **under construction**
+This website is still **under construction**, currently it is content complete but still under review and editing.
 
 General Design Overview
 =======================
