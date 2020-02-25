@@ -78,6 +78,38 @@ Recall in [lesson 3](lesson3) we talked about what happens if a leg of the print
 
 [Link to Model version 2](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/9fff88d5d5309237cd05f5d7)
 
+### Split Loom Guide
+
+The 3D printed wire guide up on top of the printer was originally meant to have a teflon tube tied to it. Another possible solution is to use a split loom instead of the teflon tube, which would look neater. I have designed another 3D printed guide that allows you to zip-tie a split loom into it.
+
+![](../images/other/splitloomguide.png)
+
+[Link to Model](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/ba03d3cc5587af0ce1e760af)
+
+### Leadscrew Upper Guard
+
+This 3D printed part is placed on the tip of the leadscrew and it prevents you from accidentally bending the leadscrew. It does not use a rotary ball bearing, the hole it has is simply much larger than the leadscrew's diameter.
+
+![](../images/other/leadscrewupperguard.png)
+
+Most 3D printers with this style of bed lifting does not use a ball bearing up on the tip of the leadscrew.
+
+![](../images/other/freeleadscrew1.png)
+
+Even [my Hephaestus 3D printer](https://eleccelerator.com/hephaestus-my-own-3d-printer/) doesn't have something to secure its leadscrews up on top. But I think it's a good idea to have something there. This is just to prevent the leadscrew from becoming damaged during transportation, in the back of a truck, where something could knock into the leadscrew.
+
+This part is included in the main 3D model.
+
+### Alternative Electronics Arrangment
+
+You can also mount the electronics like this:
+
+![](../images/other/alternativeelectronicsarrangement.png)
+
+But watch out that the stepper motors and limit switches are all on the left side of the design. So the wires to those components need to be longer. However, it'll be easy to just put the stepper motors on the right side.
+
+This design gives you more room to put junk on to the front of the printer frame.
+
 ## Upgrades
 
 ### Angled TFT24 Box
