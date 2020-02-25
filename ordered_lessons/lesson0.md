@@ -36,3 +36,7 @@ We will be using the Hemera extruder, which uses a stepper motor and some gears 
 <div class="youtube_container"><iframe src="https://www.youtube.com/embed/yV4bd_d5FAI" frameborder="0" allowfullscreen=""></iframe></div>
 
 Read more about the [Hemera extruder on the E3D-Online website](https://e3d-online.com/e3d-hemera-feature)
+
+## Get Started
+
+Let's go to [lesson 1, designing the frame](lesson1)!
