@@ -82,8 +82,7 @@ Table of Contents
  * [Optional 3D Printed Parts](other_pages/optional3dprintedparts.md)
  * [Flaws, Mistakes, Improvements](other_pages/flawsmistakesimprovements.md)
 
-If you have enjoyed this project...
-===================================
+### If you have enjoyed this project...
 
 Please consider making a contribution to help cure Alzheimer's disease.
 

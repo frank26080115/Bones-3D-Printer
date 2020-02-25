@@ -3,9 +3,26 @@
 
 @import "{{ site.theme }}";
 
-.inner h1
-{
-	white-space: nowrap;
+@media print, screen and (max-width: 1060px) {
+	#main-content h1
+	{
+		font-size: 22px;
+		white-space: normal;
+	}
+	#main-content h2
+	{
+		font-size: 19px;
+		white-space: normal;
+	}
+	#main-content h3
+	{
+		font-size: 16px;
+		white-space: normal;
+	}
+	#main-content h4
+	{
+		white-space: normal;
+	}
 }
 
 #main-content
