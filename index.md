@@ -27,7 +27,7 @@ In general, this still means:
 
  * Ultimaker-like mechanics
  * no bed sensor required
- * about 200mm x 200mm build size
+ * about 220 x 220 x 300 mm build size (L x W x H)
  * heated bed
  * 32-bit microcontroller (8-bit is still an option)
 
