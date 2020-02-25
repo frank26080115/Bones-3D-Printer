@@ -296,7 +296,9 @@ The 3D printed plastic box has a hole in the back for the cables to escape throu
 
 ![](../images/lesson6/lcdboxviews.png)
 
-To fit any other screen, or to use the USB port, this box needs to be redesigned.
+To fit any other screen, or to use the USB port, this box needs to be redesigned. I did do a second design that's admittedly much better, [check it out here](../other_pages/optional3dprintedparts#angled-tft24-box).
+
+![](../images/other/tft24boxangled2.png)
 
 ## Advanced Fan Duct
 
