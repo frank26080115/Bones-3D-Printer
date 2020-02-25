@@ -77,7 +77,7 @@ There are other settings such as acceleration that can also be edited through va
 
 ## Stepper Motor Current
 
-The stepper motor current can be adjusted. By default, they are set to 800mA RMS. This is an OK default starting point. We will need to increase this value if the printer is not printing correctly, as in:
+The stepper motor current can be adjusted. By default, they are set to 800mA. This is an OK default starting point, we purchased motors with ratings of about 1.5A and we should start with a setting that's about 60% of that. We will need to increase this value if the printer is not printing correctly, as in:
 
  * not enough plastic being extruded, due to the extruder motor being too weak and missing steps
  * layers appearing to shift, due to gantry steppers being too weak and missing steps
@@ -89,6 +89,8 @@ The value can be adjusted without editing the Configuration_adv.h file. Either t
 ## Temperature Sensor Configuration
 
 Both the E3D branded thermistor cartridge and the Anet branded bed heater uses the Semitec 104GT-2 model thermistor. This is reflected in the settings named **TEMP_SENSOR_0** and **TEMP_SENSOR_BED**. It is critical for this setting to be correct in order for us to perform any heater testing safely.
+
+It is possible that the temperature readings from the thermistors are slightly wrong, but that's OK. While it is possible to get the readings to be perfectly accurate, it's not worth the effort and the equipment. Don't worry about it too much. If you need the nozzle hotter, you will know so when you observe the filament flow out the nozzle. When you buy new filament, try using a temperature slightly hotter than what the manufacturer recommends, and then cool it down if you feel comfortable. After a while, you'll have a rough temperature offset memorized in your head.
 
 ## Building
 
