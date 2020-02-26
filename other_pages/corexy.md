@@ -1,4 +1,4 @@
-# CoreXY Variation
+# CoreXY Experimental Design
 
 I've also designed this printer with a CoreXY motion system for the upper gantry.
 
@@ -45,3 +45,27 @@ This is why CoreXY 3D printers typically use a lightweight Bowden style extruder
 This 3D model only has the upper gantry portion. The bed's sizing and positioning is different but still uses the same parts from the original Ultimaker-like design. The electronics is all the same, the wiring needs to be done slightly differently. The firmware will need to be completely reconfigured. The shopping list is also very different, as you'll need a lot more idler pulleys for the belts.
 
 As I have not built a CoreXY style printer myself, I cannot offer as much support if you choose to build this version. It'll be a nice experiment for a second 3D printer.
+
+## Belt Planning in CAD
+
+It might seem daunting to design something like this at first, but it's quite simple. It's just a bunch of pulleys, the belts go around them, and most of the belts need to be parallel.
+
+First start with where the stepper motor will be, and the diameters of the pulleys. You can draw a plan for the Y axis. There's a bunch of tangent constraints used here.
+
+[![](../images/corexy/beltplan1.png)](../images/corexy/beltplan1.png)
+
+For the X axis, I first planned out where the linear rods and linear ball bearings will go. Then I planned on how thick I wanted the 3D printed carriage to be. This told me where the belts should end up resting against, which means I know where to put the pulleys for the X axis.
+
+[![](../images/corexy/beltplan2.png)](../images/corexy/beltplan2.png)
+
+In the end, I could follow these two planning sketches to make a third sketch of exactly where the entire belt will go.
+
+[![](../images/corexy/beltplan3.png)](../images/corexy/beltplan3.png)
+
+And finally we can use the mirror tool to duplicate the belt for the other side.
+
+[![](../images/corexy/beltplanmirror.png)](../images/corexy/beltplanmirror.png)
+
+## Back to Main Page
+
+[Click Here](../) to go to our main page
