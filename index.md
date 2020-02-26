@@ -81,7 +81,7 @@ Table of Contents
  * [Lesson 14](ordered_lessons/lesson14.md): Operating the 3D Printer
  * [Optional 3D Printed Parts](other_pages/optional3dprintedparts.md)
  * [Flaws, Mistakes, Improvements](other_pages/flawsmistakesimprovements.md)
- * [CoreXY Experimental Design](other_pages/flawsmistakesimprovements.md)
+ * [CoreXY Experimental Design](other_pages/corexy.md)
 
 ### If you have enjoyed this project...
 
