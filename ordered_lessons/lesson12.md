@@ -6,7 +6,7 @@ The firmware we'll be using is [Marlin](https://marlinfw.org/) version 2.x.x. Th
 
 We need to...
 
- * download Marlin source code [(click here])(https://marlinfw.org/meta/download/), or use [their GitHub repo](https://github.com/MarlinFirmware/Marlin/) (make sure you are using the right branch, 2.x.x)
+ * download Marlin source code [(click here)](https://marlinfw.org/meta/download/), or use [their GitHub repo](https://github.com/MarlinFirmware/Marlin/) (make sure you are using the right branch, 2.x.x)
  * install PlatformIO [(click here)](https://marlinfw.org/docs/basics/install_platformio.html)
 
 ## Modifying Configuration
