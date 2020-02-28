@@ -120,6 +120,44 @@ The same principle is applied to the sliding block part that holds a brass graph
 
 ![](../images/lesson3/slidingblockgap.png)
 
+## Z Axis Wobble
+
+This is an important topic because there's some bad information out there on the internet.
+
+There's a common problem around 3D printers called "Z wobble", which makes the 3D prints look bad because it seems like each layer is shifted a little bit in a spiral pattern.
+
+![](../images/lesson3/spiralzwobbleexample.png)
+
+What causes the wobble? Usually because people attach a leadscrew to their stepper motor via a coupler. Couplers are never perfectly round or stiff. Think about it this way. How can a rod fit into a hole without the hole being just slightly bigger than the rod? Account for manufacturing tolerances and thermal expansion of solids. **The hole must be bigger than the rod.** This means when you tighten the rod down with the screws inside the coupler, it's **slightly eccentric**. Spinning something eccentric will cause it to wobble very slightly.
+
+![](../images/lesson3/wobbleani.gif)
+
+People tend to think that by affixing the top of the leadscrew will fix the problem:
+
+![](../images/lesson3/zwobbletopbearing.png)
+
+and it does help, and sometimes people put two of them. But there's other problems with those printer designs that makes the problem worse than it should be. The example pictures above I found on the internet came from a printer that looks like...
+
+![](../images/lesson3/badzsupport.png)
+
+I have highlighted the Z axis rod mountings. No wonder it wobbles! The rod is **extended** out pretty far, so it's **easier to bend** the plastic due to **leverage**. The amount of plastic used isn't nearly thick enough to handle the force from this leverage.
+
+![](../images/lesson3/zwobble3d.png)
+
+The tiniest bend will cause your print to look like it's wobbling. The diagram above is eggagerated, but it doesn't take much before it causes you frustrations.
+
+Remember, a top-of-the-line Ultimaker doesn't need to support its leadscrew at the top, and it doesn't ever show wobble!
+
+![](../images/other/freeleadscrew1.png)
+
+If you secure your Z axis rods correctly, your leadscrew can wobble as much as it wants, and your bed will not wobble with it.
+
+Watch the following video of a leadscrew and lead-nut...
+
+<video controls="controls" loop="loop" preload="none" id="vid_0" poster="../images/filmanimation.gif" style="width: 100%;"><source src="../images/lesson3/wobble720.mp4" type="video/mp4"><a href="../videos/wobble720.mp4"><img src="../images/filmanimation.gif" width="100%"></a></video>
+
+...it shows that the leadnut is a very loose fit around the leadscrew. This is **good**! It's **supposed to be loose**. If it's too tight then it will bind! Because the bed is heavy, this isn't a problem, there **won't be backlash** because of **gravity**. Do you see how I'm wiggling around the leadscrew and my bed is staying perfectly still? That's because the Z axis rods are stiff and secure!
+
 ## Next Lesson
 
 The next lesson is on "[Designing 3D Printed Parts](lesson4)"

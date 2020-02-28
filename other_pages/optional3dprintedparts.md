@@ -100,6 +100,12 @@ Even [my Hephaestus 3D printer](https://eleccelerator.com/hephaestus-my-own-3d-p
 
 This part is included in the main 3D model.
 
+To understand why this part is optional and does not require a ball bearing, please watch this video:
+
+<video controls="controls" loop="loop" preload="none" id="vid_0" poster="../images/filmanimation.gif" style="width: 100%;"><source src="../images/lesson3/wobble720.mp4" type="video/mp4"><a href="../videos/wobble720.mp4"><img src="../images/filmanimation.gif" width="100%"></a></video>
+
+The leadnut is a very loose fit around the leadscrew. This is **good**! It's **supposed to be loose**. If it's too tight then it will bind! Because the bed is heavy, this isn't a problem, there **won't be backlash** because of **gravity**.
+
 ### Alternative Electronics Arrangment
 
 You can also mount the electronics like this:
