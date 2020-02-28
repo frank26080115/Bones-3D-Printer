@@ -1,8 +1,8 @@
-This project is an inexpensive, fully self-designed 3D printer. The design utilizes common off-the-shelf components and 3D printed parts in its construction. This printer is designed to be something that can become a lesson plan, where the design can be broken down into very simplified concepts so that lessons plans can be developed around small steps that accumulate into the realization of a completely working 3D printer.
+This project is an inexpensive, self-designed 3D printer. The design utilizes common off-the-shelf components and 3D printed parts in its construction. The process of building this printer is can become a mini-course where the design can be broken down into lessons plans - concepts are presented as smaller steps that add up to a fully functional 3D printer.
 
 ![](images/3dmodeloverview.png)
 
-You, yes, you. If you've received a direct invitation to view this project from me, it means you are my friend IRL who I would like to help build this 3D printer. This *could* mean in-person help, free spare parts, borrowing tools, etc, definitely an in-person **safety check**. What's in it for me? **You are my test subject. I don't actually need this printer right now, but I do want to see that my design works!** The 3D printing marketplace is constantly evolving and I want to keep up with some new developments. This new design uses the more common 1.75mm plastic filament and all FIVE of 3D printers that I use needs 2.85mm filament, meaning even if I build it, I can't use any of my existing stockpile of 2.85mm plastic filament. But I have a need to prove to myself that I can design good 3D printer that doesn't use expensive parts and techniques.
+You (yes, you!) can build this! If you've received a direct invitation to view this project from me, it means you are my friend IRL who I would like to help build this 3D printer. This *could* mean in-person help, free spare parts, borrowing tools, etc, definitely an in-person **safety check**. What's in it for me? **You are my test subject. I don't actually need this printer right now, but I do want to see that my design works!** The 3D printing marketplace is constantly evolving and I want to keep up with some new developments. This new design uses the more common 1.75mm plastic filament and all FIVE of 3D printers that I use needs 2.85mm filament, meaning even if I build it, I can't use any of my existing stockpile of 2.85mm plastic filament. But I have a need to prove to myself that I can design good 3D printer that doesn't use expensive parts and techniques.
 
 You know me, so I bet you already know it'll be good. Reply back to my invitation to start.
 
@@ -11,7 +11,7 @@ This website is still **under construction**, currently it is content complete b
 General Design Overview
 =======================
 
-It's basically a copy of [my Hephaestus 3D printer](https://eleccelerator.com/hephaestus-my-own-3d-printer/). But this time, key differences:
+It's basically a copy of [my Hephaestus 3D printer][1]. But this time, key differences:
 
  * uses 1.75mm plastic filament, instead of 2.85mm
  * single Z leadscrew, instead of two
@@ -25,34 +25,42 @@ It's basically a copy of [my Hephaestus 3D printer](https://eleccelerator.com/he
 
 In general, this still means:
 
- * Ultimaker-like mechanics
+ * [Ultimaker-like mechanics][2]
  * no bed sensor required
- * about 220 x 220 x 300 mm build size (L x W x H)
+ * about 220L x 220W x 300H mm build size (a little smaller than an milk crate)
  * heated bed
  * 32-bit microcontroller (8-bit is still an option)
+  
+Estimated Cost
+===
+It depends! But, you should generally expect to spend...
+
+Schedule
+===
+It's hard to estimate how much time this will take - that's part of what you're helping me determine!
 
 CAD
 ===
 
-The whole 3D printer was 3D modeled first, almost every single part, using Onshape. This means:
+The 3D printer was 3D modeled first using [Onshape.][3] This means:
 
  * I can share the design with you, and you can modify it under your own Onshape account
- * I can give you CAD homework, and I can check if you did it right, AND I can even check if you cheated, because I can check the file history
- * You can design your own custom parts and share it with me, so I can give you feedback
- * You don't even need a computer. Onshape runs in the cloud and accessible through any web browser or their smartphone app
+ * I can give you CAD homework and check on your progress (I can even check if you cheated 😈)
+ * You can design your own custom parts - share it with me and I'll give you feedback!
+ * You can participate through any web browser or [ios][6]/[android][7] app
 
-The link to the Onshape model: [https://cad.onshape.com/documents/359ba....150f](https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/208ce2426916e4fde5ad150f)
+[Find the Onshape model here.][4]
 
 ![](images/followalong.png)
 
 ![](images/partsarenamed.png)
 
-For additional CAD lessons unrelated to this 3D printer, check out my [robotics class, click here](http://eleccelerator.com/ssfpl_robotics_class_2018/), also using Onshape
+For additional Onshape CAD lessons unrelated to this 3D printer [check out my robotics class!][5]
 
 About the Lessons
 =================
 
-There will be parts of the lesson where I take you through steps in CAD to create something, a drawing or a part. But keep in mind, I am not taking through the steps to make an exact copy of the model I just showed you. Instead, each time, I will be simplifiying something that was originally really complicated, to something very easy, and focus on important concepts, instead of exact replication.
+Our goal is not exact replication. There will be parts of the lesson where I take you through steps in CAD to create a drawing or a part, but I am not taking you through the steps to make an exact copy of the model I just showed you. Instead, we will be improving the design together while learning important concepts.
 
 Different lessons might intertwine, one lesson might refer to information taught much later, there might be some jumping back and forth, and some knowledge might not even follow any order.
 
@@ -91,3 +99,11 @@ Please consider making a contribution to help cure Alzheimer's disease.
 and maybe contribute your computer's idle processing power to help finding a cure
 
 [![](images/foldingathomelogo.png)](https://foldingathome.org/)
+
+[1]:https://eleccelerator.com/hephaestus-my-own-3d-printer/
+[2]:https://ultimaker.com/3d-printers/ultimaker-s3
+[3]:https://www.onshape.com/
+[4]:https://cad.onshape.com/documents/359baba3de4f085c967fb5a9/w/62a7ef2a4414462a5d8bf3e1/e/208ce2426916e4fde5ad150f
+[5]:http://eleccelerator.com/ssfpl_robotics_class_2018/
+[6]:https://apps.apple.com/us/app/onshape-3d-cad/id923421284
+[7]:https://play.google.com/store/apps/details?id=com.onshape.app&hl=en_US
