@@ -11,28 +11,24 @@ This website is still **under construction**, currently it is content complete b
 General Design Overview
 =======================
 
-It's basically a copy of [my Hephaestus 3D printer](https://eleccelerator.com/hephaestus-my-own-3d-printer/). But this time, key differences:
+ * 220 x 220 x 300 (L x W x H) build volume
+ * uses 1.75mm plastic filament
+ * uses the E3D Hemera extruder
+ * uses 2020 profile aluminum extrusion beams for the frame
+ * mechanical performance similar to Ultimaker 2
+ * will never need bed leveling after initial calibration
 
- * uses 1.75mm plastic filament, instead of 2.85mm
- * single Z leadscrew, instead of two
- * uses a stock Hemera extruder, instead of a flexible-shaft driven Titan Aero
- * uses limit switches, instead of sensorless homing
- * fully metric, instead of a mix of metric and imperial
- * uses 2020 for the frame, instead of 1010
- * no water-jet cut parts
- * all motion components now available from Amazon, instead of industrial suppliers
- * 12V power, instead of 24V
+If the part list is fully followed, the electronics features are:
 
-In general, this still means:
+ * 12V system main voltage
+ * 32-bit control system
+ * Trinamic silent stepper motor drivers
+ * heated bed, 120W
 
- * Ultimaker-like mechanics
- * no bed sensor required
- * about 220 x 220 x 300 mm build size (L x W x H)
- * heated bed
- * 32-bit microcontroller (8-bit is still an option)
+[Click Here](other_pages/comparisons.md) to compare it against some other 3D printers, such as [my Hephaestus 3D printer](https://eleccelerator.com/hephaestus-my-own-3d-printer/) which is very similar.
 
-CAD
-===
+CAD 3D Model
+============
 
 The whole 3D printer was 3D modeled first, almost every single part, using Onshape. This means:
 
@@ -54,9 +50,7 @@ About the Lessons
 
 There will be parts of the lesson where I take you through steps in CAD to create something, a drawing or a part. But keep in mind, I am not taking through the steps to make an exact copy of the model I just showed you. Instead, each time, I will be simplifiying something that was originally really complicated, to something very easy, and focus on important concepts, instead of exact replication.
 
-Different lessons might intertwine, one lesson might refer to information taught much later, there might be some jumping back and forth, and some knowledge might not even follow any order.
-
-The assembly and setup steps are much harder for me to write because... well... I can only guess at the order-of-operations without testing, and I can't provide photographs. So please somebody build this printer and send me photos!
+The assembly and setup steps are much harder for me to write because... well... I can only guess at the order-of-operations without testing, and I can't provide photographs. Instructions are given mostly via 2D or 3D illustrations. Please somebody build this printer and send me photos so we can write better instructions!
 
 Table of Contents
 =================
