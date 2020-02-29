@@ -193,6 +193,22 @@ Using the 3D printed spacer for the stepper motor, and the 50mm long M3 screws, 
 
 Repeat for both X axis and Y axis.
 
+## Gantry Motion Test
+
+Right now, your half-built printer should have a functioning gantry. You should be able to move around the cross rods by hand. Slide the cross rods around to check if the sliding blocks are moving smoothly. All the rods will start spinning and the motors will start spinning. If they move smoothly along the whole length, then that's a good sign.
+
+![](../images/lesson10/rodsmoveanimation/animation.gif)
+
+If they move smoothly only around a certain spot, then get tight, then it means the side rods are not parallel...
+
+![](../images/lesson3/notparallelrods.png)
+
+![](../images/lesson3/rodsbending.png)
+
+...and you need to make adjustments to the frame.
+
+To make adjustments, you need to loosen a lot of screws that holds the frame together (but don't take any out completely). Then, keep moving the rods forward/backward/left/right. Recall how we made sure the bed's Z axis rods are parallel, move to one end, tighten some screws, repeat until you are happy. If you are still having trouble, you might need to loosen the screws on the sliding block as well.
+
 ## Stop Here For Now
 
 I don't want to make this page super long. Take a break. Continue to the next part of the assembly instructions.

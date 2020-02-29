@@ -23,7 +23,7 @@ This is now the print head. Install this whole print head onto the gantry's cros
 
 Finally, tighten down the clamps using square nuts, 20mm long M3 screws, and here you **must use washers**.
 
-When you are done this, then you can move the print head around by hand. All the rods will start spinning and the motors will start spinning. Check that, although you can move the print head, it doesn't wiggle around as if the bearings are loose.
+When you are done this, then you can move the whole print head around by hand. All the rods will start spinning and the motors will start spinning. Check that, although you can move the print head, it doesn't wiggle around as if the bearings are loose.
 
 ## X and Y Axis Endstops
 
