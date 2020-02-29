@@ -162,6 +162,14 @@ The height of the backstop is adjustable because we don't want the print head as
 
 If you drastically change the bed's level, you do need to re-adjust the height of the backstops.
 
+#### Re-design the backstop
+
+Admittedly, the idea of a backstop with an adjustable height is very cumbersome and not really neccessary.
+
+![](../images/lesson6/bedrearblockredesign.png)
+
+I suggest that you re-design the part slightly to reach the right height, without the plates. The new correct height could be measured after you build the printer. Then you can use your new 3D printer to print replacement parts, like this, for itself.
+
 ## Bed Leveling
 
 We've talked about how and why we level the bed in the previous lessons. Now we look at the hardware required in detail.
