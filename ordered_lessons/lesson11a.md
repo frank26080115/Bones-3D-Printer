@@ -79,7 +79,9 @@ It's not dangerous to directly solder some wires directly to the terminals. Use 
 
 ![](../images/lesson11/preplimitswitches.png)
 
-Of course you need to do this 3 times.
+The wires go to the **C**ommon pin and the **N**ormally **O**pen (**NO**) pin of the switch. Although technically the switch itself does not care about polarity, please use the black wire for the **C** pin.
+
+You need to do this 3 times for all of your limit switches.
 
 We will be making extension cables for these switches later.
 
