@@ -412,6 +412,8 @@ Please use PETG for the following:
  * standoff spacers for the X and Y axis stepper motors
  * mounting part Z axis stepper motor
 
+When printing the gantry's rotary ball bearing mounts, please use consistent settings for all four pieces. The consistency between the four pieces will guarantee that the side rods are parallel and at equal heights. Please also use the same roll of filament for all four pieces. It's probably best to just print all four pieces at once in one print-job.
+
 Make sure all the holes on the 3D printed parts fit the screws that will go into them. Use a drill bit to drill them out if the holes do not fit the screws.
 
 If a hole or clamp is meant to fit in a bearing, and it doesn't fit, then that part should be re-designed and re-printed with a very slightly bigger diameter. Do not use a drill to widen these parts.
