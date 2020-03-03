@@ -33,3 +33,9 @@ The extruder print head has the blower fan mounted on the bottom instead of on t
 ## Rear Bed Backstop
 
 The backstop plates that sits behind the glass bed could be completely avoided if I knew where it would be safe to drill some holes into the heated bed. If I could drill some holes in the right places, I could include some permanently attached metal clips to secure the glass bed.
+
+## Sensorless Homing
+
+Unfortunantly, Marlin is not ready for a good sensorless homing implementation. The problem is that the homing sequence not customizable, if the end-stop was already reached and the homing sequence is re-initiated, then the stepper motors would not incur enough back-EMF to trigger StallGuard. This would lead to the stepper motors continuously attempting to move even though they can't, causing a few seconds of loud noise and vibrations.
+
+RepRapFirmware is much more suited to sensorless homing as the homing routines can be scripted. The print head can be moved away just slightly from the end-stop before attempting to home. This means the stepper motors can build up enough momentum, and thus, when the end-stop is hit, the back-EMF spike would be large enough to trigger StallGuard.
