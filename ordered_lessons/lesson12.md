@@ -41,12 +41,15 @@ A comment is simply text that the computer doesn't care about, but the human can
 There are options that can be enabled (aka defined) or disabled, and if an option is defined, it might also have a value.
 
     #define OPTION_X    // this option is enabled (aka defined)
+
 &nbsp;
 
     //#define OPTION_K    // this option is disabled, because it became a comment
+
 &nbsp;
 
     #define OPTION_K 3    // this means OPTION_K has the value of 3
+
 &nbsp;
 
 Often we use comments to act as an ON/OFF switch for options, so that we don't forget that the option is available.
