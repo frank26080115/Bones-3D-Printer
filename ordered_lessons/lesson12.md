@@ -25,14 +25,17 @@ In the source code you've downloaded, there should be a "**Configuration.h**" fi
 A comment is simply text that the computer doesn't care about, but the human can still read. We use it to make notes inside source code to communicate to other humans.
 
     // this is a single line comment
+
 &nbsp;
 
     /* a small block comment looks like this */
+
 &nbsp;
 
     /* a large block comment
     could take up multiple lines
     like this */
+
 &nbsp;
 
 There are options that can be enabled (aka defined) or disabled, and if an option is defined, it might also have a value.
