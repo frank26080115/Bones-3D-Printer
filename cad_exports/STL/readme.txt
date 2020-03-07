@@ -1,0 +1,1 @@
+The STL files here are not fully guaranteed to be the best match for your printer. The tolerances are meant to be printed on my (Frank's) printer. If the tolerances are not right for you, please modify the original CAD model.
