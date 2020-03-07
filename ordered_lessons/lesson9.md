@@ -143,7 +143,7 @@ Buy 4 of them. 16mm inner diameter, 28mm outer diameter, 37mm long.
 
 ![](../images/lesson9/lm16uu.png)
 
-The standard LM8UU on MiSUMi costs $8.13 each ([part number LMU16](https://us.misumi-ec.com/vona2/detail/110300026540/?HissuCode=LMU16)). Amazon has them for about $3 each if you get a pack of 4.
+The standard LM16UU on MiSUMi costs $8.13 each ([part number LMU16](https://us.misumi-ec.com/vona2/detail/110300026540/?HissuCode=LMU16)). Amazon has them for about $3 each if you get a pack of 4.
 
 We may need to upgrade to LM16LUU if the bed vibrates. This is highly unlikely though.
 
