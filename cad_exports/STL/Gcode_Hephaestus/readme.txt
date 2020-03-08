@@ -1,0 +1,1 @@
+These G-code files only work on my (Frank's) Hephaestus 3D printer
