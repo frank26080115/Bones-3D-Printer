@@ -11,11 +11,9 @@ Attach the blower fan onto the 3D printed part that mounts to the Hemera extrude
 
 ![](../images/lesson10/ziptieblowerfan.png)
 
-Attach the 3D printed mounts to the Hemera extruder, using the 6mm long M3 screws.
+Attach the 3D printed mounts to the Hemera extruder, using the 8mm long M3 screws and M3 washers.
 
 ![](../images/lesson10/hemeramount.png)
-
-If the screws are too long, then use some washers under them.
 
 This is now the print head. Install this whole print head onto the gantry's cross linear rods. Slide the linear rods through the clamps first, then slide the linear ball bearings into the clamps.
 

@@ -33,7 +33,7 @@ I have optimized a shopping list for every screw, nut, and washer you need from 
 | 40  | [92832A229](https://www.mcmaster.com/92832A229) | M3 x 20mm button head screw        |
 | 30  | [92095A168](https://www.mcmaster.com/92095A168) | M3 x 14mm button head screw        |
 | 30  | [92832A215](https://www.mcmaster.com/92832A215) | M3 x  6mm button head screw        |
-| 20  | [90991A113](https://www.mcmaster.com/90991A113) | M3 x  8mm button head screw        |
+| 30  | [90991A113](https://www.mcmaster.com/90991A113) | M3 x  8mm button head screw        |
 | 12  | [91290A137](https://www.mcmaster.com/91290A137) | M3 x 50mm button head screw        |
 | 100 | [90576A102](https://www.mcmaster.com/90576A102) | M3 nylon locking nut               |
 | 100 | [97259A101](https://www.mcmaster.com/97259A101) | M3 square nut 5.5mm wide           |

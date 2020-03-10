@@ -62,9 +62,11 @@ Let's break down the constraints for this sketch:
 
 [![](../images/lesson7/mountstartsketchconstraints.png)](../images/lesson7/mountstartsketchconstraints.png)
 
-We extrude this as a new part, 3mm thick.
+We extrude this as a new part, 4.2mm thick.
 
 ![](../images/lesson7/mountplatestartextrude.png)
+
+Why did we use 4.2mm as the thickness? This is because I took the official 3D model of the Hemera extruder, and measured what the thickness should be if we were to use a 8mm long M3 screw with a washer.
 
 ### X Axis Linear Ball Bearing Clamp
 
@@ -72,7 +74,7 @@ This next sketch starts on top of the new flat piece. It's very boring, it's mos
 
 ![](../images/lesson7/xbearingextendsketch.png)
 
-This sketch is extruded out 22mm, because the linear ball bearing is 25mm long and we've already extruded 3mm for the plate.
+This sketch is extruded out 21mm, because the linear ball bearing is 25mm long and we've already extruded 4.2mm for the plate.
 
 ![](../images/lesson7/xbearingextendextrude.png)
 
