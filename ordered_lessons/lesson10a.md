@@ -79,9 +79,11 @@ Take the heated bed and secure it to the plastic corner pieces with 14mm long M3
 
 ![](../images/lesson10/bedforkassembly3.png)
 
+**Lubricate all of your LM16UU bearings first ([see preparation instructions](lesson9#ball-bearing-preparation))**.
+
 Attach (using the M5 screws and T-slot nuts as before) the other pieces that goes on the forklift:
 
- * linear bearing and bearing clamps (loosely)
+ * LM16UU linear bearings and bearing clamps (loosely)
  * lead-nut mounting (tighten, position centered at the notch you cut)
  * actuator for the Z axis limit switch (loosely)
  * drag chain anchor (tighten, position not critical)
@@ -107,7 +109,7 @@ Move the forklift all the way to the **bottom**. Tighten the linear bearing clam
 
 Go up and down repeatedly, and tighten slightly repeatedly, until the motion is smooth and the screws are completely tight. The bed shouldn't wobble. If it does seem like it could wobble, then move one of the Z axis linear rods a very slight amount (loosening the screws very slightly too) to give it more pre-load, then tighten it down. **Keep making adjustments** until you are completely happy with the smoothness and stability of the bed movement.
 
-The leadscrew should not bend too much. It is **allowed to bend slightly**, just not too much. What we said about **elastic deformation** applies here.
+The leadscrew should not bend too much. It is **allowed to bend slightly**, just not too much. What we said about **elastic deformation** applies here. If the leadscrew and lead-nut is misaligned too much in the front-to-back direction, you can use a drill bit to enlarge all of the 3mm holes in the 3D printed pieces. Larger holes (or slots) would give both the lead-nut and stepper motor a little bit more wiggle room so that they can be aligned before tightening them down again.
 
 Tighten down all the parts on the fork lift now. Make sure the limit switch actuator is positioned correctly so that it can activate the limit switch beneath it.
 
@@ -171,7 +173,7 @@ Once you are done, follow the diagram below and tighten the set-screws on parts 
 
 ### Gantry Cross Linear Rods
 
-There are two more 8mm diameter linear rods that are the cross linear rods. Install two LM8UU bearings on each rod. Then install the rods into the sliding blocks, clamping down on them with the final 3D printed plastic piece. This uses the 14mm long M3 screws and square nuts.
+There are two more 8mm diameter linear rods that are the cross linear rods. **Lubricate all of your LM8UU bearings first ([see preparation instructions](lesson9#ball-bearing-preparation))**. Install two LM8UU bearings on each rod. Then install the rods into the sliding blocks, clamping down on them with the final 3D printed plastic piece. This uses the 14mm long M3 screws and square nuts.
 
 ![](../images/lesson10/uppergantryaddcrossrods.png)
 

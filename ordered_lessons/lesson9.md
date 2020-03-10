@@ -418,7 +418,7 @@ If a hole or clamp is meant to fit in a bearing, and it doesn't fit, then that p
 
 # Ball Bearing Preparation
 
-When you purchase ball bearings, both the rotary and linear kind, you should lubricate it. The bearings might already seem oily, but that oil is an anti-rust oil used for storage and transportation, not for lubrication. Purchase some dedicated bearing oil, such as machine oil, and apply it to all the bearings. Do this right before installing the bearings.
+When you purchase ball bearings, both the rotary and linear kind, you should lubricate it **before** you install them. The bearings might already seem oily, but that oil is an anti-rust oil used for storage and transportation, not for lubrication. Purchase some dedicated bearing oil, such as machine oil, and apply it to all the bearings. Do this right before installing the bearings.
 
 # Tools
 

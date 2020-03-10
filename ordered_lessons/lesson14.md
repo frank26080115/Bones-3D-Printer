@@ -22,6 +22,10 @@ There might be an item in the LCD screen's menu system to initiate bed leveling.
 
 The other way is to simply start printing. Usually the print starts with a skirt or brim, which is an outer line of plastic that is not a part of the actual 3D model. You can see if this line is too thick or too thin while it is printing. Where it is too thick, it means you need to raise the bed level on that side, and vice versa, lower the bed level where the line seems too thin.
 
+## Lubrication
+
+All of the LM8UU and LM16UU linear ball bearings should have been lubricated **before** installation ([see preparation instructions](lesson9#ball-bearing-preparation)). The other bearings and bushings can be lubricated after. A simple machine oil will work for all of the rods, a small dab on the rod is all you need, then do a large 3D print to spread the oil. Do not apply the oil too frequently, realistically, you only need to apply lubricant if you see streaks on your rods or hear screeching sounds from the rods. If the rods gets too dusty, then clean the dust off and apply some oil.
+
 ## Starting a Print
 
 Put the microSD card into the printer. Use the LCD screen to select the file and start the print.
