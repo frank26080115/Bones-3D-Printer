@@ -139,7 +139,7 @@ The standard LM8UU on MiSUMi costs $6.50 each ([part number LMU8](https://us.mis
 
 #### LM16UU linear ball bearings
 
-Buy 4 of them. 16mm inner diameter, 28mm outer diameter, 37mm long.
+Buy 2 of them. 16mm inner diameter, 28mm outer diameter, 37mm long.
 
 ![](../images/lesson9/lm16uu.png)
 
