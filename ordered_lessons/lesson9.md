@@ -359,6 +359,10 @@ As discussed in the [electrical lesson](lesson8), we will use a product that com
 
 [example on Amazon](https://smile.amazon.com/BIQU-Rocker-Switch-Socket-Module/dp/B07KS2TQ45/ref=sr_1_1) , and here's a beefcake one on [Digi-Key (Delta 06AB2D)](https://www.digikey.com/product-detail/en/delta-electronics/06AB2D/1144-1009-ND/3830632)
 
+Don't forget that you need a matching power cord (one end is IEC C13, the other end goes in your wall).
+
+![](../images/lesson9/powercord.png)
+
 ### Limit Switches
 
 We need 3 limit switches. Their form-factor are somewhat standarized, and we are only passing a very weak signal through them so they do not need a high rating. But with the same form-factor, the actuator style might still differ.
