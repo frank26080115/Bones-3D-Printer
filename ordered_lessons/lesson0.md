@@ -37,6 +37,10 @@ We will be using the Hemera extruder, which uses a stepper motor and some gears 
 
 Read more about the [Hemera extruder on the E3D-Online website](https://e3d-online.com/e3d-hemera-feature)
 
+## More Detailed Explanation
+
+There's a much more in-depth look at all of the 3D printer motion components in [lesson number 5](lesson5).
+
 ## Get Started
 
 Let's go to [lesson 1, designing the frame](lesson1)!
