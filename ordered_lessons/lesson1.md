@@ -137,7 +137,7 @@ You might ask "how did you know where to put the extruder?". This involves drawi
 
 ![visualizing how I used sketches to find nozzle height](../images/lesson1/zupperplanningsketches2.png)
 
-(this will be covered in detail in [another lesson](/ordered_lessons/lesson2)!)
+(this will be covered in detail in [another lesson](../ordered_lessons/lesson2)!)
 
 It's not the most optimal way because I haven't technically checked how "thick" the bed is, but the penalty is only losing a few millimeters in print height, which isn't as important as losing print width or length.
 
